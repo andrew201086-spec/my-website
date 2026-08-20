@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Варіантів редизайну блоку цін — Harmony Dental Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #526154;
+            --primary-dark: #3e4a40;
+            --primary-light: #738475;
+            --accent-gold: #c49b66;
+            --bg-light: #f8faf8;
+            --text-dark: #191f1a;
+            --text-muted: #5d695f;
+            --border-color: #e2e8e2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: #eef2ee;
+            color: var(--text-dark);
+            padding: 30px 15px 80px;
+        }
+
+        .showcase-header {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .showcase-header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .showcase-header p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        /* Nav Pills for Variants */
+        .variant-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background: #f0f4f0;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background: #e4ebe4;
+        }
+
+        .nav-btn.active {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(82, 97, 84, 0.3);
+        }
+
+        .variant-section {
+            display: none;
+            max-width: 1140px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 24px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+        }
+
+        .variant-section.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .variant-title-bar {
+            border-bottom: 2px dashed #e2e8e2;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .variant-badge {
+            background: #e8f0e8;
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 100px;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-action:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .formula-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #f2f6f2;
+            border: 1px solid #d8e2d8;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #38453a;
+            font-weight: 600;
+        }
+
+        /* =========================================================
+           ВАРИАНТ 1: Интерактивные Табы (Tabs)
+        ========================================================= */
+        .v1-tabs-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .v1-tab-btn {
+            padding: 14px 28px;
+            background: #f4f7f4;
+            border: 2px solid transparent;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 15px;
+            color: #4b584d;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .v1-tab-btn.active {
+            background: #fff;
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 8px 20px rgba(82,97,84,0.12);
+        }
+
+        .v1-card {
+            background: #f8faf8;
+            border: 1px solid #e1e8e1;
+            border-radius: 20px;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .v1-left h3 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .v1-left .v1-price {
+            font-size: 44px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 15px 0;
+        }
+
+        .v1-right ul {
+            list-style: none;
+        }
+
+        .v1-right li {
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 12px;
+            font-size: 14.5px;
+            color: #3f4d41;
+            line-height: 1.5;
+        }
+
+        .v1-right li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 16px;
+        }
+
+        /* =========================================================
+           ВАРИАНТ 2: 2-Крокова Дорожня Карта (Stage 1 vs Stage 2)
+        ========================================================= */
+        .v2-roadmap-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 25px;
+        }
+
+        .v2-stage-box {
+            background: #f9fbf9;
+            border: 1px solid #e1e7e1;
+            border-radius: 20px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .v2-stage-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .v2-stage-pill {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 5px 12px;
+            border-radius: 6px;
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .v2-stage-pill.gold {
+            background: var(--accent-gold);
+        }
+
+        .v2-options-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .v2-sub-option {
+            background: #fff;
+            border: 1.5px solid #e1e7e1;
+            border-radius: 14px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+
+        .v2-sub-option:hover {
+            border-color: var(--primary);
+            box-shadow: 0 6px 18px rgba(82,97,84,0.1);
+        }
+
+        .v2-sub-option.active {
+            border-color: var(--primary);
+            background: #f4f8f4;
+        }
+
+        .v2-sub-price {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 8px 0;
+        }
+
+        /* =========================================================
+           ВАРИАНТ 3: Элегантные Горизонтальные Строки-Карточки
+        ========================================================= */
+        .v3-rows-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .v3-row-card {
+            background: #f9fbf9;
+            border: 1px solid #e1e7e1;
+            border-radius: 18px;
+            padding: 24px 30px;
+            display: grid;
+            grid-template-columns: 280px 1fr 220px;
+            gap: 25px;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .v3-row-card:hover {
+            background: #fff;
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(82,97,84,0.08);
+            transform: translateY(-2px);
+        }
+
+        .v3-row-card.highlight {
+            border: 2px solid var(--primary);
+            background: #fff;
+        }
+
+        .v3-col-main h3 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .v3-col-main span {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .v3-col-formula {
+            font-size: 13.5px;
+            color: #424f44;
+            line-height: 1.6;
+        }
+
+        .v3-col-price {
+            text-align: right;
+        }
+
+        .v3-price-big {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        /* =========================================================
+           ВАРИАНТ 4: Компактные 3 Легкие Карточки в один ряд
+        ========================================================= */
+        .v4-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .v4-card {
+            background: #fff;
+            border: 1px solid #e1e7e1;
+            border-radius: 18px;
+            padding: 28px 22px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+            transition: all 0.2s;
+        }
+
+        .v4-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(82,97,84,0.1);
+        }
+
+        .v4-card.hit {
+            border: 2px solid var(--primary);
+        }
+
+        .v4-hit-pill {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 100px;
+        }
+
+        .v4-price {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 12px 0 16px;
+        }
+
+        .v4-math-bar {
+            background: #f4f7f4;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 12.5px;
+            color: #38453a;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .v4-list {
+            list-style: none;
+            margin-bottom: 22px;
+            flex-grow: 1;
+        }
+
+        .v4-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #49564b;
+        }
+
+        .v4-list li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            color: var(--primary);
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        /* =========================================================
+           ВАРИАНТ 5: Интерактивный Калькулятор-Конфигуратор
+        ========================================================= */
+        .v5-calc-box {
+            background: #f8faf8;
+            border: 1px solid #e1e8e1;
+            border-radius: 22px;
+            padding: 35px 40px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .v5-option-group {
+            margin-bottom: 25px;
+        }
+
+        .v5-option-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .v5-btn-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .v5-toggle-btn {
+            flex: 1;
+            padding: 14px;
+            border: 1.5px solid #d8e2d8;
+            background: #fff;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .v5-toggle-btn.active {
+            border-color: var(--primary);
+            background: #eef4ee;
+            color: var(--primary);
+        }
+
+        .v5-checkbox-card {
+            background: #fff;
+            border: 1.5px solid #d8e2d8;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .v5-checkbox-card:hover {
+            border-color: var(--primary);
+        }
+
+        .v5-checkbox-card input {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .v5-summary-panel {
+            background: #253328;
+            color: #fff;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .v5-summary-panel h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #c49b66;
+            margin-bottom: 12px;
+        }
+
+        .v5-total-price {
+            font-size: 42px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .v5-breakdown-list {
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+            margin-bottom: 24px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .v1-card, .v2-roadmap-grid, .v5-calc-box { grid-template-columns: 1fr; }
+            .v3-row-card { grid-template-columns: 1fr; text-align: left; }
+            .v3-col-price { text-align: left; }
+            .v4-cards-grid { grid-template-columns: 1fr; }
+            .variant-section { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="showcase-header">
+        <span class="variant-badge">Лабораторія дизайну</span>
+        <h1>5 Варіантів компактного редизайну блоку цін</h1>
+        <p>Імпланти Alpha Dent (350$) + Протез на балці (800$) + Мульти-юніти (50$) + Цирконій (3 500$)</p>
+        
+        <div class="variant-nav">
+            <button class="nav-btn active" onclick="switchVariant('v1', this)">Варіант 1: Інтерактивні Таби</button>
+            <button class="nav-btn" onclick="switchVariant('v2', this)">Варіант 2: Дорожня карта (2 Етапи)</button>
+            <button class="nav-btn" onclick="switchVariant('v3', this)">Варіант 3: Горизонтальні рядки</button>
+            <button class="nav-btn" onclick="switchVariant('v4', this)">Варіант 4: 3 Легкі картки</button>
+            <button class="nav-btn" onclick="switchVariant('v5', this)">Варіант 5: Живий калькулятор</button>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         ВАРИАНТ 1: ИНТЕРАКТИВНЫЕ ТАБЫ (TABS)
+    ========================================================================= -->
+    <section id="v1" class="variant-section active">
+        <div class="variant-title-bar">
+            <div>
+                <h2>Варіант 1: Інтерактивний перемикач (Таби)</h2>
+                <p style="color:var(--text-muted); font-size:14px; margin-top:4px;">Найбільш компактний: займає мінімум висоти, фокусує пацієнта на 1 обраному пакеті.</p>
+            </div>
+            <span class="variant-badge">Компактність 10/10</span>
+        </div>
+
+        <div class="v1-tabs-wrap">
+            <button class="v1-tab-btn active" onclick="setV1Tab('a4', this)">🌟 All-on-4 (2 400 $)</button>
+            <button class="v1-tab-btn" onclick="setV1Tab('a6', this)">💪 All-on-6 (3 200 $)</button>
+            <button class="v1-tab-btn" onclick="setV1Tab('zirc', this)">👑 Постійний Цирконій (3 500 $)</button>
+        </div>
+
+        <!-- Tab 1: All-on-4 -->
+        <div id="v1-a4" class="v1-card">
+            <div class="v1-left">
+                <span class="formula-tag">Німеччина • 4 імпланти Alpha Dent</span>
+                <h3 style="margin-top:12px;">All-on-4 під ключ</h3>
+                <div class="v1-price">2 400 $</div>
+                <div class="formula-tag" style="display:block; margin-bottom:20px; line-height:1.5;">
+                    <strong>Чесний розрахунок:</strong><br>
+                    4 імпланти (4 × 350 $) + 4 мульти-юніти (4 × 50 $) + Протез на балці (800 $)
+                </div>
+                <button class="btn-action">Записатися на All-on-4 (2 400 $)</button>
+            </div>
+            <div class="v1-right">
+                <h4 style="margin-bottom:15px; font-size:16px;">Що вже включено у вартість:</h4>
+                <ul>
+                    <li>3D комп'ютерне моделювання та навігаційний 3D-шаблон</li>
+                    <li>4 німецьких імпланти Alpha Dent + 4 мульти-юніти</li>
+                    <li>Акриловий незнімний протез на литій балці</li>
+                    <li>Встановлення зубів у день операції</li>
+                    <li>Анестезія, шви та всі контрольні огляди</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab 2: All-on-6 -->
+        <div id="v1-a6" class="v1-card" style="display:none;">
+            <div class="v1-left">
+                <span class="formula-tag">Німеччина • 6 імплантів Alpha Dent</span>
+                <h3 style="margin-top:12px;">All-on-6 під ключ</h3>
+                <div class="v1-price">3 200 $</div>
+                <div class="formula-tag" style="display:block; margin-bottom:20px; line-height:1.5;">
+                    <strong>Чесний розрахунок:</strong><br>
+                    6 імплантів (6 × 350 $) + 6 мульти-юнітів (6 × 50 $) + Протез на балці (800 $)
+                </div>
+                <button class="btn-action">Записатися на All-on-6 (3 200 $)</button>
+            </div>
+            <div class="v1-right">
+                <h4 style="margin-bottom:15px; font-size:16px;">Переваги All-on-6:</h4>
+                <ul>
+                    <li>6 опорних імплантів для ідеального розподілу навантаження</li>
+                    <li>Рекомендовано для верхньої щелепи та при широкій дузі</li>
+                    <li>6 оригінальних мульти-юнітів Alpha Dent</li>
+                    <li>Акриловий незнімний протез на балці за 1 день</li>
+                    <li>Підвищена стабільність для пацієнтів з міцним прикусом</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab 3: Zirconia -->
+        <div id="v1-zirc" class="v1-card" style="display:none;">
+            <div class="v1-left">
+                <span class="formula-tag" style="background:#fcf8f2; border-color:#ecd9c3; color:#966f38;">Через 6-12 місяців після приживлення</span>
+                <h3 style="margin-top:12px;">Цирконієві зуби на балці</h3>
+                <div class="v1-price" style="color:#966f38;">3 500 $</div>
+                <div class="formula-tag" style="display:block; margin-bottom:20px; line-height:1.5;">
+                    <strong>Постійний незнімний міст:</strong><br>
+                    Монолітний Prettau / Katana Zirconia на індивідуальній фрезерованій балці
+                </div>
+                <button class="btn-action" style="background:#966f38;">Замовити постійний Цирконій</button>
+            </div>
+            <div class="v1-right">
+                <h4 style="margin-bottom:15px; font-size:16px;">Преміум якість на все життя:</h4>
+                <ul>
+                    <li>Індивідуальна титанова балка CAD/CAM</li>
+                    <li>Абсолютна естетика та природна прозорість емалі</li>
+                    <li>Не стирається, не сколюється і не темніє</li>
+                    <li>Не вбирає барвники кави, чаю та тютюну</li>
+                    <li>Довічний термін експлуатації</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         ВАРИАНТ 2: 2-КРОКОВА ДОРОЖНЯ КАРТА (ROADMAP)
+    ========================================================================= -->
+    <section id="v2" class="variant-section">
+        <div class="variant-title-bar">
+            <div>
+                <h2>Варіант 2: Дорожня карта лікування (2 Етапи)</h2>
+                <p style="color:var(--text-muted); font-size:14px; margin-top:4px;">Логічно розділяє оплату: спочатку день операції (2 400 $ або 3 200 $), потім через рік постійний міст (3 500 $).</p>
+            </div>
+            <span class="variant-badge">Медична логіка 10/10</span>
+        </div>
+
+        <div class="v2-roadmap-grid">
+            <!-- Stage 1 -->
+            <div class="v2-stage-box">
+                <div class="v2-stage-header">
+                    <div>
+                        <span class="v2-stage-pill">Етап 1: День операції</span>
+                        <h3 style="margin-top:8px; font-size:22px;">Зуби за 1 день на імплантах Alpha Dent</h3>
+                    </div>
+                </div>
+
+                <div class="v2-options-split">
+                    <div class="v2-sub-option active">
+                        <span style="font-size:12px; font-weight:800; color:var(--primary);">ХІТ • 4 ІМПЛАНТИ</span>
+                        <h4 style="margin:4px 0;">All-on-4</h4>
+                        <div class="v2-sub-price">2 400 $</div>
+                        <div style="font-size:12px; color:#5c6b5e; line-height:1.4;">
+                            4 × 350$ (імпланти) +<br>
+                            4 × 50$ (мульти-юніти) +<br>
+                            800$ (протез на балці)
+                        </div>
+                    </div>
+
+                    <div class="v2-sub-option">
+                        <span style="font-size:12px; font-weight:800; color:#5c6b5e;">МАКСИМУМ • 6 ІМПЛАНТІВ</span>
+                        <h4 style="margin:4px 0;">All-on-6</h4>
+                        <div class="v2-sub-price">3 200 $</div>
+                        <div style="font-size:12px; color:#5c6b5e; line-height:1.4;">
+                            6 × 350$ (імпланти) +<br>
+                            6 × 50$ (мульти-юніти) +<br>
+                            800$ (протез на балці)
+                        </div>
+                    </div>
+                </div>
+
+                <div style="font-size:13px; color:#526154; margin-top:auto; padding-top:10px;">
+                    ✓ Включено: 3D-шаблон, імплантація, балка, незнімні зуби в день операції.
+                </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="v2-stage-box" style="background:#fdfbf7; border-color:#eee2d0;">
+                <div class="v2-stage-header">
+                    <div>
+                        <span class="v2-stage-pill gold">Етап 2: Через 1 рік</span>
+                        <h3 style="margin-top:8px; font-size:22px;">Цирконієвий міст</h3>
+                    </div>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="font-size:36px; font-weight:800; color:#966f38;">3 500 $</div>
+                    <span style="font-size:13px; color:#7d6a52;">за постійний монолітний міст на балці</span>
+                </div>
+
+                <p style="font-size:13px; color:#635645; line-height:1.5; margin-bottom:20px;">
+                    Встановлюється за бажанням після повного приживлення імплантів. Монолітний цирконій на фрезерованій індивідуальній балці.
+                </p>
+
+                <button class="btn-action" style="background:#966f38; width:100%; margin-top:auto;">Отримати консультацію</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         ВАРИАНТ 3: ЭЛЕГАНТНЫЕ ГОРИЗОНТАЛЬНЫЕ СТРОКИ (ROW CARDS)
+    ========================================================================= -->
+    <section id="v3" class="variant-section">
+        <div class="variant-title-bar">
+            <div>
+                <h2>Варіант 3: Горизонтальні рядки-картки</h2>
+                <p style="color:var(--text-muted); font-size:14px; margin-top:4px;">Сучасний європейський стиль: читається зліва направо за 3 секунди.</p>
+            </div>
+            <span class="variant-badge">Швидкість сприйняття 10/10</span>
+        </div>
+
+        <div class="v3-rows-container">
+            <!-- Row 1: All-on-4 -->
+            <div class="v3-row-card highlight">
+                <div class="v3-col-main">
+                    <span style="color:var(--primary); font-weight:800; font-size:11px; text-transform:uppercase;">Хіт вибору • Німеччина</span>
+                    <h3>All-on-4 Alpha Dent</h3>
+                    <span>4 імпланти + незнімний протез на балці</span>
+                </div>
+                <div class="v3-col-formula">
+                    <div class="formula-tag">
+                        <strong>Розрахунок:</strong> 4 × 350$ (імпланти) + 4 × 50$ (мульти-юніти) + 800$ (протез)
+                    </div>
+                    <div style="font-size:12.5px; color:#5d6b5e; margin-top:4px;">Включено 3D-шаблон, анестезію та встановлення зубів за 1 день.</div>
+                </div>
+                <div class="v3-col-price">
+                    <div class="v3-price-big">2 400 $</div>
+                    <button class="btn-action" style="padding:8px 18px; font-size:13px;">Обрати All-on-4</button>
+                </div>
+            </div>
+
+            <!-- Row 2: All-on-6 -->
+            <div class="v3-row-card">
+                <div class="v3-col-main">
+                    <span style="color:#526154; font-weight:800; font-size:11px; text-transform:uppercase;">Максимальна стабільність</span>
+                    <h3>All-on-6 Alpha Dent</h3>
+                    <span>6 імплантів для підвищеного навантаження</span>
+                </div>
+                <div class="v3-col-formula">
+                    <div class="formula-tag">
+                        <strong>Розрахунок:</strong> 6 × 350$ (імпланти) + 6 × 50$ (мульти-юніти) + 800$ (протез)
+                    </div>
+                    <div style="font-size:12.5px; color:#5d6b5e; margin-top:4px;">Ідеально для верхньої щелепи та пацієнтів з міцним жувальним тиском.</div>
+                </div>
+                <div class="v3-col-price">
+                    <div class="v3-price-big">3 200 $</div>
+                    <button class="btn-action" style="padding:8px 18px; font-size:13px; background:#435145;">Обрати All-on-6</button>
+                </div>
+            </div>
+
+            <!-- Row 3: Zirconia -->
+            <div class="v3-row-card" style="background:#fdfcf9; border-color:#ecd9c3;">
+                <div class="v3-col-main">
+                    <span style="color:#966f38; font-weight:800; font-size:11px; text-transform:uppercase;">Постійний етап через 1 рік</span>
+                    <h3 style="color:#2a2115;">Цирконієві зуби на балці</h3>
+                    <span>Монолітний діоксид цирконію Prettau</span>
+                </div>
+                <div class="v3-col-formula">
+                    <div class="formula-tag" style="background:#f8f2e9; border-color:#dec8af; color:#7d5c2e;">
+                        Фрезерована балка CAD/CAM + монолітний цирконій найвищої естетики
+                    </div>
+                    <div style="font-size:12.5px; color:#7d6a52; margin-top:4px;">Не стирається, не сколюється, довічний термін служби.</div>
+                </div>
+                <div class="v3-col-price">
+                    <div class="v3-price-big" style="color:#966f38;">3 500 $</div>
+                    <button class="btn-action" style="padding:8px 18px; font-size:13px; background:#966f38;">Обрати Цирконій</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         ВАРИАНТ 4: 3 ЛЕГКИЕ КАРТОЧКИ (3-CARD GRID)
+    ========================================================================= -->
+    <section id="v4" class="variant-section">
+        <div class="variant-title-bar">
+            <div>
+                <h2>Варіант 4: 3 Легкі компактні картки</h2>
+                <p style="color:var(--text-muted); font-size:14px; margin-top:4px;">Полегшена версія класичних колонок без зайвої громіздкості та з короткими тезами.</p>
+            </div>
+            <span class="variant-badge">Класика та простота 10/10</span>
+        </div>
+
+        <div class="v4-cards-grid">
+            <!-- Card 1 -->
+            <div class="v4-card hit">
+                <span class="v4-hit-pill">Хіт вибору</span>
+                <h3 style="font-size:20px; margin-top:6px;">All-on-4 Alpha Dent</h3>
+                <span style="font-size:13px; color:var(--text-muted);">4 німецьких імпланти</span>
+                
+                <div class="v4-price">2 400 $</div>
+
+                <div class="v4-math-bar">
+                    • 4 імпланти (4 × 350 $) = <strong>1 400 $</strong><br>
+                    • 4 мульти-юніти (4 × 50 $) = <strong>200 $</strong><br>
+                    • Протез на балці = <strong>800 $</strong>
+                </div>
+
+                <ul class="v4-list">
+                    <li>3D навігаційний шаблон</li>
+                    <li>Встановлення зубів за 1 день</li>
+                    <li>Анестезія та всі огляди включені</li>
+                </ul>
+
+                <button class="btn-action" style="width:100%;">Обрати All-on-4</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="v4-card">
+                <h3 style="font-size:20px;">All-on-6 Alpha Dent</h3>
+                <span style="font-size:13px; color:var(--text-muted);">6 німецьких імплантів</span>
+                
+                <div class="v4-price">3 200 $</div>
+
+                <div class="v4-math-bar">
+                    • 6 імплантів (6 × 350 $) = <strong>2 100 $</strong><br>
+                    • 6 мульти-юнітів (6 × 50 $) = <strong>300 $</strong><br>
+                    • Протез на балці = <strong>800 $</strong>
+                </div>
+
+                <ul class="v4-list">
+                    <li>6 опор для кращої фіксації</li>
+                    <li>Ідеально для верхньої щелепи</li>
+                    <li>Встановлення зубів за 1 день</li>
+                </ul>
+
+                <button class="btn-action" style="width:100%; background:#435145;">Обрати All-on-6</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="v4-card" style="background:#fcfbf9; border-color:#e8d8c5;">
+                <span style="font-size:11px; font-weight:800; color:#966f38; text-transform:uppercase;">Через 6-12 місяців</span>
+                <h3 style="font-size:20px; margin-top:2px;">Цирконій на балці</h3>
+                <span style="font-size:13px; color:#857159;">Постійний міст Prettau</span>
+                
+                <div class="v4-price" style="color:#966f38;">3 500 $</div>
+
+                <div class="v4-math-bar" style="background:#f5eee4; color:#614d33;">
+                    Постійне протезування після повного приживлення імплантів.
+                </div>
+
+                <ul class="v4-list">
+                    <li>Фрезерована титанова балка</li>
+                    <li>Монолітний преміум цирконій</li>
+                    <li>Довічна міцність та естетика</li>
+                </ul>
+
+                <button class="btn-action" style="width:100%; background:#966f38;">Дізнатися про Цирконій</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         ВАРИАНТ 5: ИНТЕРАКТИВНЫЙ ЖИВОЙ КАЛЬКУЛЯТОР (CALCULATOR)
+    ========================================================================= -->
+    <section id="v5" class="variant-section">
+        <div class="variant-title-bar">
+            <div>
+                <h2>Варіант 5: Живий інтерактивний калькулятор</h2>
+                <p style="color:var(--text-muted); font-size:14px; margin-top:4px;">Пацієнт сам обирає параметри і бачить зміну ціни у прямому ефірі без нагромадження тексту.</p>
+            </div>
+            <span class="variant-badge">Інтерактив та залучення 10/10</span>
+        </div>
+
+        <div class="v5-calc-box">
+            <!-- Controls -->
+            <div>
+                <div class="v5-option-group">
+                    <label>1. Оберіть кількість опорних імплантів Alpha Dent (Німеччина):</label>
+                    <div class="v5-btn-group">
+                        <div class="v5-toggle-btn active" id="v5-opt-4" onclick="v5Select(4)">
+                            <strong>All-on-4 (4 імпланти)</strong><br>
+                            <span style="font-size:12px; color:#637165;">Стандарт для нижньої/верхньої щелепи</span>
+                        </div>
+                        <div class="v5-toggle-btn" id="v5-opt-6" onclick="v5Select(6)">
+                            <strong>All-on-6 (6 імплантів)</strong><br>
+                            <span style="font-size:12px; color:#637165;">Підвищена надійність на 6 опор</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v5-option-group">
+                    <label>2. Додати постійний цирконієвий міст (через рік):</label>
+                    <div class="v5-checkbox-card" onclick="v5ToggleZirc()">
+                        <input type="checkbox" id="v5-zirc-check">
+                        <div>
+                            <strong>Цирконієві зуби на балці (+ 3 500 $)</strong><br>
+                            <span style="font-size:12.5px; color:#617063;">Виготовляється через 6-12 місяців на все життя</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Result Panel -->
+            <div class="v5-summary-panel">
+                <h4>Ваш розрахунок під ключ:</h4>
+                <div class="v5-total-price" id="v5-price-display">2 400 $</div>
+
+                <div class="v5-breakdown-list" id="v5-breakdown-display">
+                    • 4 імпланти Alpha Dent (4 × 350 $) = 1 400 $<br>
+                    • 4 мульти-юніти (4 × 50 $) = 200 $<br>
+                    • Незнімний акриловий протез на балці = 800 $<br>
+                    • 3D-шаблон, анестезія та огляди = 0 $ (включено)
+                </div>
+
+                <button class="btn-action" style="width:100%; background:#c49b66; color:#1b241c; font-weight:800; font-size:15px;">
+                    Зафіксувати ціну за розрахунком
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Main Tab Switcher between 5 Variants
+        function switchVariant(variantId, btn) {
+            document.querySelectorAll('.variant-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(variantId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        // Variant 1 Sub-tabs
+        function setV1Tab(tabKey, btn) {
+            document.querySelectorAll('.v1-tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('v1-a4').style.display = (tabKey === 'a4') ? 'grid' : 'none';
+            document.getElementById('v1-a6').style.display = (tabKey === 'a6') ? 'grid' : 'none';
+            document.getElementById('v1-zirc').style.display = (tabKey === 'zirc') ? 'grid' : 'none';
+        }
+
+        // Variant 5 Calculator Logic
+        let v5Implants = 4;
+        let v5WithZirc = false;
+
+        function v5Select(num) {
+            v5Implants = num;
+            document.getElementById('v5-opt-4').classList.toggle('active', num === 4);
+            document.getElementById('v5-opt-6').classList.toggle('active', num === 6);
+            v5Recalc();
+        }
+
+        function v5ToggleZirc() {
+            const cb = document.getElementById('v5-zirc-check');
+            cb.checked = !cb.checked;
+            v5WithZirc = cb.checked;
+            v5Recalc();
+        }
+
+        document.getElementById('v5-zirc-check').addEventListener('click', function(e) {
+            e.stopPropagation();
+            v5WithZirc = this.checked;
+            v5Recalc();
+        });
+
+        function v5Recalc() {
+            let base = (v5Implants === 4) ? 2400 : 3200;
+            let total = v5WithZirc ? (base + 3500) : base;
+
+            document.getElementById('v5-price-display').textContent = total.toLocaleString() + ' $';
+
+            let implantsCost = v5Implants * 350;
+            let multiCost = v5Implants * 50;
+
+            let html = `• ${v5Implants} імплантів Alpha Dent (${v5Implants} × 350 $) = ${implantsCost} $<br>` +
+                       `• ${v5Implants} мульти-юнітів (${v5Implants} × 50 $) = ${multiCost} $<br>` +
+                       `• Незнімний акриловий протез на балці = 800 $<br>`;
+
+            if (v5WithZirc) {
+                html += `• <strong>+ Постійний цирконієвий міст на балці = 3 500 $</strong><br>`;
+            }
+            html += `• 3D-шаблон, анестезія та огляди = 0 $ (включено)`;
+
+            document.getElementById('v5-breakdown-display').innerHTML = html;
+        }
+    </script>
+</body>
+</html>

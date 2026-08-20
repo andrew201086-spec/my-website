@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /*.py$
+Disallow: /*.backup$
+
+# Sitemap
+Sitemap: https://harmonyclinic.od.ua/sitemap.xml

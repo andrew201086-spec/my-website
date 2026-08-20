@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Силіконові зліпки проти цифрового 3D-сканування</title>
+  <desc id="d2">Інфографіка порівняння двох методів отримання моделі зубів у стоматології</desc>
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4ec"/>
+      <stop offset="1" stop-color="#fadccb"/>
+    </linearGradient>
+    <linearGradient id="bgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf3ea"/>
+      <stop offset="1" stop-color="#bcd4bc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="#fbfbf9" rx="20"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="22" fill="#222">Зліпок vs цифровий 3D-скан</text>
+  <text x="400" y="62" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#5b6b5d">Що отримує лікар і пацієнт у кожному випадку</text>
+
+  <!-- Left card: traditional -->
+  <g transform="translate(40,90)">
+    <rect x="0" y="0" width="350" height="350" rx="18" fill="url(#bgA)" stroke="#e6b88f"/>
+    <text x="175" y="34" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#7a4a2b">Силіконові зліпки</text>
+    <text x="175" y="54" text-anchor="middle" font-family="Manrope" font-size="12" fill="#7a4a2b">Класична методика</text>
+
+    <!-- impression tray -->
+    <g transform="translate(70,90)">
+      <path d="M0 60 Q105 0 210 60 L195 105 Q105 50 15 105 Z" fill="#c87d5a" stroke="#8c4f33"/>
+      <path d="M0 60 L-10 70 L-10 95 L15 105 Z" fill="#a55d3f" stroke="#8c4f33"/>
+      <path d="M210 60 L220 70 L220 95 L195 105 Z" fill="#a55d3f" stroke="#8c4f33"/>
+      <!-- teeth marks -->
+      <g fill="#e9d4c0">
+        <ellipse cx="40" cy="80" rx="8" ry="10"/>
+        <ellipse cx="65" cy="72" rx="8" ry="10"/>
+        <ellipse cx="90" cy="68" rx="8" ry="10"/>
+        <ellipse cx="115" cy="68" rx="8" ry="10"/>
+        <ellipse cx="140" cy="72" rx="8" ry="10"/>
+        <ellipse cx="170" cy="80" rx="8" ry="10"/>
+      </g>
+    </g>
+
+    <!-- features -->
+    <g font-family="Manrope" font-size="13" fill="#5b3a25">
+      <text x="20" y="230">⏱ 4–7 хв із масою в роті</text>
+      <text x="20" y="255">😖 блювотний рефлекс у ~30%</text>
+      <text x="20" y="280">📦 фізична доставка в лабораторію</text>
+      <text x="20" y="305">📏 похибка 60–150 мкм</text>
+      <text x="20" y="330">🗄 зберігання — гіпсова модель</text>
+    </g>
+  </g>
+
+  <!-- Right card: digital -->
+  <g transform="translate(410,90)">
+    <rect x="0" y="0" width="350" height="350" rx="18" fill="url(#bgB)" stroke="#9cba9c"/>
+    <text x="175" y="34" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#2f4a31">Цифровий 3D-скан</text>
+    <text x="175" y="54" text-anchor="middle" font-family="Manrope" font-size="12" fill="#2f4a31">Інтраоральний сканер</text>
+
+    <!-- digital wand -->
+    <g transform="translate(70,90)">
+      <rect x="10" y="40" width="160" height="40" rx="10" fill="#3c493d"/>
+      <rect x="155" y="46" width="50" height="28" rx="6" fill="#5d6e5f"/>
+      <circle cx="180" cy="60" r="8" fill="#9cc6d6"/>
+      <text x="60" y="65" font-family="Manrope" font-size="11" font-weight="700" fill="#fff">3Shape TRIOS</text>
+      <!-- mini screen -->
+      <rect x="40" y="105" width="130" height="80" rx="6" fill="#fff" stroke="#7a8d7c"/>
+      <path d="M55 165 Q105 115 155 165" fill="none" stroke="#3c493d" stroke-width="2"/>
+      <g fill="#fff" stroke="#3c493d">
+        <rect x="58" y="153" width="7" height="13" rx="2"/>
+        <rect x="69" y="148" width="7" height="13" rx="2"/>
+        <rect x="80" y="145" width="7" height="13" rx="2"/>
+        <rect x="91" y="145" width="7" height="13" rx="2"/>
+        <rect x="102" y="148" width="7" height="13" rx="2"/>
+        <rect x="113" y="153" width="7" height="13" rx="2"/>
+      </g>
+    </g>
+
+    <!-- features -->
+    <g font-family="Manrope" font-size="13" fill="#1f3622">
+      <text x="20" y="230">⏱ 2–3 хв сканування</text>
+      <text x="20" y="255">😊 без маси, без дискомфорту</text>
+      <text x="20" y="280">☁ передача файлу онлайн</text>
+      <text x="20" y="305">📏 точність 10–20 мкм</text>
+      <text x="20" y="330">🗄 архів STL-моделей назавжди</text>
+    </g>
+  </g>
+
+  <text x="400" y="465" text-anchor="middle" font-family="Manrope" font-size="12" fill="#5b6b5d">
+    Дані виробників обладнання та клінічної практики Harmony Clinic
+  </text>
+</svg>

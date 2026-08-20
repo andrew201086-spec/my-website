@@ -1,0 +1,19 @@
+{
+  "name": "Harmony Clinic",
+  "short_name": "Harmony",
+  "description": "Стоматологічна клініка в Одесі (Таїрова). Повний цифровий протокол лікування, імплантація, естетична стоматологія.",
+  "icons": [
+    {
+      "src": "/images/Logo.png",
+      "sizes": "192x192 512x512 any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7ab07d",
+  "lang": "uk",
+  "orientation": "portrait"
+}

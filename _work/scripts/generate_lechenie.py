@@ -1,0 +1,3355 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Generator for Dental Treatment / Therapy & Endodontics landing pages:
+- lechenie-ua.html (Ukrainian)
+- ru/lechenie-ua.html (Russian)
+
+Key constraints & editorial guidelines:
+- Therapist: ONLY Andrei Malyukin (Андрій Малюкін)
+- NO populist marketing fluff, no exaggerated claims, no pseudo-scientific buzzwords
+- NO pregnancy / children mentions
+- NO microscope mentions
+- Realistic medical tone (gentle local anesthesia, rubber dam isolation, rotary endodontics, 3Shape TRIOS 4)
+- Structured Schema.org microdata (Dentist, Physician, MedicalProcedure, OfferCatalog, FAQPage, BreadcrumbList)
+"""
+
+import os
+
+def get_ua_html():
+    return """<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Analytics: dataLayer + gtag stub available immediately; heavy scripts deferred -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','G-6ZP07STZJF');
+    gtag('config','AW-11468618731');
+
+    function gtag_report_conversion(url){
+        var navigate=function(){ if(typeof url!=='undefined'){ window.location=url; } };
+        gtag('event','conversion',{'send_to':'AW-11468618731/s-heCPmCmt0bEOv31Nwq','event_callback':navigate});
+        loadDeferredTags();
+        setTimeout(navigate, 700);
+        return false;
+    }
+    var gtag_report_call = gtag_report_conversion;
+    var gtag_report_messenger = gtag_report_conversion;
+
+    var __tagsLoaded=false;
+    function loadDeferredTags(){
+        if(__tagsLoaded)return; __tagsLoaded=true;
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PBZF8G5B');
+        var ga=document.createElement('script'); ga.async=true; ga.src='https://www.googletagmanager.com/gtag/js?id=G-6ZP07STZJF'; document.head.appendChild(ga);
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','451786880568879');fbq('track','PageView');
+    }
+    ['pointerdown','touchstart','mousedown','keydown','scroll'].forEach(function(ev){
+        window.addEventListener(ev, loadDeferredTags, {once:true, passive:true});
+    });
+    window.addEventListener('load', function(){ setTimeout(loadDeferredTags, 6000); });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="UA-51">
+    <meta name="geo.placename" content="Одеса">
+    <meta name="geo.position" content="46.4258;30.7488">
+    <meta name="ICBM" content="46.4258, 30.7488">
+
+    <link rel="canonical" href="https://harmonyclinic.od.ua/lechenie-ua.html">
+    <link rel="alternate" hreflang="uk-UA" href="https://harmonyclinic.od.ua/lechenie-ua.html">
+    <link rel="alternate" hreflang="ru-UA" href="https://harmonyclinic.od.ua/ru/lechenie-ua.html">
+    <link rel="alternate" hreflang="x-default" href="https://harmonyclinic.od.ua/lechenie-ua.html">
+
+    <title>Лікування зубів в Одесі — терапія карієсу та ендодонтія каналів | Harmony Clinic</title>
+    <meta name="description"
+        content="Лікування зубів та кореневих каналів в Одесі (Таїрова). Надійна місцева анестезія, кофердам, фотополімерні реставрації від 1 700 грн. Лікар Андрій Малюкін. ☎ +38 068 779 45 47">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Лікування зубів в Одесі — терапія карієсу та ендодонтія | Harmony Clinic">
+    <meta property="og:description" content="Сучасне лікування зубів, пульпіту та каналів в Одесі. Ізоляція кофердамом, цифрова діагностика, лікар Андрій Малюкін.">
+    <meta property="og:image" content="https://harmonyclinic.od.ua/images/andrey.jpg">
+    <meta property="og:url" content="https://harmonyclinic.od.ua/lechenie-ua.html">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="Harmony Clinic">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Лікування зубів в Одесі — Harmony Clinic">
+    <meta name="twitter:description" content="Терапія карієсу, ендодонтія кореневих каналів та естетичні реставрації в Одесі. Лікар Андрій Малюкін.">
+    <meta name="twitter:image" content="https://harmonyclinic.od.ua/images/andrey.jpg">
+
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Microdata Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Dentist",
+          "@id": "https://harmonyclinic.od.ua/#org",
+          "name": "Harmony Clinic",
+          "url": "https://harmonyclinic.od.ua/lechenie-ua.html",
+          "image": "https://harmonyclinic.od.ua/images/Logo.png",
+          "telephone": "+380687794547",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "вул. Новаторів, 1А",
+            "addressLocality": "Одеса",
+            "addressRegion": "Одеська область",
+            "postalCode": "65114",
+            "addressCountry": "UA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 46.4258,
+            "longitude": 30.7488
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Одеса" },
+            { "@type": "AdministrativeArea", "name": "Київський район" },
+            { "@type": "Place", "name": "Таїрова" },
+            { "@type": "Place", "name": "Черемушки" },
+            { "@type": "Place", "name": "Сьомий кілометр" }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "10:00",
+              "closes": "16:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/harmony.dental.clinic.od/",
+            "https://www.facebook.com/andrei.maliukin/"
+          ]
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://harmonyclinic.od.ua/#maliukin-andriy",
+          "name": "Андрій Малюкін",
+          "jobTitle": "Головний лікар, стоматолог-терапевт, ортопед",
+          "medicalSpecialty": "https://schema.org/Dentistry",
+          "image": "https://harmonyclinic.od.ua/images/andrey.jpg",
+          "worksFor": { "@id": "https://harmonyclinic.od.ua/#org" }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "@id": "https://harmonyclinic.od.ua/lechenie-ua.html#procedure",
+          "name": "Терапевтичне та ендодонтичне лікування зубів",
+          "alternateName": [
+            "Лікування карієсу",
+            "Пломбування зубів",
+            "Лікування каналів зуба",
+            "Художня реставрація зуба"
+          ],
+          "procedureType": "https://schema.org/TherapeuticProcedure",
+          "bodyLocation": "Зуби та кореневі канали",
+          "howPerformed": "Препарування уражених тканин під якісною місцевою анестезією, обов'язкова ізоляція кофердамом, медикаментозна обробка та пошарове відновлення анатомії зуба фотополімерними композитами або герметичне пломбування каналів гутаперчею.",
+          "performer": [
+            { "@id": "https://harmonyclinic.od.ua/#maliukin-andriy" }
+          ],
+          "status": "https://schema.org/ActiveActionStatus"
+        },
+        {
+          "@type": "Service",
+          "name": "Терапевтичне лікування зубів в Одесі",
+          "provider": { "@id": "https://harmonyclinic.od.ua/#org" },
+          "areaServed": [
+            { "@type": "City", "name": "Одеса" },
+            { "@type": "Place", "name": "Таїрова" },
+            { "@type": "Place", "name": "Київський район" }
+          ],
+          "serviceType": "Терапевтична стоматологія та ендодонтія",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Прайс на лікування карієсу та каналів",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Лікування поверхневого карієсу (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "1700",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лікування середнього карієсу (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "2000",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лікування глибокого карієсу (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "2400",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Художня реставрація зуба (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "2500",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лікування 1-канального зуба (пульпіт/періодонтит)",
+                "priceCurrency": "UAH",
+                "price": "1500",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лікування 2-канального зуба",
+                "priceCurrency": "UAH",
+                "price": "2000",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лікування 3-канального зуба",
+                "priceCurrency": "UAH",
+                "price": "3000",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Головна",
+              "item": "https://harmonyclinic.od.ua/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Послуги",
+              "item": "https://harmonyclinic.od.ua/services-ua.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Лікування зубів",
+              "item": "https://harmonyclinic.od.ua/lechenie-ua.html"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Наскільки комфортно проходить лікування зубів та чи відчувається біль?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Процедура лікування проходить під сучасною європейською місцевою анестезією (артикаїновий ряд), яка надійно блокує больову чутливість. Гострого болю немає — під час роботи відчувається лише легкий тиск та дотики інструментів. Для пацієнтів з підвищеною тривожністю застосовується додаткове попереднє знеболення місця уколу гелем."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Навіщо потрібна ізоляція кофердамом під час пломбування та лікування каналів?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Кофердам (латексна завіса) повністю ізолює зуб від слини, вологи дихання та бактерій порожнини рота. Це обов'язковий світовий стандарт: сучасні фотополімери та адгезиви надійно зчіплюються із зубом лише в сухому середовищі. Завдяки кофердаму пломби служать довше і не випадають, а антисептичні розчини не потрапляють на слизову оболонку."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Скільки коштує лікування карієсу та каналів в Одесі?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "У Harmony Dental Clinic діє прозорий прайс: поверхневий карієс — 1 700 грн, середній — 2 000 грн, глибокий — 2 400 грн, художня реставрація — 2 500 грн. Лікування кореневих каналів коштує від 1 500 грн за 1 канал, 2 000 грн за 2 канали, 3 000 грн за 3 канали. Первинна консультація лікаря — безкоштовна."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Як відрізнити звичайний карієс від пульпіту?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "При карієсі біль виникає тільки під дією подразника (солодке, холодне, гаряче) і швидко минає після усунення контакту. При пульпіті (запаленні нерва) біль має гострий, пульсуючий або ниючий характер, часто посилюється вночі та не проходить самостійно. У такому випадку потрібне невідкладне ендодонтичне лікування каналів."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Скільки служить сучасна фотополімерна пломба / реставрація?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Якісна композитна реставрація, виконана за протоколом з ізоляцією кофердамом матеріалами Estelite або Harmonize, служить у середньому 5–10 років і більше. Її довговічність безпосередньо залежить від домашньої гігієни, відсутності бруксизму та регулярного проходження професійного чищення 2 рази на рік."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Чим відрізняється звичайна пломба від художньої естетичної реставрації?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Звичайна пломба закриває дефект і зупиняє карієс. Художня реставрація — це пошарове відновлення анатомічної форми зуба фотополімерними композитами з точним підбором відтінку під колір емалі. Лікар відновлює природні горбки та фісури, завдяки чому зуб виглядає природно і не відрізняється від сусідніх."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Чому зуб може злегка нити після пломбування кореневих каналів?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Незначна чутливість при накушуванні протягом 2–5 днів після ендодонтичного лікування є нормальною фізіологічною реакцією періодонта на антисептичну обробку та механічний вплив. За потреби лікар порекомендує м'які протизапальні засоби. Якщо біль наростає чи пульсує — слід негайно звернутися на огляд."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Що робити, якщо відколовся шматочок зуба або випала стара пломба?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Не зволікайте зі зверненням до лікаря, навіть якщо зуб не болить. Відкриті дентинні канальці швидко інфікуються бактеріями зі слини, що призводить до запалення нерва (пульпіту). У Harmony Clinic ми відновлюємо форму зуба фотополімером або керамічною накладкою за один візит."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Scoped styles for Treatment / Therapy Landing */
+        .lech-hero {
+            position: relative;
+            padding: 70px 0 60px;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at top right, rgba(82, 97, 84, 0.35) 0%, transparent 65%),
+                        linear-gradient(135deg, #111a14 0%, #060a07 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .lech-hero .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .lech-hero h1 {
+            font-size: clamp(28px, 3.8vw, 46px);
+            font-weight: 800;
+            line-height: 1.18;
+            letter-spacing: -0.5px;
+            margin-bottom: 18px;
+        }
+
+        .lech-hero .hero-lead {
+            font-size: 16.5px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .hero-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .hero-feat-item {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 12px 16px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            backdrop-filter: blur(8px);
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        .hero-feat-item svg {
+            width: 22px;
+            height: 22px;
+            fill: #c49b66;
+            flex-shrink: 0;
+        }
+
+        .hero-portrait-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            background: #19241c;
+        }
+
+        .hero-portrait-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hero-portrait-badge {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            background: rgba(12, 18, 14, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .hero-portrait-badge strong {
+            color: #c49b66;
+            display: block;
+            font-size: 14.5px;
+            margin-bottom: 2px;
+        }
+
+        /* Section layout */
+        .section-py {
+            padding: 75px 0;
+        }
+
+        .bg-light-alt {
+            background-color: #f8faf8;
+        }
+
+        .section-header-center {
+            text-align: center;
+            max-width: 820px;
+            margin: 0 auto 45px;
+        }
+
+        .section-header-center h2 {
+            font-size: clamp(26px, 3vw, 36px);
+            font-weight: 800;
+            color: #191f1a;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+            line-height: 1.25;
+        }
+
+        .section-header-center p {
+            font-size: 16px;
+            color: #556057;
+            line-height: 1.6;
+        }
+
+        .eyebrow-tag {
+            display: inline-block;
+            background: rgba(82, 97, 84, 0.12);
+            color: var(--primary);
+            font-size: 12.5px;
+            font-weight: 800;
+            padding: 5px 14px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 14px;
+        }
+
+        /* Services Grid (What we treat) */
+        .services-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .srv-card {
+            background: #fff;
+            border: 1px solid #e3e8e3;
+            border-radius: 18px;
+            padding: 30px 24px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .srv-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-light);
+            box-shadow: 0 14px 32px rgba(82, 97, 84, 0.1);
+        }
+
+        .srv-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(82, 97, 84, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .srv-card h3 {
+            font-size: 19px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .srv-card p {
+            font-size: 14px;
+            color: #556257;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .srv-card-footer {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--primary);
+            border-top: 1px solid #edf2ed;
+            padding-top: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* 2-Column Explainer */
+        .explainer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .explainer-text h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #191f1a;
+        }
+
+        .explainer-text p {
+            font-size: 15.5px;
+            line-height: 1.65;
+            color: #445046;
+            margin-bottom: 18px;
+        }
+
+        .explainer-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .explainer-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 14px;
+            font-size: 14.5px;
+            color: #2b352d;
+            line-height: 1.5;
+        }
+
+        .explainer-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .explainer-media {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e3e8e3;
+        }
+
+        .explainer-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Dual Pricing Tables Section */
+        .pricing-split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .price-category-box {
+            background: #fff;
+            border-radius: 20px;
+            border: 1px solid #e1e7e1;
+            padding: 35px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-category-box h3 {
+            font-size: 21px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 8px;
+        }
+
+        .price-category-box .box-sub {
+            font-size: 13.5px;
+            color: #6a776c;
+            margin-bottom: 22px;
+        }
+
+        .price-rows-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+            flex-grow: 1;
+        }
+
+        .price-row-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 0;
+            border-bottom: 1px solid #edf2ed;
+            font-size: 14.5px;
+        }
+
+        .price-row-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-item-title {
+            color: #334035;
+            font-weight: 600;
+        }
+
+        .price-item-title small {
+            display: block;
+            font-size: 12px;
+            color: #7b887d;
+            font-weight: normal;
+            margin-top: 2px;
+        }
+
+        .price-item-val {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 16px;
+            white-space: nowrap;
+            margin-left: 12px;
+        }
+
+        .price-note-banner {
+            background: #f4f7f4;
+            border: 1px dashed #c6d2c7;
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 13px;
+            color: #445246;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Timeline Steps */
+        .process-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .proc-step-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 26px 20px;
+            border: 1px solid #e3e8e3;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        .proc-step-num {
+            font-size: 32px;
+            font-weight: 800;
+            color: rgba(82, 97, 84, 0.25);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .proc-step-card h3 {
+            font-size: 17px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 8px;
+        }
+
+        .proc-step-card p {
+            font-size: 13.5px;
+            color: #556257;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* Doctor Highlight Box (E-E-A-T) — Andrei Malyukin Only */
+        .doctor-spotlight-box {
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid #e1e7e1;
+            padding: 45px;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.04);
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 45px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .doc-spotlight-photo {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .doc-spotlight-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .doc-spotlight-info h3 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 6px;
+        }
+
+        .doc-spotlight-role {
+            font-size: 15.5px;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .doc-spotlight-desc {
+            font-size: 15px;
+            color: #4b564d;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .doc-stats-row {
+            display: flex;
+            gap: 30px;
+            padding: 20px 0;
+            border-top: 1px solid #edf2ed;
+            border-bottom: 1px solid #edf2ed;
+        }
+
+        .doc-stat-item strong {
+            display: block;
+            font-size: 20px;
+            color: #191f1a;
+            font-weight: 800;
+        }
+
+        .doc-stat-item span {
+            font-size: 13px;
+            color: #728074;
+        }
+
+        /* Cases Grid (Before/After) */
+        .cases-grid-lechenie {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .case-card-mini {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #e3e8e3;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+        }
+
+        .case-card-mini img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .case-mini-caption {
+            padding: 14px;
+            font-size: 13px;
+            color: #334035;
+            line-height: 1.45;
+            border-top: 1px solid #edf2ed;
+        }
+
+        .case-mini-caption strong {
+            display: block;
+            color: #191f1a;
+            font-size: 13.5px;
+            margin-bottom: 3px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .lech-hero .hero-grid { grid-template-columns: 1fr; }
+            .services-cards-grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing-split-grid { grid-template-columns: 1fr; }
+            .process-steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .doctor-spotlight-box { grid-template-columns: 1fr; gap: 30px; }
+            .doc-spotlight-photo { max-width: 300px; margin: 0 auto; }
+            .cases-grid-lechenie { grid-template-columns: repeat(2, 1fr); }
+            .explainer-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .lech-hero { padding: 50px 0 45px; }
+            .lech-hero h1 { font-size: 26px; }
+            .hero-features-grid { grid-template-columns: 1fr; }
+            .services-cards-grid { grid-template-columns: 1fr; }
+            .process-steps-grid { grid-template-columns: 1fr; }
+            .cases-grid-lechenie { grid-template-columns: 1fr; }
+            .doc-stats-row { flex-direction: column; gap: 14px; }
+            .section-py { padding: 50px 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZF8G5B"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header role="banner">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <picture>
+                    <source srcset="images/Logo.webp" type="image/webp">
+                    <img loading="lazy" src="images/Logo.png" alt="Harmony Dental Clinic" width="1072" height="1071">
+                </picture>
+            </a>
+            <nav role="navigation">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="services-ua.html">Послуги</a></li>
+                    <li><a href="lechenie-ua.html" style="color:var(--primary);font-weight:800;">Лікування</a></li>
+                    <li><a href="implants-ua.html">Імплантація</a></li>
+                    <li><a href="all-on-4-odessa.html">All-on-4</a></li>
+                    <li><a href="index.html#team">Лікарі</a></li>
+                    <li><a href="#prices">Ціни</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="lang-switch">
+                    <a href="lechenie-ua.html" class="active">UA</a>
+                    <a href="ru/lechenie-ua.html">RU</a>
+                </div>
+                <a href="tel:+380687794547" aria-label="Зателефонувати" class="header-phone"
+                    onclick="return gtag_report_call('tel:+380687794547');">+38 068 779 45 47</a>
+                <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs Section -->
+    <div style="background:#f4f7f4; padding: 14px 0; border-bottom: 1px solid #e3e8e3;">
+        <div class="container">
+            <nav aria-label="Хлібні крихти" style="font-size: 13px; color: #667368;">
+                <a href="index.html" style="color: inherit; text-decoration: none;">Головна</a>
+                <span style="margin: 0 8px;">/</span>
+                <a href="services-ua.html" style="color: inherit; text-decoration: none;">Послуги</a>
+                <span style="margin: 0 8px;">/</span>
+                <span style="color: var(--primary); font-weight: 700;">Лікування зубів в Одесі</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section class="lech-hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); padding:7px 16px; border-radius:100px; font-size:13px; font-weight:600; margin-bottom:20px; backdrop-filter:blur(5px);">
+                        <span style="width:8px; height:8px; background:#4ade80; border-radius:50%; display:inline-block;"></span>
+                        Працюємо автономно: є генератор та резервне живлення
+                    </div>
+
+                    <h1>Лікування зубів та кореневих каналів в Одесі</h1>
+                    
+                    <p class="hero-lead">
+                        Збереження та естетичне відновлення природних зубів лікарем Андрієм Малюкіним. Комфортна місцева анестезія, обов'язкова ізоляція кофердамом та надійні фотополімерні реставрації.
+                    </p>
+
+                    <div class="hero-features-grid">
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Надійна місцева анестезія</span>
+                        </div>
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                            <span>Ізоляція системою Кофердам</span>
+                        </div>
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                            <span>Цифрова 3D-діагностика</span>
+                        </div>
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                            <span>Лікар з досвідом 15+ років</span>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                        <a href="#prices" class="btn" style="background:var(--primary); color:#fff; border:none; padding:14px 28px; font-weight:800; font-size:15px; border-radius:12px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; box-shadow:0 10px 25px rgba(82,97,84,0.4);">
+                            Подивитися ціни на лікування
+                        </a>
+                        <a href="tel:+380687794547" class="btn" style="background:rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.25); padding:14px 24px; font-weight:700; font-size:15px; border-radius:12px; text-decoration:none; display:inline-flex; align-items:center; gap:8px;"
+                           onclick="return gtag_report_call('tel:+380687794547');">
+                            📞 Зателефонувати
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="hero-portrait-card">
+                        <picture>
+                            <source srcset="images/andrey.webp" type="image/webp">
+                            <img src="images/andrey.jpg" alt="Головний лікар Андрій Малюкін — терапевтичне лікування зубів в Одесі" width="725" height="1024">
+                        </picture>
+                        <div class="hero-portrait-badge">
+                            <strong>Лікар Андрій Малюкін</strong>
+                            Персональне лікування карієсу, ендодонтія каналів та реставрація зубів.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: What We Treat (Comprehensive Services Cards) -->
+    <section class="section-py">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Напрямки терапії</span>
+                <h2>Що ми лікуємо в Harmony Dental Clinic</h2>
+                <p>
+                    Діагностуємо та усуваємо захворювання зубів на будь-якій стадії, зберігаючи максимум здорових тканин.
+                </p>
+            </div>
+
+            <div class="services-cards-grid">
+                <!-- Card 1 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🦷</div>
+                    <h3>Лікування карієсу (всі стадії)</h3>
+                    <p>
+                        Акуратне видалення некротизованих тканин при поверхневому, середньому та глибокому карієсі. Пломбування якісними фотополімерними композитами (Estelite, Harmonize) з точним відтворенням фісур і горбків.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Відновлення форми</span>
+                        <span>від 1 700 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">⚡</div>
+                    <h3>Лікування пульпіту (запалення нерва)</h3>
+                    <p>
+                        Зняття гострого або нічного болю. Видалення запаленої пульпи, механічна обробка каналів гнучкими нікель-титановими інструментами, антисептична обробка та герметична 3D-обтурація гутаперчею.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Ендодонтичний протокол</span>
+                        <span>від 1 500 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🛡️</div>
+                    <h3>Лікування періодонтиту та кіст</h3>
+                    <p>
+                        Усунення хронічного запалення біля верхівки кореня зуба. Ретельна дезінфекція кореневої системи, тимчасове лікувальне пломбування препаратами кальцію та рентген-контроль загоєння кістки.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Збереження зуба</span>
+                        <span>від 1 500 грн/канал</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">✨</div>
+                    <h3>Художня естетична реставрація</h3>
+                    <p>
+                        Пряме відновлення форми та кольору фронтальних і жувальних зубів. Пошарове нанесення композиту з індивідуальним підбором відтінку під емаль при сколах, тріщинах чи стиранні.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Естетика посмішки</span>
+                        <span>від 2 500 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🔍</div>
+                    <h3>Вторинний карієс під старими пломбами</h3>
+                    <p>
+                        Діагностика прихованого руйнування під негерметичними або потемнілими старими реставраціями. Заміна пломби до того, як інфекція проникне в нерв і спричинить пульпіт.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Захист від ускладнень</span>
+                        <span>від 2 000 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🩹</div>
+                    <h3>Клиноподібні дефекти та ерозії</h3>
+                    <p>
+                        Усунення дефектів емалі в пришийковій ділянці зуба. Зняття гіперестезії (підвищеної чутливості до холодного/кислого) та пломбування високоеластичними композитними матеріалами.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Зняття чутливості</span>
+                        <span>від 1 800 грн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Technology & Safety Standards -->
+    <section class="section-py bg-light-alt">
+        <div class="container">
+            <div class="explainer-grid">
+                <div>
+                    <span class="eyebrow-tag">Стандарти якості</span>
+                    <h2>Сучасні клінічні стандарти терапії в Одесі</h2>
+                    <p>
+                        Ми лікуємо зуби за перевіреними протоколами, що забезпечують максимальну адгезію пломбувального матеріалу та захист кореневих каналів від повторного інфікування.
+                    </p>
+                    <ul class="explainer-list">
+                        <li>
+                            <strong>Обов'язкова ізоляція кофердамом:</strong> спеціальна латексна завіса виключає потрапляння слини та вологи на робоче поле. Це забезпечує надійне зчеплення (адгезію) пломби із зубом.
+                        </li>
+                        <li>
+                            <strong>Ефективне місцеве знеболення:</strong> використовуємо якісні європейські анестетики артикаїнового ряду. Дія настає швидко; процедура проходить у спокійній обстановці без гострого болю.
+                        </li>
+                        <li>
+                            <strong>Машинна ендодонтія (ротаційні NiTi-файли):</strong> кореневі канали проходять гнучкими нікель-титановими інструментами з контролем глибини апекслокатором, що зберігає анатомічну форму кореня.
+                        </li>
+                        <li>
+                            <strong>Щадне препарування тканин:</strong> акуратно прибираємо лише уражений карієсом дентин, максимально зберігаючи живу та здорову структуру зуба.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="explainer-media">
+                    <picture>
+                        <source srcset="images/scanner.webp" type="image/webp">
+                        <img src="images/scanner.jpg" alt="Цифрова діагностика 3Shape TRIOS 4 у стоматології Harmony Clinic Одеса" width="1280" height="853" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Dual Pricing Tables -->
+    <section class="section-py" id="prices">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Прозорий прайс</span>
+                <h2>Ціни на лікування зубів та каналів в Одесі</h2>
+                <p>
+                    Фіксована вартість терапевтичного лікування без прихованих платежів. Безкоштовна первинна консультація лікаря.
+                </p>
+            </div>
+
+            <div class="pricing-split-grid">
+                <!-- Table 1: Therapy & Restorations -->
+                <div class="price-category-box">
+                    <h3>Терапія та реставрація зубів</h3>
+                    <div class="box-sub">Лікування карієсу, відновлення форми фотополімером</div>
+
+                    <ul class="price-rows-list">
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Первинна консультація лікаря-терапевта
+                                <small>Огляд, план лікування, складання кошторису</small>
+                            </div>
+                            <div class="price-item-val">0 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лікування поверхневого карієсу
+                                <small>Препарування, кофердам, фотополімерна пломба</small>
+                            </div>
+                            <div class="price-item-val">1 700 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лікування середнього карієсу
+                                <small>Обробка порожнини, лікувальна прокладка, пломба</small>
+                            </div>
+                            <div class="price-item-val">2 000 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лікування глибокого карієсу
+                                <small>Захист пульпи, ізоляція, анатомічна пломба</small>
+                            </div>
+                            <div class="price-item-val">2 400 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Художня реставрація зуба
+                                <small>Пошарове моделювання, фотополімер Estelite</small>
+                            </div>
+                            <div class="price-item-val">2 500 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Реставрація клиноподібного дефекту
+                                <small>Пришийкова ділянка, зняття чутливості</small>
+                            </div>
+                            <div class="price-item-val">1 800 грн</div>
+                        </li>
+                    </ul>
+
+                    <div class="price-note-banner">
+                        <strong>У вартість лікування включено:</strong> огляд, місцева анестезія, ізоляція кофердамом, шліфування та полірування пломби.
+                    </div>
+
+                    <a href="tel:+380687794547" class="btn" style="background:var(--primary); color:#fff; padding:12px 24px; border-radius:12px; font-weight:800; text-decoration:none; text-align:center; box-shadow:0 8px 20px rgba(82,97,84,0.3);"
+                       onclick="return gtag_report_call('tel:+380687794547');">
+                        Записатися на прийом
+                    </a>
+                </div>
+
+                <!-- Table 2: Endodontics (Root Canals) -->
+                <div class="price-category-box">
+                    <h3>Ендодонтія (лікування каналів)</h3>
+                    <div class="box-sub">Пульпіт, періодонтит, пломбування гутаперчею</div>
+
+                    <ul class="price-rows-list">
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Прицільна цифрова рентгенографія
+                                <small>Контроль глибини та якості пломбування</small>
+                            </div>
+                            <div class="price-item-val">200 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лікування однокореневого зуба
+                                <small>1 канал: механічна та медикаментозна обробка + 3D гутаперча</small>
+                            </div>
+                            <div class="price-item-val">1 500 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лікування двокореневого зуба
+                                <small>2 канали: розширення NiTi-файлами + герметична обтурація</small>
+                            </div>
+                            <div class="price-item-val">2 000 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лікування трьохкореневого зуба
+                                <small>3 канали (моляри): повний ендодонтичний протокол</small>
+                            </div>
+                            <div class="price-item-val">3 000 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Тимчасове пломбування каналів кальцієм
+                                <small>При хронічному періодонтиті та кістах</small>
+                            </div>
+                            <div class="price-item-val">500 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Розпломбування / ревізія 1 каналу
+                                <small>Переліковування раніше запломбованого зуба</small>
+                            </div>
+                            <div class="price-item-val">від 600 грн</div>
+                        </li>
+                    </ul>
+
+                    <div class="price-note-banner">
+                        <strong>Зверніть увагу:</strong> після лікування каналів рекомендується відновлення коронкової частини зуба пломбою або накладкою.
+                    </div>
+
+                    <a href="https://t.me/Harmonyclinic_od" target="_blank" class="btn" style="background:#229ED9; color:#fff; padding:12px 24px; border-radius:12px; font-weight:700; text-decoration:none; text-align:center;">
+                        Консультація в Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Step-by-Step Process -->
+    <section class="section-py bg-light-alt">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Послідовність</span>
+                <h2>Як проходить лікування зуба в клініці</h2>
+                <p>
+                    Прозорий алгоритм дій від первинного огляду до контролю прикусу.
+                </p>
+            </div>
+
+            <div class="process-steps-grid">
+                <div class="proc-step-card">
+                    <div class="proc-step-num">01</div>
+                    <h3>Діагностика та огляд</h3>
+                    <p>
+                        Оцінка стану зуба, прицільний рентген-знімок для виявлення прихованого карієсу або запалення в коренях, складання плану лікування.
+                    </p>
+                </div>
+
+                <div class="proc-step-card">
+                    <div class="proc-step-num">02</div>
+                    <h3>Анестезія та кофердам</h3>
+                    <p>
+                        Введення сучасної місцевої анестезії та встановлення захисної латексної завіси (кофердаму) для сухого робочого поля.
+                    </p>
+                </div>
+
+                <div class="proc-step-card">
+                    <div class="proc-step-num">03</div>
+                    <h3>Очищення та терапія</h3>
+                    <p>
+                        Акуратне видалення пошкоджених тканин або механічна й антисептична обробка кореневих каналів із промиванням антисептиками.
+                    </p>
+                </div>
+
+                <div class="proc-step-card">
+                    <div class="proc-step-num">04</div>
+                    <h3>Реставрація та контроль</h3>
+                    <p>
+                        Пошарове відновлення анатомії зуба фотополімером, перевірка прикусу копіркою та фінішне полірування під природний блиск емалі.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Doctor Spotlight (E-E-A-T) — Andrei Malyukin Only -->
+    <section class="section-py" id="doctor">
+        <div class="container">
+            <div class="doctor-spotlight-box">
+                <div class="doc-spotlight-photo">
+                    <picture>
+                        <source srcset="images/andrey.webp" type="image/webp">
+                        <img src="images/andrey.jpg" alt="Головний лікар Андрій Малюкін — терапевтичне лікування зубів в Одесі" width="725" height="1024" loading="lazy">
+                    </picture>
+                </div>
+
+                <div class="doc-spotlight-info">
+                    <span class="eyebrow-tag">Головний лікар клініки</span>
+                    <h3>Андрій Малюкін</h3>
+                    <div class="doc-spotlight-role">Стоматолог-терапевт • Ортопед • Засновник Harmony Dental Clinic</div>
+                    
+                    <p class="doc-spotlight-desc">
+                        Понад 15 років практичного досвіду в терапевтичній стоматології, ендодонтії та відновленні зубів. Особисто проводить первинні огляди, цифрову діагностику та виконує реставрації фотополімерними композитами з обов'язковою ізоляцією кофердамом і контролем прикусу.
+                    </p>
+
+                    <div class="doc-stats-row">
+                        <div class="doc-stat-item">
+                            <strong>15+ років</strong>
+                            <span>Клінічного досвіду</span>
+                        </div>
+                        <div class="doc-stat-item">
+                            <strong>Головний лікар</strong>
+                            <span>Особистий прийом</span>
+                        </div>
+                        <div class="doc-stat-item">
+                            <strong>3Shape TRIOS 4</strong>
+                            <span>Цифрова діагностика</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 24px;">
+                        <a href="tel:+380687794547" class="btn" style="background:var(--primary); color:#fff; padding:12px 26px; border-radius:12px; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:8px;"
+                           onclick="return gtag_report_call('tel:+380687794547');">
+                            Записатися на прийом до лікаря
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Clinical Cases Before / After -->
+    <section class="section-py bg-light-alt" id="results">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Клінічні результати</span>
+                <h2>Результати лікування зубів: До та Після</h2>
+                <p>
+                    Приклади відновлення анатомічної форми та естетики зубів пацієнтів лікарем Андрієм Малюкіним.
+                </p>
+            </div>
+
+            <div class="cases-grid-lechenie">
+                <!-- Case 1 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case1.webp" type="image/webp">
+                        <img src="images_lechenie/case1.jpg" alt="Лікування глибокого карієсу жувального зуба до та після" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Лікування карієсу жувального зуба</strong>
+                        Усунення каріозної порожнини та відновлення фісур фотополімером.
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case2.webp" type="image/webp">
+                        <img src="images_lechenie/case2.jpg" alt="Художня реставрація фронтальних зубів до та після" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Художня реставрація емалі</strong>
+                        Відновлення форми та природного відтінку зуба композитом Estelite.
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case3.webp" type="image/webp">
+                        <img src="images_lechenie/case3.jpg" alt="Заміна старої пломби та лікування вторинного карієсу" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Заміна старої негерметичної пломби</strong>
+                        Усунення вторинного карієсу під старою реставрацією з ізоляцією кофердамом.
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case4.webp" type="image/webp">
+                        <img src="images_lechenie/case4.jpg" alt="Ендодонтичне лікування та відновлення коронки зуба" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Лікування пульпіту та реставрація</strong>
+                        Пломбування кореневих каналів гутаперчею та відновлення форми зуба.
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case5.webp" type="image/webp">
+                        <img src="images_lechenie/case5.jpg" alt="Лікування клиноподібного дефекту в пришийковій ділянці" width="1242" height="1214" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Клиноподібний дефект шийки зуба</strong>
+                        Усунення дефекту емалі, зняття чутливості та захист шийки зуба.
+                    </div>
+                </div>
+
+                <!-- Case 6 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case6.webp" type="image/webp">
+                        <img src="images_lechenie/case6.jpg" alt="Пряма композитна реставрація моляра до та після" width="2048" height="2048" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Відновлення контактного пункту</strong>
+                        Лікування карієсу на контактній поверхні між зубами з матричною системою.
+                    </div>
+                </div>
+
+                <!-- Case 7 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case7.webp" type="image/webp">
+                        <img src="images_lechenie/case7.jpg" alt="Ендодонтичне переліковування кореневого каналу" width="2048" height="2048" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Ендодонтичне переліковування</strong>
+                        Ревізія каналу, усунення запалення періодонта та 3D-обтурація.
+                    </div>
+                </div>
+
+                <!-- Case 8 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="images_lechenie/case8.webp" type="image/webp">
+                        <img src="images_lechenie/case8.jpg" alt="Комплексне лікування карієсу кількох зубів" width="2048" height="2048" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Комплексне лікування карієсу</strong>
+                        Усунення кількох каріозних дефектів та полірування реставрацій.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: FAQ Section -->
+    <section class="section-py" id="faq">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Запитання та відповіді</span>
+                <h2>Часті запитання про лікування зубів в Одесі</h2>
+                <p>
+                    Відповіді лікаря-терапевта Андрія Малюкіна щодо анестезії, кофердаму, терміну служби пломб та лікування каналів.
+                </p>
+            </div>
+
+            <div style="max-width:850px; margin:0 auto;">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Наскільки комфортно проходить лікування зубів та чи відчувається біль?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Процедура лікування проходить під сучасною європейською місцевою анестезією (артикаїновий ряд), яка надійно блокує больову чутливість. Гострого болю немає — під час роботи відчувається лише легкий тиск та дотики інструментів. Для пацієнтів з підвищеною тривожністю застосовується додаткове попереднє знеболення місця уколу гелем.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Навіщо потрібна ізоляція кофердамом під час пломбування та лікування каналів?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Кофердам (латексна завіса) повністю ізолює зуб від слини, вологи дихання та бактерій порожнини рота. Це обов'язковий світовий стандарт: сучасні фотополімери та адгезиви надійно зчіплюються із зубом лише в сухому середовищі. Завдяки кофердаму пломби служать довше і не випадають, а антисептичні розчини не потрапляють на слизову оболонку.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Скільки коштує лікування карієсу та каналів в Одесі?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            У Harmony Dental Clinic діє прозорий прайс: поверхневий карієс — 1 700 грн, середній — 2 000 грн, глибокий — 2 400 грн, художня реставрація — 2 500 грн. Лікування кореневих каналів коштує від 1 500 грн за 1 канал, 2 000 грн за 2 канали, 3 000 грн за 3 канали. Первинна консультація лікаря — безкоштовна.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Як відрізнити звичайний карієс від пульпіту?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            При карієсі біль виникає тільки під дією подразника (солодке, холодне, гаряче) і швидко минає після усунення контакту. При пульпіті (запаленні нерва) біль має гострий, пульсуючий або ниючий характер, часто посилюється вночі та не проходить самостійно. У такому випадку потрібне невідкладне ендодонтичне лікування каналів.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Скільки служить сучасна фотополімерна пломба / реставрація?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Якісна композитна реставрація, виконана за протоколом з ізоляцією кофердамом матеріалами Estelite або Harmonize, служить у середньому 5–10 років і більше. Її довговічність безпосередньо залежить від домашньої гігієни, відсутності бруксизму та регулярного проходження професійного чищення 2 рази на рік.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Чим відрізняється звичайна пломба від художньої естетичної реставрації?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Звичайна пломба закриває дефект і зупиняє карієс. Художня реставрація — це пошарове відновлення анатомічної форми зуба фотополімерними композитами з точним підбором відтінку під колір емалі. Лікар відновлює природні горбки та фісури, завдяки чому зуб виглядає природно і не відрізняється від сусідніх.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Чому зуб може злегка нити після пломбування кореневих каналів?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Незначна чутливість при накушуванні протягом 2–5 днів після ендодонтичного лікування є нормальною фізіологічною реакцією періодонта на антисептичну обробку та механічний вплив. За потреби лікар порекомендує м'які протизапальні засоби. Якщо біль наростає чи пульсує — слід негайно звернутися на огляд.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Що робити, якщо відколовся шматочок зуба або випала стара пломба?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Не зволікайте зі зверненням до лікаря, навіть якщо зуб не болить. Відкриті дентинні канальці швидко інфікуються бактеріями зі слини, що призводить до запалення нерва (пульпіту). У Harmony Clinic ми відновлюємо форму зуба фотополімером або керамічною накладкою за один візит.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Consultation & Location Banner -->
+    <section class="section-py bg-light-alt" id="consultation">
+        <div class="container">
+            <div style="background:linear-gradient(135deg, #253328 0%, #162018 100%); border-radius:24px; padding:50px; color:#fff; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;">
+                <div>
+                    <span style="color:#c49b66; font-weight:800; text-transform:uppercase; font-size:13px; letter-spacing:1px;">Запис на прийом</span>
+                    <h2 style="font-size:32px; font-weight:800; margin:10px 0 16px 0; color:#fff; line-height:1.2;">Запишіться на консультацію до лікаря Андрія Малюкіна</h2>
+                    <p style="font-size:16px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:24px;">
+                        Отримайте детальний огляд та комфортне лікування зубів у клініці на вул. Новаторів 1А (Київський район, Таїрова).
+                    </p>
+                    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+                        <a href="tel:+380687794547" class="btn" style="background:#fff; color:#191f1a; padding:14px 28px; border-radius:12px; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:8px;"
+                           onclick="return gtag_report_call('tel:+380687794547');">
+                            📞 Зателефонувати +38 068 779 45 47
+                        </a>
+                        <a href="https://t.me/Harmonyclinic_od" target="_blank" class="btn" style="background:#229ED9; color:#fff; padding:14px 24px; border-radius:12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                            Написати в Telegram
+                        </a>
+                        <a href="viber://chat?number=%2B380687794547" class="btn" style="background:#7360f2; color:#fff; padding:14px 24px; border-radius:12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                            Написати у Viber
+                        </a>
+                    </div>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:18px; padding:30px;">
+                    <h3 style="font-size:18px; margin-bottom:15px; color:#fff;">📍 Як нас знайти</h3>
+                    <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:12px;">
+                        <strong>Адреса:</strong> м. Одеса, вул. Новаторів 1А (Київський район, Таїрова / Черемушки).
+                    </p>
+                    <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:12px;">
+                        <strong>Графік роботи:</strong> Пн–Пт: 09:00 – 20:00, Сб: 10:00 – 16:00.
+                    </p>
+                    <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:0;">
+                        <strong>Потрібна імплантація чи протезування?</strong><br>
+                        <a href="implants-ua.html" style="color:#c49b66; text-decoration:underline;">Переглянути послуги імплантації зубів →</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts" class="unified-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <picture>
+                        <source srcset="images/Logo.webp" type="image/webp">
+                        <img loading="lazy" src="images/Logo.png" alt="Логотип Harmony Dental Clinic" class="footer-logo-img" width="1072" height="1071">
+                    </picture>
+                    <p style="margin-top:10px;">Сучасна сімейна та цифрова стоматологія в Одесі.</p>
+                    <div class="social-icons">
+                        <a href="viber://chat?number=%2B380687794547" title="Viber" aria-label="Viber"><svg viewBox="0 0 24 24">
+                            <path d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+                        </svg></a>
+                        <a href="https://t.me/Harmonyclinic_od" target="_blank" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24">
+                            <path d="M9.78,18.65l0.13-3.14l5.63-5.07c0.49-0.44-0.11-0.69-0.76-0.29L8.4,14.2l-3.03-0.95c-0.66-0.21-0.67-0.66,0.14-0.97L17.36,7.7c0.56-0.21,1.05,0.13,0.87,0.86L16.14,18.2c-0.12,0.59-0.87,0.72-1.41,0.45L9.78,18.65z" />
+                        </svg></a>
+                        <a href="https://www.instagram.com/harmony.dental.clinic.od/" target="_blank" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                            <path d="M12,2.2c3.2,0,3.6,0,4.9,0.1c1.2,0.1,1.8,0.3,2.2,0.5c0.6,0.2,1,0.5,1.4,0.9c0.4,0.4,0.7,0.8,0.9,1.4c0.2,0.4,0.4,1.1,0.5,2.2c0.1,1.3,0.1,1.6,0.1,4.9s0,3.6-0.1,4.9c-0.1,1.2-0.3,1.8-0.5,2.2c-0.2,0.6-0.5,1-0.9,1.4c-0.4,0.4-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.5C8.4,2.2,8.8,2.2,12,2.2 M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2s-1.1,1.4-1.4,2.2C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9c0.3,0.8,0.7,1.5,1.4,2.2c0.7,0.7,1.4,1.1,2.2,1.4c0.8,0.3,1.7,0.5,2.9,0.6c1.2,0.1,1.6,0.1,4.9,0.1s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.2-1.4c0.7-0.7,1.1-1.4,1.4-2.2c0.3-0.8,0.5-1.7,0.6-2.9c0.1-1.2,0.1-1.6,0.1-4.9s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9c-0.3-0.8-0.7-1.5-1.4-2.2c-0.7-0.7-1.4-1.1-2.2-1.4c-0.8-0.3-1.7-0.5-2.9-0.6C15.7,0,15.3,0,12,0z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2c0,3.4,2.8,6.2,6.2,6.2s6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S14.2,16,12,16z M18.4,4.2c-0.8,0-1.4,0.6-1.4,1.4s0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4S19.2,4.2,18.4,4.2z" />
+                        </svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Меню</h3>
+                    <div class="footer-links">
+                        <a href="index.html#about">> Про клініку</a>
+                        <a href="services-ua.html">> Послуги</a>
+                        <a href="index.html#prices">> Ціни</a>
+                        <a href="offer.html">> Оферта</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Послуги</h3>
+                    <div class="footer-links">
+                        <a href="lechenie-ua.html">> Лікування зубів</a>
+                        <a href="implants-ua.html">> Імплантація</a>
+                        <a href="all-on-4-odessa.html">> All-on-4 / All-on-6</a>
+                        <a href="prosthetics-ua.html">> Протезування</a>
+                        <a href="hygiene-ua.html">> Гігієна</a>
+                        <a href="orthodontics-ua.html">> Ортодонтія</a>
+                        <a href="extraction-ua.html">> Видалення</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>📍 м. Одеса, вул. Новаторів 1А</p>
+                    <p style="margin-top:10px;">
+                        <a href="tel:+380687794547" aria-label="Зателефонувати" style="color:#fff; font-weight:700;"
+                            onclick="if(typeof gtag_report_conversion==='function'){return gtag_report_conversion('tel:+380687794547');}">📞 +38 068 779 45 47</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">Copyright © 2026 Harmony Clinic. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+380687794547" aria-label="Зателефонувати" class="floating-widget"
+        onclick="if(typeof gtag_report_conversion === 'function') { return gtag_report_conversion('tel:+380687794547'); } else if(typeof gtag_report_call === 'function') { return gtag_report_call('tel:+380687794547'); }">
+        <div class="widget-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+            </svg>
+        </div>
+    </a>
+
+    <script src="header.js" defer></script>
+    <script src="mobile-menu.js" defer></script>
+    <script>
+    function toggleAccordion(el){
+        const c = el.nextElementSibling;
+        const s = el.querySelector('span');
+        if (c.style.maxHeight){
+            c.style.maxHeight = null;
+            s.textContent = "+";
+        } else {
+            c.style.maxHeight = c.scrollHeight + "px";
+            s.textContent = "−";
+        }
+    }
+    </script>
+</body>
+
+</html>
+"""
+
+def get_ru_html():
+    return """<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Analytics: dataLayer + gtag stub available immediately; heavy scripts deferred -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','G-6ZP07STZJF');
+    gtag('config','AW-11468618731');
+
+    function gtag_report_conversion(url){
+        var navigate=function(){ if(typeof url!=='undefined'){ window.location=url; } };
+        gtag('event','conversion',{'send_to':'AW-11468618731/s-heCPmCmt0bEOv31Nwq','event_callback':navigate});
+        loadDeferredTags();
+        setTimeout(navigate, 700);
+        return false;
+    }
+    var gtag_report_call = gtag_report_conversion;
+    var gtag_report_messenger = gtag_report_conversion;
+
+    var __tagsLoaded=false;
+    function loadDeferredTags(){
+        if(__tagsLoaded)return; __tagsLoaded=true;
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PBZF8G5B');
+        var ga=document.createElement('script'); ga.async=true; ga.src='https://www.googletagmanager.com/gtag/js?id=G-6ZP07STZJF'; document.head.appendChild(ga);
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','451786880568879');fbq('track','PageView');
+    }
+    ['pointerdown','touchstart','mousedown','keydown','scroll'].forEach(function(ev){
+        window.addEventListener(ev, loadDeferredTags, {once:true, passive:true});
+    });
+    window.addEventListener('load', function(){ setTimeout(loadDeferredTags, 6000); });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="UA-51">
+    <meta name="geo.placename" content="Одесса">
+    <meta name="geo.position" content="46.4258;30.7488">
+    <meta name="ICBM" content="46.4258, 30.7488">
+
+    <link rel="canonical" href="https://harmonyclinic.od.ua/ru/lechenie-ua.html">
+    <link rel="alternate" hreflang="uk-UA" href="https://harmonyclinic.od.ua/lechenie-ua.html">
+    <link rel="alternate" hreflang="ru-UA" href="https://harmonyclinic.od.ua/ru/lechenie-ua.html">
+    <link rel="alternate" hreflang="x-default" href="https://harmonyclinic.od.ua/lechenie-ua.html">
+
+    <title>Лечение зубов в Одессе — терапия кариеса и эндодонтия каналов | Harmony Clinic</title>
+    <meta name="description"
+        content="Лечение зубов и корневых каналов в Одессе (Таирова). Надежная местная анестезия, коффердам, фотополимерные реставрации от 1 700 грн. Врач Андрей Малюкин. ☎ +38 068 779 45 47">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Лечение зубов в Одессе — терапия кариеса и эндодонтия | Harmony Clinic">
+    <meta property="og:description" content="Современное лечение зубов, пульпита и каналов в Одессе. Изоляция коффердамом, цифровая диагностика, врач Андрей Малюкин.">
+    <meta property="og:image" content="https://harmonyclinic.od.ua/images/andrey.jpg">
+    <meta property="og:url" content="https://harmonyclinic.od.ua/ru/lechenie-ua.html">
+    <meta property="og:locale" content="ru_UA">
+    <meta property="og:site_name" content="Harmony Clinic">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Лечение зубов в Одессе — Harmony Clinic">
+    <meta name="twitter:description" content="Терапия кариеса, эндодонтия корневых каналов и эстетические реставрации в Одессе. Врач Андрей Малюкин.">
+    <meta name="twitter:image" content="https://harmonyclinic.od.ua/images/andrey.jpg">
+
+    <link rel="icon" type="image/png" href="../images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Microdata Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Dentist",
+          "@id": "https://harmonyclinic.od.ua/#org",
+          "name": "Harmony Clinic",
+          "url": "https://harmonyclinic.od.ua/ru/lechenie-ua.html",
+          "image": "https://harmonyclinic.od.ua/images/Logo.png",
+          "telephone": "+380687794547",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Новаторов, 1А",
+            "addressLocality": "Одесса",
+            "addressRegion": "Одесская область",
+            "postalCode": "65114",
+            "addressCountry": "UA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 46.4258,
+            "longitude": 30.7488
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Одесса" },
+            { "@type": "AdministrativeArea", "name": "Киевский район" },
+            { "@type": "Place", "name": "Таирова" },
+            { "@type": "Place", "name": "Черемушки" },
+            { "@type": "Place", "name": "Седьмой километр" }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "10:00",
+              "closes": "16:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/harmony.dental.clinic.od/",
+            "https://www.facebook.com/andrei.maliukin/"
+          ]
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://harmonyclinic.od.ua/#maliukin-andriy",
+          "name": "Андрей Малюкин",
+          "jobTitle": "Главный врач, стоматолог-терапевт, ортопед",
+          "medicalSpecialty": "https://schema.org/Dentistry",
+          "image": "https://harmonyclinic.od.ua/images/andrey.jpg",
+          "worksFor": { "@id": "https://harmonyclinic.od.ua/#org" }
+        },
+        {
+          "@type": "MedicalProcedure",
+          "@id": "https://harmonyclinic.od.ua/ru/lechenie-ua.html#procedure",
+          "name": "Терапевтическое и эндодонтическое лечение зубов",
+          "alternateName": [
+            "Лечение кариеса",
+            "Пломбирование зубов",
+            "Лечение каналов зуба",
+            "Художественная реставрация зуба"
+          ],
+          "procedureType": "https://schema.org/TherapeuticProcedure",
+          "bodyLocation": "Зубы и корневые каналы",
+          "howPerformed": "Препарирование пораженных тканей под качественной местной анестезией, обязательная изоляция коффердамом, медикаментозная обработка и послойное восстановление анатомии зуба фотополимерными композитами или герметичное пломбирование каналов гуттаперчей.",
+          "performer": [
+            { "@id": "https://harmonyclinic.od.ua/#maliukin-andriy" }
+          ],
+          "status": "https://schema.org/ActiveActionStatus"
+        },
+        {
+          "@type": "Service",
+          "name": "Терапевтическое лечение зубов в Одессе",
+          "provider": { "@id": "https://harmonyclinic.od.ua/#org" },
+          "areaServed": [
+            { "@type": "City", "name": "Одесса" },
+            { "@type": "Place", "name": "Таирова" },
+            { "@type": "Place", "name": "Киевский район" }
+          ],
+          "serviceType": "Терапевтическая стоматология и эндодонтия",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Прайс на лечение кариеса и каналов",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Лечение поверхностного кариеса (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "1700",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лечение среднего кариеса (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "2000",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лечение глубокого кариеса (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "2400",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Художественная реставрация зуба (1 зуб)",
+                "priceCurrency": "UAH",
+                "price": "2500",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лечение 1-канального зуба (пульпит/периодонтит)",
+                "priceCurrency": "UAH",
+                "price": "1500",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лечение 2-канального зуба",
+                "priceCurrency": "UAH",
+                "price": "2000",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Лечение 3-канального зуба",
+                "priceCurrency": "UAH",
+                "price": "3000",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Главная",
+              "item": "https://harmonyclinic.od.ua/ru/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Услуги",
+              "item": "https://harmonyclinic.od.ua/ru/services-ua.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Лечение зубов",
+              "item": "https://harmonyclinic.od.ua/ru/lechenie-ua.html"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Насколько комфортно проходит лечение зубов и чувствуется ли боль?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Процедура лечения проходит под современной европейской местной анестезией (артикаиновый ряд), надежно блокирующей болевую чувствительность. Острой боли нет — во время работы ощущается лишь легкое давление и прикосновения инструментов. Для пациентов с повышенной чувствительностью применяется предварительное обезболивание места укола гелем."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Зачем нужна изоляция коффердамом при пломбировании и лечении каналов?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Коффердам (латексный платок) полностью изолирует зуб от слюны, влаги дыхания и бактерий полости рта. Это обязательный мировой стандарт: современные фотополимеры надежно сцепляются с зубом только в сухой среде. Благодаря коффердаму пломбы служат дольше и не выпадают, а антисептические растворы не попадают на слизистую."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Сколько стоит лечение кариеса и каналов в Одессе?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "В Harmony Dental Clinic действует прозрачный прайс: поверхностный кариес — 1 700 грн, средний — 2 000 грн, глубокий — 2 400 грн, художественная реставрация — 2 500 грн. Лечение корневых каналов стоит от 1 500 грн за 1 канал, 2 000 грн за 2 канала, 3 000 грн за 3 канала. Первичная консультация врача — бесплатная."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Как отличить обычный кариес от пульпита?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "При кариесе боль возникает только под действием раздражителя (сладкое, холодное, горячее) и быстро проходит после прекращения контакта. При пульпите (воспалении нерва) боль острая, пульсирующая или ноющая, часто усиливается ночью и не проходит сама. В таком случае требуется неотложное эндодонтическое лечение каналов."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Сколько служит современная фотополимерная пломба / реставрация?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Качественная композитная реставрация, выполненная по протоколу с изоляцией коффердамом материалами Estelite или Harmonize, служит в среднем 5–10 лет и более. Срок службы напрямую зависит от домашней гигиены, отсутствия бруксизма и регулярной профессиональной чистки 2 раза в год."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Чем отличается обычная пломба от художественной эстетической реставрации?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Обычная пломба закрывает дефект и останавливает кариес. Художественная реставрация — это послойное восстановление анатомической формы зуба фотополимерными композитами с точным подбором оттенка под цвет эмали. Врач воссоздает естественные бугры и фиссуры, благодаря чему зуб выглядит естественно и не отличается от соседних."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Почему зуб может немного ныть после пломбирования корневых каналов?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Незначительная чувствительность при накусывании в течение 2–5 дней после эндодонтического лечения является нормальной реакцией периодонта на антисептическую обработку. При необходимости врач порекомендует мягкие противовоспалительные средства. Если боль нарастает или пульсирует — следует сразу обратиться на осмотр."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Что делать, если откололся кусочек зуба или выпала старая пломба?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Не откладывайте визит к врачу, даже если зуб не болит. Открытые дентинные канальцы быстро инфицируются бактериями из слюны, что приводит к воспалению нерва (пульпиту). В Harmony Clinic мы восстанавливаем форму зуба фотополимером или керамической накладкой за один визит."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Scoped styles for Treatment / Therapy Landing */
+        .lech-hero {
+            position: relative;
+            padding: 70px 0 60px;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at top right, rgba(82, 97, 84, 0.35) 0%, transparent 65%),
+                        linear-gradient(135deg, #111a14 0%, #060a07 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .lech-hero .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .lech-hero h1 {
+            font-size: clamp(28px, 3.8vw, 46px);
+            font-weight: 800;
+            line-height: 1.18;
+            letter-spacing: -0.5px;
+            margin-bottom: 18px;
+        }
+
+        .lech-hero .hero-lead {
+            font-size: 16.5px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .hero-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .hero-feat-item {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 12px 16px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            backdrop-filter: blur(8px);
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        .hero-feat-item svg {
+            width: 22px;
+            height: 22px;
+            fill: #c49b66;
+            flex-shrink: 0;
+        }
+
+        .hero-portrait-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            background: #19241c;
+        }
+
+        .hero-portrait-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hero-portrait-badge {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            background: rgba(12, 18, 14, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .hero-portrait-badge strong {
+            color: #c49b66;
+            display: block;
+            font-size: 14.5px;
+            margin-bottom: 2px;
+        }
+
+        /* Section layout */
+        .section-py {
+            padding: 75px 0;
+        }
+
+        .bg-light-alt {
+            background-color: #f8faf8;
+        }
+
+        .section-header-center {
+            text-align: center;
+            max-width: 820px;
+            margin: 0 auto 45px;
+        }
+
+        .section-header-center h2 {
+            font-size: clamp(26px, 3vw, 36px);
+            font-weight: 800;
+            color: #191f1a;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+            line-height: 1.25;
+        }
+
+        .section-header-center p {
+            font-size: 16px;
+            color: #556057;
+            line-height: 1.6;
+        }
+
+        .eyebrow-tag {
+            display: inline-block;
+            background: rgba(82, 97, 84, 0.12);
+            color: var(--primary);
+            font-size: 12.5px;
+            font-weight: 800;
+            padding: 5px 14px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 14px;
+        }
+
+        /* Services Grid (What we treat) */
+        .services-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .srv-card {
+            background: #fff;
+            border: 1px solid #e3e8e3;
+            border-radius: 18px;
+            padding: 30px 24px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .srv-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-light);
+            box-shadow: 0 14px 32px rgba(82, 97, 84, 0.1);
+        }
+
+        .srv-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(82, 97, 84, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .srv-card h3 {
+            font-size: 19px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .srv-card p {
+            font-size: 14px;
+            color: #556257;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .srv-card-footer {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--primary);
+            border-top: 1px solid #edf2ed;
+            padding-top: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* 2-Column Explainer */
+        .explainer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .explainer-text h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #191f1a;
+        }
+
+        .explainer-text p {
+            font-size: 15.5px;
+            line-height: 1.65;
+            color: #445046;
+            margin-bottom: 18px;
+        }
+
+        .explainer-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .explainer-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 14px;
+            font-size: 14.5px;
+            color: #2b352d;
+            line-height: 1.5;
+        }
+
+        .explainer-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .explainer-media {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e3e8e3;
+        }
+
+        .explainer-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Dual Pricing Tables Section */
+        .pricing-split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .price-category-box {
+            background: #fff;
+            border-radius: 20px;
+            border: 1px solid #e1e7e1;
+            padding: 35px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-category-box h3 {
+            font-size: 21px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 8px;
+        }
+
+        .price-category-box .box-sub {
+            font-size: 13.5px;
+            color: #6a776c;
+            margin-bottom: 22px;
+        }
+
+        .price-rows-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+            flex-grow: 1;
+        }
+
+        .price-row-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 0;
+            border-bottom: 1px solid #edf2ed;
+            font-size: 14.5px;
+        }
+
+        .price-row-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-item-title {
+            color: #334035;
+            font-weight: 600;
+        }
+
+        .price-item-title small {
+            display: block;
+            font-size: 12px;
+            color: #7b887d;
+            font-weight: normal;
+            margin-top: 2px;
+        }
+
+        .price-item-val {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 16px;
+            white-space: nowrap;
+            margin-left: 12px;
+        }
+
+        .price-note-banner {
+            background: #f4f7f4;
+            border: 1px dashed #c6d2c7;
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 13px;
+            color: #445246;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Timeline Steps */
+        .process-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .proc-step-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 26px 20px;
+            border: 1px solid #e3e8e3;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        .proc-step-num {
+            font-size: 32px;
+            font-weight: 800;
+            color: rgba(82, 97, 84, 0.25);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .proc-step-card h3 {
+            font-size: 17px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 8px;
+        }
+
+        .proc-step-card p {
+            font-size: 13.5px;
+            color: #556257;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* Doctor Highlight Box (E-E-A-T) — Andrei Malyukin Only */
+        .doctor-spotlight-box {
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid #e1e7e1;
+            padding: 45px;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.04);
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 45px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .doc-spotlight-photo {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .doc-spotlight-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .doc-spotlight-info h3 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #191f1a;
+            margin-bottom: 6px;
+        }
+
+        .doc-spotlight-role {
+            font-size: 15.5px;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .doc-spotlight-desc {
+            font-size: 15px;
+            color: #4b564d;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .doc-stats-row {
+            display: flex;
+            gap: 30px;
+            padding: 20px 0;
+            border-top: 1px solid #edf2ed;
+            border-bottom: 1px solid #edf2ed;
+        }
+
+        .doc-stat-item strong {
+            display: block;
+            font-size: 20px;
+            color: #191f1a;
+            font-weight: 800;
+        }
+
+        .doc-stat-item span {
+            font-size: 13px;
+            color: #728074;
+        }
+
+        /* Cases Grid (Before/After) */
+        .cases-grid-lechenie {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .case-card-mini {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #e3e8e3;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+        }
+
+        .case-card-mini img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .case-mini-caption {
+            padding: 14px;
+            font-size: 13px;
+            color: #334035;
+            line-height: 1.45;
+            border-top: 1px solid #edf2ed;
+        }
+
+        .case-mini-caption strong {
+            display: block;
+            color: #191f1a;
+            font-size: 13.5px;
+            margin-bottom: 3px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .lech-hero .hero-grid { grid-template-columns: 1fr; }
+            .services-cards-grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing-split-grid { grid-template-columns: 1fr; }
+            .process-steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .doctor-spotlight-box { grid-template-columns: 1fr; gap: 30px; }
+            .doc-spotlight-photo { max-width: 300px; margin: 0 auto; }
+            .cases-grid-lechenie { grid-template-columns: repeat(2, 1fr); }
+            .explainer-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .lech-hero { padding: 50px 0 45px; }
+            .lech-hero h1 { font-size: 26px; }
+            .hero-features-grid { grid-template-columns: 1fr; }
+            .services-cards-grid { grid-template-columns: 1fr; }
+            .process-steps-grid { grid-template-columns: 1fr; }
+            .cases-grid-lechenie { grid-template-columns: 1fr; }
+            .doc-stats-row { flex-direction: column; gap: 14px; }
+            .section-py { padding: 50px 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZF8G5B"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header role="banner">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <picture>
+                    <source srcset="../images/Logo.webp" type="image/webp">
+                    <img loading="lazy" src="../images/Logo.png" alt="Harmony Dental Clinic" width="1072" height="1071">
+                </picture>
+            </a>
+            <nav role="navigation">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services-ua.html">Услуги</a></li>
+                    <li><a href="lechenie-ua.html" style="color:var(--primary);font-weight:800;">Лечение</a></li>
+                    <li><a href="implants-ua.html">Имплантация</a></li>
+                    <li><a href="all-on-4-odessa.html">All-on-4</a></li>
+                    <li><a href="index.html#team">Врачи</a></li>
+                    <li><a href="#prices">Цены</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="lang-switch">
+                    <a href="../lechenie-ua.html">UA</a>
+                    <a href="lechenie-ua.html" class="active">RU</a>
+                </div>
+                <a href="tel:+380687794547" aria-label="Позвонить" class="header-phone"
+                    onclick="return gtag_report_call('tel:+380687794547');">+38 068 779 45 47</a>
+                <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs Section -->
+    <div style="background:#f4f7f4; padding: 14px 0; border-bottom: 1px solid #e3e8e3;">
+        <div class="container">
+            <nav aria-label="Хлебные крошки" style="font-size: 13px; color: #667368;">
+                <a href="index.html" style="color: inherit; text-decoration: none;">Главная</a>
+                <span style="margin: 0 8px;">/</span>
+                <a href="services-ua.html" style="color: inherit; text-decoration: none;">Услуги</a>
+                <span style="margin: 0 8px;">/</span>
+                <span style="color: var(--primary); font-weight: 700;">Лечение зубов в Одессе</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section class="lech-hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); padding:7px 16px; border-radius:100px; font-size:13px; font-weight:600; margin-bottom:20px; backdrop-filter:blur(5px);">
+                        <span style="width:8px; height:8px; background:#4ade80; border-radius:50%; display:inline-block;"></span>
+                        Работаем автономно: есть генератор и резервное питание
+                    </div>
+
+                    <h1>Лечение зубов и корневых каналов в Одессе</h1>
+                    
+                    <p class="hero-lead">
+                        Сохранение и эстетическое восстановление естественных зубов врачом Андреем Малюкиным. Комфортная местная анестезия, обязательная изоляция коффердамом и надежные фотополимерные реставрации.
+                    </p>
+
+                    <div class="hero-features-grid">
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Надежная местная анестезия</span>
+                        </div>
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                            <span>Изоляция системой Коффердам</span>
+                        </div>
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                            <span>Цифровая 3D-диагностика</span>
+                        </div>
+                        <div class="hero-feat-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                            <span>Врач с опытом 15+ лет</span>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                        <a href="#prices" class="btn" style="background:var(--primary); color:#fff; border:none; padding:14px 28px; font-weight:800; font-size:15px; border-radius:12px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; box-shadow:0 10px 25px rgba(82,97,84,0.4);">
+                            Посмотреть цены на лечение
+                        </a>
+                        <a href="tel:+380687794547" class="btn" style="background:rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.25); padding:14px 24px; font-weight:700; font-size:15px; border-radius:12px; text-decoration:none; display:inline-flex; align-items:center; gap:8px;"
+                           onclick="return gtag_report_call('tel:+380687794547');">
+                            📞 Позвонить
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="hero-portrait-card">
+                        <picture>
+                            <source srcset="../images/andrey.webp" type="image/webp">
+                            <img src="../images/andrey.jpg" alt="Главный врач Андрей Малюкин — терапевтическое лечение зубов в Одессе" width="725" height="1024">
+                        </picture>
+                        <div class="hero-portrait-badge">
+                            <strong>Врач Андрей Малюкин</strong>
+                            Персональное лечение кариеса, эндодонтия каналов и реставрация зубов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: What We Treat (Comprehensive Services Cards) -->
+    <section class="section-py">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Направления терапии</span>
+                <h2>Что мы лечим в Harmony Dental Clinic</h2>
+                <p>
+                    Диагностируем и устраняем заболевания зубов на любой стадии, сохраняя максимум здоровых тканей.
+                </p>
+            </div>
+
+            <div class="services-cards-grid">
+                <!-- Card 1 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🦷</div>
+                    <h3>Лечение кариеса (все стадии)</h3>
+                    <p>
+                        Бережное удаление некротизированных тканей при поверхностном, среднем и глубоком кариесе. Пломбирование качественными фотополимерными композитами (Estelite, Harmonize) с точным воссозданием фиссур и бугров.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Восстановление формы</span>
+                        <span>от 1 700 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">⚡</div>
+                    <h3>Лечение пульпита (воспаление нерва)</h3>
+                    <p>
+                        Снятие острой или ночной боли. Удаление воспаленной пульпы, механическая обработка каналов гибкими никель-титановыми инструментами, антисептическая обработка и герметичная 3D-обтурация гуттаперчей.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Эндодонтический протокол</span>
+                        <span>от 1 500 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🛡️</div>
+                    <h3>Лечение периодонтита и кист</h3>
+                    <p>
+                        Устранение хронического воспаления у верхушки корня зуба. Тщательная дезинфекция корневой системы, временное лечебное пломбирование препаратами кальция и рентген-контроль заживления кости.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Сохранение зуба</span>
+                        <span>от 1 500 грн/канал</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">✨</div>
+                    <h3>Художественная эстетическая реставрация</h3>
+                    <p>
+                        Прямое восстановление формы и цвета передних и жевательных зубов. Послойное нанесение композита с индивидуальным подбором оттенка под эмаль при сколах, трещинах или стираемости.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Эстетика улыбки</span>
+                        <span>от 2 500 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🔍</div>
+                    <h3>Вторичный кариес под старыми пломбами</h3>
+                    <p>
+                        Диагностика скрытого разрушения под негерметичными или потемневшими старыми реставрациями. Замена пломбы до того, как инфекция проникнет в нерв и вызовет пульпит.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Защита от осложнений</span>
+                        <span>от 2 000 грн</span>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="srv-card">
+                    <div class="srv-card-icon">🩹</div>
+                    <h3>Клиновидные дефекты и эрозии</h3>
+                    <p>
+                        Устранение дефектов эмали в пришеечной области зуба. Снятие гиперестезии (повышенной чувствительности к холодному/кислому) и пломбирование высокоэластичными композитными материалами.
+                    </p>
+                    <div class="srv-card-footer">
+                        <span>Снятие чувствительности</span>
+                        <span>от 1 800 грн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Technology & Safety Standards -->
+    <section class="section-py bg-light-alt">
+        <div class="container">
+            <div class="explainer-grid">
+                <div>
+                    <span class="eyebrow-tag">Стандарты качества</span>
+                    <h2>Современные клинические стандарты терапии в Одессе</h2>
+                    <p>
+                        Мы лечим зубы по проверенным протоколам, обеспечивающим максимальную адгезию пломбировочного материала и защиту корневых каналов от повторного инфицирования.
+                    </p>
+                    <ul class="explainer-list">
+                        <li>
+                            <strong>Обязательная изоляция коффердамом:</strong> специальный латексный платок исключает попадание слюны и влаги на рабочее поле. Это обеспечивает надежное сцепление (адгезию) пломбы с зубом.
+                        </li>
+                        <li>
+                            <strong>Эффективное местное обезболивание:</strong> используем качественные европейские анестетики артикаинового ряда. Действие наступает быстро; процедура проходит в спокойной обстановке без острой боли.
+                        </li>
+                        <li>
+                            <strong>Машинная эндодонтия (ротационные NiTi-файлы):</strong> корневые каналы проходятся гибкими никель-титановыми инструментами с контролем глубины апекслокатором, сохраняя анатомическую форму корня.
+                        </li>
+                        <li>
+                            <strong>Щадящее препарирование тканей:</strong> аккуратно убираем только пораженный кариесом дентин, максимально сохраняя живую и здоровую структуру зуба.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="explainer-media">
+                    <picture>
+                        <source srcset="../images/scanner.webp" type="image/webp">
+                        <img src="../images/scanner.jpg" alt="Цифровая диагностика 3Shape TRIOS 4 в стоматологии Harmony Clinic Одесса" width="1280" height="853" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Dual Pricing Tables -->
+    <section class="section-py" id="prices">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Прозрачный прайс</span>
+                <h2>Цены на лечение зубов и каналов в Одессе</h2>
+                <p>
+                    Фиксированная стоимость терапевтического лечения без скрытых платежей. Бесплатная первичная консультация врача.
+                </p>
+            </div>
+
+            <div class="pricing-split-grid">
+                <!-- Table 1: Therapy & Restorations -->
+                <div class="price-category-box">
+                    <h3>Терапия и реставрация зубов</h3>
+                    <div class="box-sub">Лечение кариеса, восстановление формы фотополимером</div>
+
+                    <ul class="price-rows-list">
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Первичная консультация врача-терапевта
+                                <small>Осмотр, план лечения, составление сметы</small>
+                            </div>
+                            <div class="price-item-val">0 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лечение поверхностного кариеса
+                                <small>Препарирование, коффердам, фотополимерная пломба</small>
+                            </div>
+                            <div class="price-item-val">1 700 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лечение среднего кариеса
+                                <small>Обработка полости, лечебная прокладка, пломба</small>
+                            </div>
+                            <div class="price-item-val">2 000 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лечение глубокого кариеса
+                                <small>Защита пульпы, изоляция, анатомическая пломба</small>
+                            </div>
+                            <div class="price-item-val">2 400 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Художественная реставрация зуба
+                                <small>Послойное моделирование, фотополимер Estelite</small>
+                            </div>
+                            <div class="price-item-val">2 500 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Реставрация клиновидного дефекта
+                                <small>Пришеечная область, снятие чувствительности</small>
+                            </div>
+                            <div class="price-item-val">1 800 грн</div>
+                        </li>
+                    </ul>
+
+                    <div class="price-note-banner">
+                        <strong>В стоимость лечения включено:</strong> осмотр, местная анестезия, изоляция коффердамом, шлифовка и полировка пломбы.
+                    </div>
+
+                    <a href="tel:+380687794547" class="btn" style="background:var(--primary); color:#fff; padding:12px 24px; border-radius:12px; font-weight:800; text-decoration:none; text-align:center; box-shadow:0 8px 20px rgba(82,97,84,0.3);"
+                       onclick="return gtag_report_call('tel:+380687794547');">
+                        Записаться на прием
+                    </a>
+                </div>
+
+                <!-- Table 2: Endodontics (Root Canals) -->
+                <div class="price-category-box">
+                    <h3>Эндодонтия (лечение каналов)</h3>
+                    <div class="box-sub">Пульпит, периодонтит, пломбирование гуттаперчей</div>
+
+                    <ul class="price-rows-list">
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Прицельная цифровая рентгенография
+                                <small>Контроль глубины и качества пломбирования</small>
+                            </div>
+                            <div class="price-item-val">200 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лечение однокорневого зуба
+                                <small>1 канал: механическая и медикаментозная обработка + 3D гуттаперча</small>
+                            </div>
+                            <div class="price-item-val">1 500 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лечение двухкорневого зуба
+                                <small>2 канала: расширение NiTi-файлами + герметичная обтурация</small>
+                            </div>
+                            <div class="price-item-val">2 000 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Лечение трехкорневого зуба
+                                <small>3 канала (моляры): полный эндодонтический протокол</small>
+                            </div>
+                            <div class="price-item-val">3 000 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Временное пломбирование каналов кальцием
+                                <small>При хроническом периодонтите и кистах</small>
+                            </div>
+                            <div class="price-item-val">500 грн</div>
+                        </li>
+                        <li class="price-row-item">
+                            <div class="price-item-title">
+                                Распломбирование / ревизия 1 канала
+                                <small>Перелечивание ранее запломбированного зуба</small>
+                            </div>
+                            <div class="price-item-val">от 600 грн</div>
+                        </li>
+                    </ul>
+
+                    <div class="price-note-banner">
+                        <strong>Обратите внимание:</strong> после лечения каналов рекомендуется восстановление коронковой части зуба пломбой или накладкой.
+                    </div>
+
+                    <a href="https://t.me/Harmonyclinic_od" target="_blank" class="btn" style="background:#229ED9; color:#fff; padding:12px 24px; border-radius:12px; font-weight:700; text-decoration:none; text-align:center;">
+                        Консультация в Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Step-by-Step Process -->
+    <section class="section-py bg-light-alt">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Последовательность</span>
+                <h2>Как проходит лечение зуба в клинике</h2>
+                <p>
+                    Прозрачный алгоритм действий от первичного осмотра до контроля прикуса.
+                </p>
+            </div>
+
+            <div class="process-steps-grid">
+                <div class="proc-step-card">
+                    <div class="proc-step-num">01</div>
+                    <h3>Диагностика и осмотр</h3>
+                    <p>
+                        Оценка состояния зуба, прицельный рентген-снимок для выявления скрытого кариеса или воспаления в корнях, составление плана лечения.
+                    </p>
+                </div>
+
+                <div class="proc-step-card">
+                    <div class="proc-step-num">02</div>
+                    <h3>Анестезия и коффердам</h3>
+                    <p>
+                        Введение современной местной анестезии и установка защитного латексного платка (коффердама) для сухого рабочего поля.
+                    </p>
+                </div>
+
+                <div class="proc-step-card">
+                    <div class="proc-step-num">03</div>
+                    <h3>Очищение и терапия</h3>
+                    <p>
+                        Аккуратное удаление поврежденных тканей или механическая и антисептическая обработка корневых каналов с промыванием антисептиками.
+                    </p>
+                </div>
+
+                <div class="proc-step-card">
+                    <div class="proc-step-num">04</div>
+                    <h3>Реставрация и контроль</h3>
+                    <p>
+                        Послойное восстановление анатомии зуба фотополимером, проверка прикуса копиркой и финишная полировка под естественный блеск эмали.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Doctor Spotlight (E-E-A-T) — Andrei Malyukin Only -->
+    <section class="section-py" id="doctor">
+        <div class="container">
+            <div class="doctor-spotlight-box">
+                <div class="doc-spotlight-photo">
+                    <picture>
+                        <source srcset="../images/andrey.webp" type="image/webp">
+                        <img src="../images/andrey.jpg" alt="Главный врач Андрей Малюкин — терапевтическое лечение зубов в Одессе" width="725" height="1024" loading="lazy">
+                    </picture>
+                </div>
+
+                <div class="doc-spotlight-info">
+                    <span class="eyebrow-tag">Главный врач клиники</span>
+                    <h3>Андрей Малюкин</h3>
+                    <div class="doc-spotlight-role">Стоматолог-терапевт • Ортопед • Основатель Harmony Dental Clinic</div>
+                    
+                    <p class="doc-spotlight-desc">
+                        Более 15 лет практического опыта в терапевтической стоматологии, эндодонтии и восстановлении зубов. Лично проводит первичные осмотры, цифровую диагностику и выполняет реставрации фотополимерными композитами с обязательной изоляцией коффердамом и контролем прикуса.
+                    </p>
+
+                    <div class="doc-stats-row">
+                        <div class="doc-stat-item">
+                            <strong>15+ лет</strong>
+                            <span>Клинического опыта</span>
+                        </div>
+                        <div class="doc-stat-item">
+                            <strong>Главный врач</strong>
+                            <span>Личный прием</span>
+                        </div>
+                        <div class="doc-stat-item">
+                            <strong>3Shape TRIOS 4</strong>
+                            <span>Цифровая диагностика</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 24px;">
+                        <a href="tel:+380687794547" class="btn" style="background:var(--primary); color:#fff; padding:12px 26px; border-radius:12px; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:8px;"
+                           onclick="return gtag_report_call('tel:+380687794547');">
+                            Записаться на прием к врачу
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Clinical Cases Before / After -->
+    <section class="section-py bg-light-alt" id="results">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Клинические результаты</span>
+                <h2>Результаты лечения зубов: До и После</h2>
+                <p>
+                    Примеры восстановления анатомической формы и эстетики зубов пациентов врачом Андреем Малюкиным.
+                </p>
+            </div>
+
+            <div class="cases-grid-lechenie">
+                <!-- Case 1 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case1.webp" type="image/webp">
+                        <img src="../images_lechenie/case1.jpg" alt="Лечение глубокого кариеса жевательного зуба до и после" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Лечение кариеса жевательного зуба</strong>
+                        Устранение кариозной полости и восстановление фиссур фотополимером.
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case2.webp" type="image/webp">
+                        <img src="../images_lechenie/case2.jpg" alt="Художественная реставрация фронтальных зубов до и после" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Художественная реставрация эмали</strong>
+                        Восстановление формы и естественного оттенка зуба композитом Estelite.
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case3.webp" type="image/webp">
+                        <img src="../images_lechenie/case3.jpg" alt="Замена старой пломбы и лечение вторичного кариеса" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Замена старой негерметичной пломбы</strong>
+                        Устранение вторичного кариеса под старой реставрацией с изоляцией коффердамом.
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case4.webp" type="image/webp">
+                        <img src="../images_lechenie/case4.jpg" alt="Эндодонтическое лечение и восстановление коронки зуба" width="1280" height="1280" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Лечение пульпита и реставрация</strong>
+                        Пломбирование корневых каналов гуттаперчей и восстановление формы зуба.
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case5.webp" type="image/webp">
+                        <img src="../images_lechenie/case5.jpg" alt="Лечение клиновидного дефекта в пришеечной области" width="1242" height="1214" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Клиновидный дефект шейки зуба</strong>
+                        Устранение дефекта эмали, снятие чувствительности и защита шейки зуба.
+                    </div>
+                </div>
+
+                <!-- Case 6 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case6.webp" type="image/webp">
+                        <img src="../images_lechenie/case6.jpg" alt="Прямая композитная реставрация моляра до и после" width="2048" height="2048" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Восстановление контактного пункта</strong>
+                        Лечение кариеса на контактной поверхности между зубами с матричной системой.
+                    </div>
+                </div>
+
+                <!-- Case 7 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case7.webp" type="image/webp">
+                        <img src="../images_lechenie/case7.jpg" alt="Эндодонтическое перелечивание корневого канала" width="2048" height="2048" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Эндодонтическое перелечивание</strong>
+                        Ревизия канала, устранение воспаления периодонта и 3D-обтурация.
+                    </div>
+                </div>
+
+                <!-- Case 8 -->
+                <div class="case-card-mini">
+                    <picture>
+                        <source srcset="../images_lechenie/case8.webp" type="image/webp">
+                        <img src="../images_lechenie/case8.jpg" alt="Комплексное лечение кариеса нескольких зубов" width="2048" height="2048" loading="lazy">
+                    </picture>
+                    <div class="case-mini-caption">
+                        <strong>Комплексное лечение кариеса</strong>
+                        Устранение нескольких кариозных дефектов и полировка реставраций.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: FAQ Section -->
+    <section class="section-py" id="faq">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="eyebrow-tag">Вопросы и ответы</span>
+                <h2>Частые вопросы о лечении зубов в Одессе</h2>
+                <p>
+                    Ответы врача-терапевта Андрея Малюкина об анестезии, коффердаме, сроке службы пломб и лечении каналов.
+                </p>
+            </div>
+
+            <div style="max-width:850px; margin:0 auto;">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Насколько комфортно проходит лечение зубов и чувствуется ли боль?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Процедура лечения проходит под современной европейской местной анестезией (артикаиновый ряд), надежно блокирующей болевую чувствительность. Острой боли нет — во время работы ощущается лишь легкое давление и прикосновения инструментов. Для пациентов с повышенной чувствительностью применяется предварительное обезболивание места укола гелем.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Зачем нужна изоляция коффердамом при пломбировании и лечении каналов?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Коффердам (латексный платок) полностью изолирует зуб от слюны, влаги дыхания и бактерий полости рта. Это обязательный мировой стандарт: современные фотополимеры надежно сцепляются с зубом только в сухой среде. Благодаря коффердаму пломбы служат дольше и не выпадают, а антисептические растворы не попадают на слизистую.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Сколько стоит лечение кариеса и каналов в Одессе?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            В Harmony Dental Clinic действует прозрачный прайс: поверхностный кариес — 1 700 грн, средний — 2 000 грн, глубокий — 2 400 грн, художественная реставрация — 2 500 грн. Лечение корневых каналов стоит от 1 500 грн за 1 канал, 2 000 грн за 2 канала, 3 000 грн за 3 канала. Первичная консультация врача — бесплатная.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Как отличить обычный кариес от пульпита?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            При кариесе боль возникает только под действием раздражителя (сладкое, холодное, горячее) и быстро проходит после прекращения контакта. При пульпите (воспалении нерва) боль острая, пульсирующая или ноющая, часто усиливается ночью и не проходит сама. В таком случае требуется неотложное эндодонтическое лечение каналов.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Сколько служит современная фотополимерная пломба / реставрация?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Качественная композитная реставрация, выполненная по протоколу с изоляцией коффердамом материалами Estelite или Harmonize, служит в среднем 5–10 лет и более. Срок службы напрямую зависит от домашней гигиены, отсутствия бруксизма и регулярной профессиональной чистки 2 раза в год.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Чем отличается обычная пломба от художественной эстетической реставрации?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Обычная пломба закрывает дефект и останавливает кариес. Художественная реставрация — это послойное восстановление анатомической формы зуба фотополимерными композитами с точным подбором оттенка под цвет эмали. Врач воссоздает естественные бугры и фиссуры, благодаря чему зуб выглядит естественно и не отличается от соседних.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Почему зуб может немного ныть после пломбирования корневых каналов?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Незначительная чувствительность при накусывании в течение 2–5 дней после эндодонтического лечения является нормальной реакцией периодонта на антисептическую обработку. При необходимости врач порекомендует мягкие противовоспалительные средства. Если боль нарастает или пульсирует — следует сразу обратиться на осмотр.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        Что делать, если откололся кусочек зуба или выпала старая пломба?
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div style="padding:20px 25px; line-height:1.7; color:#4a544c; border-top:1px solid #f2f5f2;">
+                            Не откладывайте визит к врачу, даже если зуб не болит. Открытые дентинные канальцы быстро инфицируются бактериями из слюны, что приводит к воспалению нерва (пульпиту). В Harmony Clinic мы восстанавливаем форму зуба фотополимером или керамической накладкой за один визит.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Consultation & Location Banner -->
+    <section class="section-py bg-light-alt" id="consultation">
+        <div class="container">
+            <div style="background:linear-gradient(135deg, #253328 0%, #162018 100%); border-radius:24px; padding:50px; color:#fff; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;">
+                <div>
+                    <span style="color:#c49b66; font-weight:800; text-transform:uppercase; font-size:13px; letter-spacing:1px;">Запись на прием</span>
+                    <h2 style="font-size:32px; font-weight:800; margin:10px 0 16px 0; color:#fff; line-height:1.2;">Запишитесь на консультацию к врачу Андрею Малюкину</h2>
+                    <p style="font-size:16px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:24px;">
+                        Получите детальный осмотр и комфортное лечение зубов в клинике на ул. Новаторов 1А (Киевский район, Таирова).
+                    </p>
+                    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+                        <a href="tel:+380687794547" class="btn" style="background:#fff; color:#191f1a; padding:14px 28px; border-radius:12px; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:8px;"
+                           onclick="return gtag_report_call('tel:+380687794547');">
+                            📞 Позвонить +38 068 779 45 47
+                        </a>
+                        <a href="https://t.me/Harmonyclinic_od" target="_blank" class="btn" style="background:#229ED9; color:#fff; padding:14px 24px; border-radius:12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                            Написать в Telegram
+                        </a>
+                        <a href="viber://chat?number=%2B380687794547" class="btn" style="background:#7360f2; color:#fff; padding:14px 24px; border-radius:12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                            Написать в Viber
+                        </a>
+                    </div>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:18px; padding:30px;">
+                    <h3 style="font-size:18px; margin-bottom:15px; color:#fff;">📍 Как нас найти</h3>
+                    <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:12px;">
+                        <strong>Адрес:</strong> г. Одесса, ул. Новаторов 1А (Киевский район, Таирова / Черемушки).
+                    </p>
+                    <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:12px;">
+                        <strong>График работы:</strong> Пн–Пт: 09:00 – 20:00, Сб: 10:00 – 16:00.
+                    </p>
+                    <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.6; margin-bottom:0;">
+                        <strong>Нужна имплантация или протезирование?</strong><br>
+                        <a href="implants-ua.html" style="color:#c49b66; text-decoration:underline;">Посмотреть услуги имплантации зубов →</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts" class="unified-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <picture>
+                        <source srcset="../images/Logo.webp" type="image/webp">
+                        <img loading="lazy" src="../images/Logo.png" alt="Логотип Harmony Dental Clinic" class="footer-logo-img" width="1072" height="1071">
+                    </picture>
+                    <p style="margin-top:10px;">Современная семейная и цифровая стоматология в Одессе.</p>
+                    <div class="social-icons">
+                        <a href="viber://chat?number=%2B380687794547" title="Viber" aria-label="Viber"><svg viewBox="0 0 24 24">
+                            <path d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+                        </svg></a>
+                        <a href="https://t.me/Harmonyclinic_od" target="_blank" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24">
+                            <path d="M9.78,18.65l0.13-3.14l5.63-5.07c0.49-0.44-0.11-0.69-0.76-0.29L8.4,14.2l-3.03-0.95c-0.66-0.21-0.67-0.66,0.14-0.97L17.36,7.7c0.56-0.21,1.05,0.13,0.87,0.86L16.14,18.2c-0.12,0.59-0.87,0.72-1.41,0.45L9.78,18.65z" />
+                        </svg></a>
+                        <a href="https://www.instagram.com/harmony.dental.clinic.od/" target="_blank" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                            <path d="M12,2.2c3.2,0,3.6,0,4.9,0.1c1.2,0.1,1.8,0.3,2.2,0.5c0.6,0.2,1,0.5,1.4,0.9c0.4,0.4,0.7,0.8,0.9,1.4c0.2,0.4,0.4,1.1,0.5,2.2c0.1,1.3,0.1,1.6,0.1,4.9s0,3.6-0.1,4.9c-0.1,1.2-0.3,1.8-0.5,2.2c-0.2,0.6-0.5,1-0.9,1.4c-0.4,0.4-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.5C8.4,2.2,8.8,2.2,12,2.2 M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2s-1.1,1.4-1.4,2.2C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9c0.3,0.8,0.7,1.5,1.4,2.2c0.7,0.7,1.4,1.1,2.2,1.4c0.8,0.3,1.7,0.5,2.9,0.6c1.2,0.1,1.6,0.1,4.9,0.1s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.2-1.4c0.7-0.7,1.1-1.4,1.4-2.2c0.3-0.8,0.5-1.7,0.6-2.9c0.1-1.2,0.1-1.6,0.1-4.9s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9c-0.3-0.8-0.7-1.5-1.4-2.2c-0.7-0.7-1.4-1.1-2.2-1.4c-0.8-0.3-1.7-0.5-2.9-0.6C15.7,0,15.3,0,12,0z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2c0,3.4,2.8,6.2,6.2,6.2s6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S14.2,16,12,16z M18.4,4.2c-0.8,0-1.4,0.6-1.4,1.4s0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4S19.2,4.2,18.4,4.2z" />
+                        </svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Меню</h3>
+                    <div class="footer-links">
+                        <a href="index.html#about">> О клинике</a>
+                        <a href="services-ua.html">> Услуги</a>
+                        <a href="index.html#prices">> Цены</a>
+                        <a href="offer.html">> Оферта</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Услуги</h3>
+                    <div class="footer-links">
+                        <a href="lechenie-ua.html">> Лечение зубов</a>
+                        <a href="implants-ua.html">> Имплантация</a>
+                        <a href="all-on-4-odessa.html">> All-on-4 / All-on-6</a>
+                        <a href="prosthetics-ua.html">> Протезирование</a>
+                        <a href="hygiene-ua.html">> Гигиена</a>
+                        <a href="orthodontics-ua.html">> Ортодонтия</a>
+                        <a href="extraction-ua.html">> Удаление</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Контакты</h3>
+                    <p>📍 г. Одесса, ул. Новаторов 1А</p>
+                    <p style="margin-top:10px;">
+                        <a href="tel:+380687794547" aria-label="Позвонить" style="color:#fff; font-weight:700;"
+                            onclick="if(typeof gtag_report_conversion==='function'){return gtag_report_conversion('tel:+380687794547');}">📞 +38 068 779 45 47</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">Copyright © 2026 Harmony Clinic. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+380687794547" aria-label="Позвонить" class="floating-widget"
+        onclick="if(typeof gtag_report_conversion === 'function') { return gtag_report_conversion('tel:+380687794547'); } else if(typeof gtag_report_call === 'function') { return gtag_report_call('tel:+380687794547'); }">
+        <div class="widget-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+            </svg>
+        </div>
+    </a>
+
+    <script src="../header.js" defer></script>
+    <script src="../mobile-menu.js" defer></script>
+    <script>
+    function toggleAccordion(el){
+        const c = el.nextElementSibling;
+        const s = el.querySelector('span');
+        if (c.style.maxHeight){
+            c.style.maxHeight = null;
+            s.textContent = "+";
+        } else {
+            c.style.maxHeight = c.scrollHeight + "px";
+            s.textContent = "−";
+        }
+    }
+    </script>
+</body>
+
+</html>
+"""
+
+def main():
+    root = "/Users/doc/Desktop/Сайт"
+    ua_path = os.path.join(root, "Harmony Dental Clinic", "lechenie-ua.html")
+    ru_path = os.path.join(root, "Harmony Dental Clinic", "ru", "lechenie-ua.html")
+
+    with open(ua_path, "w", encoding="utf-8") as f:
+        f.write(get_ua_html())
+    print("Updated:", ua_path)
+
+    with open(ru_path, "w", encoding="utf-8") as f:
+        f.write(get_ru_html())
+    print("Updated:", ru_path)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,21 @@
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor & local configurations
+.claude/
+.vscode/
+.idea/
+
+# Temp files
+.fuse_hidden*
+*.backup
+*.old
+
+# Heavy local backups
+_work/backups/

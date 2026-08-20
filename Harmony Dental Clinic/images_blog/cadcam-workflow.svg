@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t3 d3">
+  <title id="t3">Цифровий CAD/CAM-протокол у стоматології</title>
+  <desc id="d3">П'ять етапів цифрового лікування: 3D-скан, CAD-моделювання, фрезерування або 3D-друк, кераміка, фіксація</desc>
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f9f5"/>
+      <stop offset="1" stop-color="#e3ece2"/>
+    </linearGradient>
+    <linearGradient id="step" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#eaf2ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#bgC)" rx="20"/>
+
+  <text x="400" y="40" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="22" fill="#222">Виробництво цирконієвої коронки</text>
+  <text x="400" y="62" text-anchor="middle" font-family="Manrope" font-size="13" fill="#5b6b5d">Шлях від сканування ротової порожнини до постійної фіксації</text>
+
+  <!-- 5 steps -->
+  <g font-family="Manrope" font-size="12" fill="#3c493d">
+    <!-- Step 1 -->
+    <g transform="translate(40,110)">
+      <rect width="130" height="180" rx="14" fill="url(#step)" stroke="#cdd9cd"/>
+      <circle cx="65" cy="38" r="22" fill="#3c493d"/>
+      <text x="65" y="44" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#fff">1</text>
+      <text x="65" y="85" text-anchor="middle" font-weight="700" font-size="13">3D-скан</text>
+      <text x="65" y="105" text-anchor="middle">у клініці</text>
+      <text x="65" y="123" text-anchor="middle">~ 3 хв</text>
+      <!-- mini icon -->
+      <rect x="35" y="135" width="60" height="14" rx="4" fill="#3c493d"/>
+      <rect x="88" y="138" width="14" height="8" rx="2" fill="#7c8c7e"/>
+    </g>
+    <!-- Step 2 -->
+    <g transform="translate(190,110)">
+      <rect width="130" height="180" rx="14" fill="url(#step)" stroke="#cdd9cd"/>
+      <circle cx="65" cy="38" r="22" fill="#3c493d"/>
+      <text x="65" y="44" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#fff">2</text>
+      <text x="65" y="85" text-anchor="middle" font-weight="700" font-size="13">Лабораторія</text>
+      <text x="65" y="105" text-anchor="middle">CAD-дизайн</text>
+      <text x="65" y="123" text-anchor="middle">~ 1 день</text>
+      <rect x="35" y="135" width="60" height="40" rx="4" fill="#fff" stroke="#3c493d"/>
+      <path d="M40 167 Q65 138 90 167" fill="none" stroke="#3c493d" stroke-width="1.5"/>
+    </g>
+    <!-- Step 3 -->
+    <g transform="translate(340,110)">
+      <rect width="130" height="180" rx="14" fill="url(#step)" stroke="#cdd9cd"/>
+      <circle cx="65" cy="38" r="22" fill="#3c493d"/>
+      <text x="65" y="44" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#fff">3</text>
+      <text x="65" y="85" text-anchor="middle" font-weight="700" font-size="13">Фрезерування</text>
+      <text x="65" y="105" text-anchor="middle">із цирконію</text>
+      <text x="65" y="123" text-anchor="middle">2–4 год</text>
+      <g fill="#7c8c7e" stroke="#3c493d">
+        <rect x="35" y="135" width="60" height="32" rx="4"/>
+        <rect x="58" y="125" width="14" height="14" rx="2" fill="#3c493d"/>
+      </g>
+    </g>
+    <!-- Step 4 -->
+    <g transform="translate(490,110)">
+      <rect width="130" height="180" rx="14" fill="url(#step)" stroke="#cdd9cd"/>
+      <circle cx="65" cy="38" r="22" fill="#3c493d"/>
+      <text x="65" y="44" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#fff">4</text>
+      <text x="65" y="85" text-anchor="middle" font-weight="700" font-size="13">Запікання</text>
+      <text x="65" y="105" text-anchor="middle">синтеризація</text>
+      <text x="65" y="123" text-anchor="middle">у печі</text>
+      <g fill="#fff" stroke="#3c493d">
+        <ellipse cx="65" cy="155" rx="32" ry="14"/>
+        <path d="M33 155 Q65 178 97 155" fill="#f4f1ea"/>
+      </g>
+    </g>
+    <!-- Step 5 -->
+    <g transform="translate(640,110)">
+      <rect width="130" height="180" rx="14" fill="url(#step)" stroke="#cdd9cd"/>
+      <circle cx="65" cy="38" r="22" fill="#3c493d"/>
+      <text x="65" y="44" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="18" fill="#fff">5</text>
+      <text x="65" y="85" text-anchor="middle" font-weight="700" font-size="13">Фіксація</text>
+      <text x="65" y="105" text-anchor="middle">у клініці</text>
+      <text x="65" y="123" text-anchor="middle">30–60 хв</text>
+      <g>
+        <path d="M40 160 Q65 140 90 160 Q65 175 40 160 Z" fill="#f9d9bb" stroke="#3c493d"/>
+        <g fill="#fff" stroke="#3c493d">
+          <rect x="50" y="148" width="6" height="10" rx="1"/>
+          <rect x="58" y="146" width="6" height="12" rx="1"/>
+          <rect x="66" y="146" width="6" height="12" rx="1"/>
+          <rect x="74" y="148" width="6" height="10" rx="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- connectors -->
+  <g stroke="#3c493d" stroke-width="2" fill="#3c493d">
+    <path d="M170 200 L190 200" stroke-linecap="round"/>
+    <polygon points="190,196 200,200 190,204"/>
+    <path d="M320 200 L340 200" stroke-linecap="round"/>
+    <polygon points="340,196 350,200 340,204"/>
+    <path d="M470 200 L490 200" stroke-linecap="round"/>
+    <polygon points="490,196 500,200 490,204"/>
+    <path d="M620 200 L640 200" stroke-linecap="round"/>
+    <polygon points="640,196 650,200 640,204"/>
+  </g>
+
+  <text x="400" y="335" text-anchor="middle" font-family="Manrope" font-size="12" fill="#5b6b5d">
+    Harmony Clinic · Одеса · повний цикл цифрової стоматології
+  </text>
+</svg>

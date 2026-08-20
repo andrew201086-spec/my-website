@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Аналитика: dataLayer + gtag-заглушка доступны сразу (без сети);
+         тяжёлые библиотеки (GTM, gtag.js, Facebook Pixel) грузятся по первому
+         взаимодействию пользователя, поэтому не блокируют первый рендер. -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','G-6ZP07STZJF');
+    gtag('config','AW-11468618731');
+
+    /* Конверсия: событие ставится в очередь сразу, переход по ссылке гарантирован,
+       даже если библиотека Ads ещё не догрузилась */
+    function gtag_report_conversion(url){
+        var navigate=function(){ if(typeof url!=='undefined'){ window.location=url; } };
+        gtag('event','conversion',{'send_to':'AW-11468618731/s-heCPmCmt0bEOv31Nwq','event_callback':navigate});
+        loadDeferredTags();           /* на этом клике начинаем грузить Ads/GTM */
+        setTimeout(navigate, 700);    /* страховка: ссылка/звонок откроется в любом случае */
+        return false;
+    }
+    /* Совместимость со старыми обработчиками onclick на страницах услуг */
+    var gtag_report_call = gtag_report_conversion;
+    var gtag_report_messenger = gtag_report_conversion;
+
+    /* GTM, gtag.js и Facebook Pixel — только после реального взаимодействия */
+    var __tagsLoaded=false;
+    function loadDeferredTags(){
+        if(__tagsLoaded)return; __tagsLoaded=true;
+        /* Google Tag Manager */
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PBZF8G5B');
+        /* Google Ads / GA4 */
+        var ga=document.createElement('script'); ga.async=true; ga.src='https://www.googletagmanager.com/gtag/js?id=G-6ZP07STZJF'; document.head.appendChild(ga);
+        /* Facebook Pixel */
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','451786880568879');fbq('track','PageView');
+    }
+    ['pointerdown','touchstart','mousedown','keydown','scroll'].forEach(function(ev){
+        window.addEventListener(ev, loadDeferredTags, {once:true, passive:true});
+    });
+    /* Для тех, кто вообще не взаимодействует — сильно после load, вне критического пути */
+    window.addEventListener('load', function(){ setTimeout(loadDeferredTags, 6000); });
+    </script>
+
+
+
+
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="UA-51">
+    <meta name="geo.placename" content="Одеса">
+    <meta name="geo.position" content="46.4258;30.7488">
+    <meta name="ICBM" content="46.4258, 30.7488">
+    <link rel="canonical" href="https://harmonyclinic.od.ua/implants-ua.html">
+    <link rel="alternate" hreflang="uk-UA" href="https://harmonyclinic.od.ua/implants-ua.html">
+    <link rel="alternate" hreflang="ru-UA" href="https://harmonyclinic.od.ua/ru/implants-ua.html">
+    <link rel="alternate" hreflang="x-default" href="https://harmonyclinic.od.ua/implants-ua.html">
+<title>Імплантація зубів в Одесі — ціна від 620$ | Harmony Clinic</title>
+    <meta name="description"
+        content="Імплантація зубів в Одесі під ключ від 620$: Straumann, MIS, Alpha Dent. Цифровий протокол 3Shape, навігаційний шаблон, кісткова пластика. ☎ +38 068 779 45 47">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="Harmony Clinic">
+    
+    <meta property="og:title" content="Імплантація зубів в Одесі — ціна від 620$ | Harmony Clinic">
+    <meta property="og:description" content="Цифрова імплантація зубів в Одесі: 3D-планування, навігаційні шаблони, імпланти Straumann, MIS, Alpha Dent. Ціна під ключ від 620$.">
+    <meta property="og:url" content="https://harmonyclinic.od.ua/implants-ua.html">
+    <meta property="og:image" content="https://harmonyclinic.od.ua/images/clinic.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Імплантація зубів в Одесі — ціна від 620$ | Harmony Clinic">
+    <meta name="twitter:description" content="Цифрова імплантація зубів в Одесі: 3D-планування, навігаційні шаблони, імпланти Straumann, MIS, Alpha Dent. Ціна під ключ від 620$.">
+    <meta name="twitter:image" content="https://harmonyclinic.od.ua/images/clinic.jpg">
+    
+    
+    <link rel="icon" type="image/png" href="images/Logo.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "@id": "https://harmonyclinic.od.ua/#org",
+      "name": "Harmony Clinic",
+      "url": "https://harmonyclinic.od.ua/implants-ua.html",
+      "image": "https://harmonyclinic.od.ua/images/Logo.png",
+      "telephone": "+380687794547",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Новаторів, 1А",
+        "addressLocality": "Одеса",
+        "addressRegion": "Одеська область",
+        "postalCode": "65114",
+        "addressCountry": "UA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.4258,
+        "longitude": 30.7488
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Одеса"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Київський район"
+        },
+        {
+          "@type": "Place",
+          "name": "Таїрова"
+        },
+        {
+          "@type": "Place",
+          "name": "Черемушки"
+        },
+        {
+          "@type": "Place",
+          "name": "Сьомий кілометр"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/harmony.dental.clinic.od/",
+        "https://www.facebook.com/andrei.maliukin/"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://harmonyclinic.od.ua/#surgeon",
+      "name": "Олег Швець",
+      "jobTitle": "Хірург-імплантолог",
+      "medicalSpecialty": "https://schema.org/Dentistry",
+      "image": "https://harmonyclinic.od.ua/images/oleg.jpg",
+      "worksFor": {
+        "@id": "https://harmonyclinic.od.ua/#org"
+      }
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://harmonyclinic.od.ua/implants-ua.html#procedure",
+      "name": "Імплантація зубів",
+      "alternateName": [
+        "Dental implantation",
+        "Встановлення імплантів"
+      ],
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "bodyLocation": "Зуби, щелепа",
+      "howPerformed": "Цифрове сканування 3Shape TRIOS 4, 3D-планування, малоінвазивна установка титанового імпланта.",
+      "preparation": "Ортопантомограма або КТ, гігієнічна підготовка, консультація хірурга.",
+      "followup": "Контрольний огляд через 7-10 днів, остеоінтеграція 3-6 місяців, потім протезування.",
+      "performer": [
+        {
+          "@id": "https://harmonyclinic.od.ua/#surgeon"
+        },
+        {
+          "@id": "https://harmonyclinic.od.ua/#org"
+        }
+      ],
+      "status": "https://schema.org/ActiveActionStatus"
+    },
+    {
+      "@type": "Service",
+      "name": "Імплантація зубів в Одесі",
+      "provider": {
+        "@id": "https://harmonyclinic.od.ua/#org"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Одеса"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Київський район"
+        },
+        {
+          "@type": "Place",
+          "name": "Таїрова"
+        },
+        {
+          "@type": "Place",
+          "name": "Черемушки"
+        },
+        {
+          "@type": "Place",
+          "name": "Сьомий кілометр"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "620",
+        "availability": "https://schema.org/InStock"
+      },
+      "serviceType": "Дентальна імплантація",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Імплантація зубів — прайс",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Імплантація під ключ (Unident, Україна)",
+            "price": "620",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Імплантація під ключ (Alpha Dent, Німеччина)",
+            "price": "700",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Імплантація під ключ (Straumann, Швейцарія)",
+            "price": "1100",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Встановлення імпланта MIS C1 (Ізраїль)",
+            "price": "400",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Цирконієва коронка на імпланті",
+            "price": "300",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Головна",
+          "item": "https://harmonyclinic.od.ua/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Послуги",
+          "item": "https://harmonyclinic.od.ua/services-ua.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Імплантація зубів",
+          "item": "https://harmonyclinic.od.ua/implants-ua.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Скільки коштує імплантація зуба в Одесі?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Імплантація під ключ у Harmony Dental Clinic коштує від 620 $ — сюди вже входять імплант, абатмент і коронка. Окремо хірургічний етап (встановлення імпланта) — від 300 $, коронка на імплант — від 270 $. Точну суму розраховуємо на консультації після КТ і фіксуємо в плані лікування."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи болить імплантація зубів?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сама операція проходить під місцевою анестезією — пацієнт відчуває дотик і тиск, але не біль. Легкий дискомфорт і невеликий набряк можливі протягом 2–3 днів після встановлення імпланта; вони знімаються звичайними знеболювальними за призначенням лікаря."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Скільки часу триває імплантація?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Встановлення одного імпланта займає 30–60 хвилин. Повний цикл до постійної коронки — 3–6 місяців: стільки потрібно кістці на остеоінтеграцію. При одномоментній імплантації строк скорочується, бо видалення й установка імпланта проходять за один візит."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи можна поставити імплант одразу після видалення зуба?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так, це одномоментна імплантація: імплант встановлюється у лунку щойно видаленого зуба. Умови — відсутність гострого запалення та збережені стінки лунки, що оцінюється за комп'ютерною томографією. Такий протокол зберігає контур ясен і економить 3–4 місяці лікування."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Що робити, якщо не вистачає кістки для імпланта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дефіцит кістки — не протипоказання, а окремий етап лікування. Залежно від об'єму застосовуємо напрямлену кісткову регенерацію, закритий або відкритий синус-ліфтинг. У багатьох випадках кісткова пластика виконується одночасно зі встановленням імпланта, без окремої операції."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Скільки служить зубний імплант?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "За належної гігієни та регулярних оглядів імплант служить десятиліттями — виробники Straumann, MIS і Alpha Dent дають на сам імплант довічну гарантію. Коронка на імпланті — розхідна частина конструкції, її середній строк служби 10–15 років."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи дають гарантію на імпланти?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так. Виробник дає довічну гарантію на сам імплант, а клініка — гарантію на роботу лікаря. Умова збереження гарантії стандартна: профілактичний огляд і професійна гігієна раз на пів року."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи обов'язкова КТ перед імплантацією?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так. Комп'ютерна томографія показує реальну висоту й ширину кістки, положення гайморової пазухи та нижньощелепного нерва. Без КТ неможливо ані спланувати вісь імпланта, ані виготовити навігаційний хірургічний шаблон, ані чесно назвати ціну."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи встановлюєте ви імпланти Neodent, Osstem або Nobel Biocare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ми працюємо з системами Straumann (Швейцарія), MIS C1 (Ізраїль), Alpha Dent (Німеччина) та Unident (Україна). Якщо ви орієнтувалися на іншу систему, на консультації порівняємо характеристики й покажемо, який аналог із нашого переліку відповідає вашому запиту та бюджету."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Скільки імплантів потрібно, якщо немає трьох зубів поспіль?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зазвичай двох: імпланти встановлюються по краях дефекту й слугують опорами для мостоподібної конструкції. Це дешевше, ніж імплант під кожен зуб, і повністю відновлює жувальну функцію. Остаточне рішення приймається за КТ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи можна курити після імплантації зубів?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перші два тижні курити не можна категорично: нікотин звужує судини, порушує кровопостачання рани й різко підвищує ризик відторгнення. Надалі курити не заборонено, але ризик залишається підвищеним — у курців імпланти втрачаються у 2–3 рази частіше, тому й контрольні огляди їм потрібні частіше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Що можна їсти після встановлення імпланта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перші 2–3 дні — м'яка тепла їжа: супи-пюре, каші, йогурти, паштети; жувати потрібно на протилежному боці. Виключіть гаряче, гостре, тверде (горіхи, сухарі) й алкоголь. Через тиждень раціон повертається до звичного, а повноцінно навантажувати імплант можна після фіксації постійної коронки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи можна робити МРТ, якщо стоїть імплант?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так. Титан немагнітний, тому дентальні імпланти не є протипоказанням до магнітно-резонансної томографії й не зміщуються в томографі. На знімках голови та шиї можливий локальний артефакт у зоні коронки — про наявність імплантів варто попередити рентген-лаборанта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи ставлять імпланти при пародонтиті?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ставлять, але тільки після лікування пародонтиту й досягнення стабільної гігієни. Встановлювати імплант у порожнину рота з активним запаленням не можна: бактерії з пародонтальних кишень колонізують поверхню імпланта й запускають периімплантит. Спершу — пародонтологічне лікування, потім імплантація."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://harmonyclinic.od.ua/implants-ua.html#webpage",
+      "url": "https://harmonyclinic.od.ua/implants-ua.html",
+      "name": "Імплантація зубів в Одесі — ціна від 620$ | Harmony Clinic",
+      "description": "Імплантація зубів в Одесі під ключ від 620$: Straumann, MIS, Alpha Dent. Цифровий протокол 3Shape, навігаційний шаблон, кісткова пластика. ☎ +38 068 779 45 47",
+      "inLanguage": "uk-UA",
+      "about": {
+        "@id": "https://harmonyclinic.od.ua/implants-ua.html#procedure"
+      },
+      "audience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Пацієнти"
+      },
+      "lastReviewed": "2026-08-12",
+      "reviewedBy": {
+        "@id": "https://harmonyclinic.od.ua/#surgeon"
+      },
+      "isPartOf": {
+        "@id": "https://harmonyclinic.od.ua/#org"
+      }
+    }
+  ]
+}
+</script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --header-bg: #000000;
+            --header-text: #ffffff;
+            --primary: #526154;
+            --primary-light: #6b7c6d;
+            --primary-dark: #3c493d;
+            --accent: #d4af37; /* Noble gold for accents */
+            --text-dark: #1a1a1a;
+            --text-grey: #555555;
+            --bg-light: #fdfdfd;
+            --bg-noble: #f4f5f2;
+            --border: rgba(0, 0, 0, 0.08);
+            --radius: 30px;
+            --radius-sm: 15px;
+            --radius-btn: 50px;
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.04);
+            --shadow-premium: 0 20px 40px rgba(82, 97, 84, 0.12);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .noble-bg {
+            background: linear-gradient(180deg, #ffffff 0%, var(--bg-noble) 100%);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2.section-title {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            padding: 20px 45px;
+            border-radius: var(--radius-btn);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(82, 97, 84, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: var(--shadow-premium);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: auto;
+            max-height: 60px;
+            filter: brightness(0) invert(1);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .nav-menu a {
+            color: #ffffff;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .header-phone {
+            color: #fff;
+            font-weight: 700;
+            border: 1px solid #fff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        /* Language Switcher */
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            font-weight: 800;
+            font-size: 14px;
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .lang-switch a {
+            opacity: 0.6;
+        }
+
+        .lang-switch a.active {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .lang-switch a:hover {
+            opacity: 1;
+            color: var(--primary);
+        }
+
+        /* Hero */
+        .hero-implants {
+            padding: 80px 0;
+            background: radial-gradient(circle at 20% 50%, rgba(82, 97, 84, 0.25) 0%, rgba(0, 0, 0, 0) 50%),
+                linear-gradient(135deg, #0f172a 0%, #020617 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            font-size: 46px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .sub-headline {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+            display: block;
+        }
+
+        .hero-benefits {
+            margin-bottom: 35px;
+        }
+
+        .hero-benefits p {
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        .hero-benefits li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: left;
+        }
+
+        .hero-benefits li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Modern Booking Strip with Glassmorphism */
+        .booking-strip {
+            padding: 80px 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                        url('images/clinic.jpg') center/cover;
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(10px);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .booking-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .btn-msg {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 35px;
+            border-radius: var(--radius-btn);
+            font-weight: 700;
+            font-size: 15px;
+            color: #fff;
+            transition: var(--transition);
+            cursor: pointer;
+            background: var(--primary);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-msg:hover {
+            background: var(--primary-dark);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-premium);
+        }
+
+        /* Steps */
+        .steps-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .step-item {
+            padding: 50px 35px;
+            background: #fff;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .step-item:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-premium);
+        }
+
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-noble);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .step-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke-width: 1.5;
+        }
+
+        .step-number {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+        }
+
+        .step-item h3 {
+            margin-bottom: 5px;
+            font-weight: 800;
+            font-size: 22px;
+            color: var(--text-dark);
+        }
+
+        /* Works Carousel */
+        .carousel-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 45px;
+        }
+
+        .carousel-track-container {
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            padding: 10px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            width: 50%;
+        }
+
+        .c-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            border: 1px solid #ddd;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+        }
+
+        .c-prev {
+            left: 0;
+        }
+
+        .c-next {
+            right: 0;
+        }
+
+        .case-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .case-card:hover {
+            box-shadow: var(--shadow-premium);
+        }
+
+        .before-after-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .photo-wrapper img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            backdrop-filter: blur(4px);
+            font-size: 10px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* FAQ Accordion */
+        .info-accordion {
+            padding: 80px 0;
+            background: #fff;
+            border-top: 1px solid var(--border);
+        }
+
+        .accordion-item {
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .accordion-item:hover {
+            border-color: var(--primary-light);
+        }
+
+        .accordion-header {
+            padding: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .accordion-header:hover {
+            background-color: var(--bg-noble);
+            color: var(--primary);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .content-padding {
+            padding: 0 25px 25px 25px;
+            color: var(--text-grey);
+            font-size: 15px;
+        }
+
+        .check-icon {
+            color: var(--primary);
+            font-weight: 800;
+            margin-right: 10px;
+        }
+
+        /* PRICES STYLES (NEW/UPDATED) */
+        .prices {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .package-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 50px 35px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .package-card.featured {
+            border: 2px solid var(--primary);
+            box-shadow: var(--shadow-premium);
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        .badge {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background: var(--accent);
+            color: #fff;
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        .package-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .package-price {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 15px 0 5px;
+        }
+
+        .package-features {
+            text-align: left;
+            margin: 25px 0;
+            flex-grow: 1;
+        }
+
+        /* ГАЛОЧКИ ТОЛЬКО ЧЕРЕЗ CSS */
+        .package-features li {
+            padding: 10px 0 10px 35px;
+            position: relative;
+            font-weight: 600;
+            font-size: 15px;
+            border-bottom: 1px dashed #eee;
+            color: #444;
+        }
+
+        .package-features li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+
+        .btn-package {
+            width: 100%;
+            padding: 20px;
+            border-radius: var(--radius-btn);
+            font-weight: 800;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            background: #1a1a1a;
+            color: #fff;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .btn-package.teal {
+            background: var(--primary);
+        }
+
+        .btn-package:hover {
+            transform: translateY(-3px);
+            opacity: 0.95;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* TABLES STYLES */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 77, 64, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .price-table th,
+        .price-table td {
+            padding: 18px 25px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .price-table th {
+            background-color: var(--primary);
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .price-val {
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .price-origin {
+            color: var(--text-grey);
+            font-size: 13px;
+            margin-left: 10px;
+        }
+
+        /* Footer, Social Icons, Floating Widget — стилі підключено через styles.css */
+
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .carousel-slide {
+                width: 100%;
+            }
+
+            .c-btn {
+                display: none;
+            }
+
+            .lang-switch {
+                margin-left: auto;
+                margin-right: 15px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZF8G5B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo"><picture><source srcset="images/Logo.webp" type="image/webp"><img src="images/Logo.png" alt="Harmony Clinic" width="1072" height="1071"></picture></a>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="services-ua.html">Послуги</a></li>
+                    <li><a href="index.html#team">Лікарі</a></li>
+                    <li><a href="index.html#works">Роботи</a></li>
+                    <li><a href="index.html#reviews">Відгуки</a></li>
+                    <li><a href="index.html#prices">Ціни</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <a href="tel:+380687794547" class="header-phone"
+                    onclick="return gtag_report_call('tel:+380687794547');">+38 068 779 45 47</a>
+                <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-implants">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 6px 15px; border-radius: 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.2);">
+                    <span style="width: 8px; height: 8px; background: #4ADE80; border-radius: 50%; box-shadow: 0 0 10px #4ADE80;"></span>
+                    <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Цифровий протокол 2026</span>
+                </div>
+                <h1>Імплантація зубів в Одесі за цифровим протоколом</h1>
+                <span class="sub-headline">3D-планування та навігаційні шаблони для ідеального результату без зайвого травматизму.</span>
+                <div class="hero-benefits">
+                    <p style="text-transform: uppercase; font-size: 12px; letter-spacing: 2px; color: var(--accent); margin-bottom: 15px;">Технології майбутнього:</p>
+                    <ul>
+                        <li><strong>Сканер 3Shape TRIOS 4</strong> — жодних зліпків та дискомфорту;</li>
+                        <li><strong>Мікронна точність</strong> завдяки навігаційним шаблонам;</li>
+                        <li><strong>Повна передбачуваність</strong> естетики та функції.</li>
+                    </ul>
+                </div>
+                <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                    <a href="viber://chat?number=%2B380687794547" class="btn-primary"
+                        onclick="return gtag_report_messenger('viber://chat?number=%2B380687794547');">Консультація хірурга</a>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.6); font-weight: 600;">⚡️ План лікування за 30 хв</div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <picture><source srcset="images/oleg.webp" type="image/webp"><img src="images/oleg.jpg" alt="Олег Швець — хірург-імплантолог клініки Harmony Clinic Одеса" width="725" height="1024" fetchpriority="high" decoding="async"></picture>
+            </div>
+        </div>
+    </section>
+
+    <nav aria-label="Навігаційний ланцюжок" style="background:var(--bg-light);padding:14px 0;font-size:13px;border-bottom:1px solid var(--border);">
+        <div class="container">
+            <a href="index.html" style="color:var(--primary);font-weight:700;">Головна</a>
+            <span style="margin:0 8px;color:#aaa;">/</span>
+            <a href="services-ua.html" style="color:var(--primary);font-weight:700;">Послуги</a>
+            <span style="margin:0 8px;color:#aaa;">/</span>
+            <span style="color:var(--text-grey);">Імплантація зубів</span>
+        </div>
+    </nav>
+
+    <section class="about" style="padding:70px 0 50px;">
+        <div class="container">
+            <h2 class="section-title">Імплантація зубів в Одесі — від консультації до нового зуба</h2>
+            <div style="max-width:900px;margin:0 auto;color:var(--text-grey);font-size:16px;">
+                <p style="margin-bottom:18px;"><strong>Імплантація зубів</strong> — це відновлення втраченого зуба
+                    титановим коренем (імплантом), на який фіксується коронка. На відміну від мостоподібного протеза,
+                    імплант не потребує обточування сусідніх здорових зубів і зупиняє атрофію кістки на місці
+                    видаленого зуба. Жувальне навантаження знову передається на щелепу — саме тому імплантація
+                    вважається золотим стандартом заміщення дефектів зубного ряду.</p>
+                <p style="margin-bottom:18px;">Клініка <strong>Harmony Dental Clinic</strong> працює у Київському
+                    районі Одеси, на вул. Новаторів, 1А — це кілька хвилин від Таїрова, Черемушок і Сьомого кілометра.
+                    Ми встановлюємо імпланти <strong>Straumann</strong> (Швейцарія), <strong>MIS C1</strong>
+                    (Ізраїль), <strong>Alpha Dent</strong> (Німеччина) та <strong>Unident</strong> (Україна) —
+                    від преміум- до бюджетного сегмента. Вартість імплантації зуба під ключ в Одесі —
+                    <strong>від 620 $</strong> разом із абатментом і коронкою.</p>
+                <p style="margin-bottom:30px;">Кожен випадок плануємо цифрово: комп'ютерна томографія, сканування
+                    <strong>3Shape TRIOS 4</strong> без зліпків і навігаційний хірургічний шаблон, який задає імпланту
+                    точну вісь і глибину. Це робить операцію коротшою, малотравматичною і передбачуваною за
+                    результатом.</p>
+                <ul class="sterile-list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 30px;">
+                    <li><span class="check-icon">✓</span><span>Встановлення імпланта — <strong>30–60 хвилин</strong> під місцевою анестезією</span></li>
+                    <li><span class="check-icon">✓</span><span>Приживлення (остеоінтеграція) — <strong>3–6 місяців</strong></span></li>
+                    <li><span class="check-icon">✓</span><span><strong>Довічна гарантія виробника</strong> на сам імплант</span></li>
+                    <li><span class="check-icon">✓</span><span>Планування за <strong>КТ і 3D-шаблоном</strong> — без «на око»</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-strip noble-bg">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 10px;">Записатися онлайн</h2>
+            <p style="color: var(--text-grey); font-weight: 500;">Оберіть зручний месенджер для швидкої відповіді лікаря</p>
+            <div class="booking-buttons">
+                <a href="viber://chat?number=%2B380687794547" class="btn-msg"
+                    onclick="return gtag_report_messenger('viber://chat?number=%2B380687794547');">
+                    <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path
+                            d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+                    </svg>
+                    Viber
+                </a>
+                <a href="https://t.me/+380687794547" target="_blank" class="btn-msg"
+                    onclick="return gtag_report_messenger('https://t.me/+380687794547');">
+                    <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path
+                            d="M9.78,18.65l0.13-3.14l5.63-5.07c0.49-0.44-0.11-0.69-0.76-0.29L8.4,14.2l-3.03-0.95c-0.66-0.21-0.67-0.66,0.14-0.97L17.36,7.7c0.56-0.21,1.05,0.13,0.87,0.86L16.14,18.2c-0.12,0.59-0.87,0.72-1.41,0.45L9.78,18.65z" />
+                    </svg>
+                    Telegram
+                </a>
+                <a href="https://www.instagram.com/harmony.dental.clinic.od/" target="_blank" class="btn-msg"
+                    onclick="return gtag_report_messenger('https://www.instagram.com/harmony.dental.clinic.od/');">
+                    <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path
+                            d="M12,2.2c3.2,0,3.6,0,4.9,0.1c1.2,0.1,1.8,0.3,2.2,0.5c0.6,0.2,1,0.5,1.4,0.9c0.4,0.4,0.7,0.8,0.9,1.4c0.2,0.4,0.4,1.1,0.5,2.2c0.1,1.3,0.1,1.6,0.1,4.9s0,3.6-0.1,4.9c-0.1,1.2-0.3,1.8-0.5,2.2c-0.2,0.6-0.5,1-0.9,1.4c-0.4,0.4-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.5C8.4,2.2,8.8,2.2,12,2.2 M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2s-1.1,1.4-1.4,2.2C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9c0.3,0.8,0.7,1.5,1.4,2.2c0.7,0.7,1.4,1.1,2.2,1.4c0.8,0.3,1.7,0.5,2.9,0.6c1.2,0.1,1.6,0.1,4.9,0.1s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.2-1.4c0.7-0.7,1.1-1.4,1.4-2.2c0.3-0.8,0.5-1.7,0.6-2.9c0.1-1.2,0.1-1.6,0.1-4.9s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9c-0.3-0.8-0.7-1.5-1.4-2.2c-0.7-0.7-1.4-1.1-2.2-1.4c-0.8-0.3-1.7-0.5-2.9-0.6C15.7,0,15.3,0,12,0z" />
+                    </svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <div class="container">
+            <h2 class="section-title">Як проходить імплантація в Harmony Clinic</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <span class="step-number">Етап 01</span>
+                    <h3>Консультація та 3D-скан</h3>
+                    <p>Цифрове сканування <strong>3Shape TRIOS 4</strong> замість неприємних зліпків. Миттєва 3D-візуалізація.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <span class="step-number">Етап 02</span>
+                    <h3>Точний план</h3>
+                    <p>Детальне обговорення етапів та фіксація повної вартості. Без прихованих доплат.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
+                    <span class="step-number">Етап 03</span>
+                    <h3>Цифрове планування</h3>
+                    <p>Створення віртуального пацієнта та моделювання положення імпланта ще до операції.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+                    </div>
+                    <span class="step-number">Етап 04</span>
+                    <h3>Навігаційний шаблон</h3>
+                    <p>Друк індивідуального хірургічного шаблону для встановлення імпланта з мікронною точністю.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.5-1 2-3c1.5-2 3-4 6-5"/><path d="M15 8h5s1 .5 3 2c2 1.5 4 3 5 6"/></svg>
+                    </div>
+                    <span class="step-number">Етап 05</span>
+                    <h3>Процедура імплантації</h3>
+                    <p>Швидке та безболісне встановлення за шаблоном. Мінімум травматизації та набряків.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                    </div>
+                    <span class="step-number">Етап 06</span>
+                    <h3>Протезування</h3>
+                    <p>Встановлення постійної естетичної коронки, яка ідеально відтворює форму вашого зуба.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">Що відбувається, якщо вчасно не вставити зуб</h2>
+            <p style="max-width:900px;margin:-20px auto 40px;text-align:center;color:var(--text-grey);font-size:16px;">
+                Втрата навіть одного жувального зуба запускає ланцюг змін, які помітні не одразу. Перші місяці нічого
+                не турбує — саме тому візит до лікаря відкладають на роки. Але кожен рік очікування робить майбутнє
+                лікування довшим і дорожчим.</p>
+            <div class="types-grid">
+                <div class="type-item">
+                    <h3>Атрофія кістки</h3>
+                    <p>Кістка живе під навантаженням. Щойно корінь зуба зникає, ділянка перестає отримувати
+                        жувальний тиск і починає розсмоктуватися: до <strong>25 % ширини за перший рік</strong> і до
+                        40–60 % за три роки. Саме тому імплант, встановлений через рік після видалення, часто вже
+                        потребує кісткової пластики.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Зміщення сусідніх зубів</h3>
+                    <p>Сусідні зуби нахиляються у бік порожнечі, а зуб-антагоніст із протилежної щелепи поступово
+                        висувається з лунки. Через 2–3 роки місця для коронки може просто не залишитися — спершу
+                        доведеться повертати зуби на місце ортодонтично.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Перевантаження решти зубів</h3>
+                    <p>Навантаження, яке припадало на втрачений зуб, перерозподіляється на сусідні. Вони стираються
+                        швидше, з'являються тріщини емалі, рухливість і оголення шийок. Один невідновлений зуб з
+                        часом тягне за собою наступні.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Естетика й травлення</h3>
+                    <p>Відсутність бічних зубів змінює овал обличчя: щоки западають, поглиблюються носогубні
+                        складки. Погано пережована їжа збільшує навантаження на шлунок, а при втраті передніх зубів
+                        страждає ще й дикція.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <div class="container">
+            <h2 class="section-title">Види імплантації зубів</h2>
+            <div class="types-grid">
+                <div class="type-item">
+                    <h3>Одномоментна імплантація</h3>
+                    <p>Імплант встановлюється <strong>одразу після видалення зуба</strong>, у ту саму лунку. Це
+                        скорочує лікування на 3–4 місяці, зберігає контур ясен і об'єм кістки. Протокол можливий,
+                        якщо в ділянці немає гострого запалення, а стінки лунки збережені — це видно на КТ.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Класична (двоетапна) імплантація</h3>
+                    <p>Найпередбачуваніший протокол. Імплант встановлюють у сформовану кістку, далі 3–6 місяців
+                        остеоінтеграції, потім формувач ясен, абатмент і постійна коронка. Підходить майже в
+                        будь-якій клінічній ситуації.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Імплантація переднього зуба</h3>
+                    <p>Естетична зона вимагає окремої уваги до профілю ясен і кольору коронки. Використовуємо
+                        індивідуальний абатмент і безметалеву коронку (цирконій або E-max), щоб край ясен не
+                        просвічувався сірим, а зуб не відрізнявся від сусідніх.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Відновлення жувальних зубів</h3>
+                    <p>Коли поспіль відсутні 2–3 зуби, зазвичай достатньо <strong>двох імплантів</strong>, на які
+                        фіксується мостоподібна конструкція. Рішення дешевше, ніж імплант під кожен зуб, і повністю
+                        повертає жувальну функцію.</p>
+                </div>
+                <div class="type-item" style="border: 2px solid var(--primary); background: #f4f7f4;">
+                    <span style="background:var(--primary);color:#fff;font-size:11px;font-weight:800;padding:3px 8px;border-radius:4px;text-transform:uppercase;">Всі зуби за 1 день</span>
+                    <h3 style="margin-top:8px;">Повна імплантація: All-on-4 та All-on-6</h3>
+                    <p>Якщо відсутні всі зуби або вони підлягають видаленню — встановлюємо незнімний міст на 4 або 6 імплантах у день операції без довгого нарощування кістки.</p>
+                    <p style="margin-top:12px;"><a href="all-on-4-odessa.html" style="color:var(--primary);font-weight:800;text-decoration:underline;">Детальніше про технологію All-on-4 в Одесі →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">Системи імплантів, з якими ми працюємо</h2>
+            <div class="types-grid">
+                <div class="type-item">
+                    <h3>Straumann <span style="font-size:13px;color:var(--text-grey);font-weight:600;">Швейцарія</span></h3>
+                    <p>Преміум-сегмент і найбільша база клінічних досліджень у світі. Поверхня SLA пришвидшує
+                        приживлення. Обираємо, коли потрібна максимальна передбачуваність — складні випадки,
+                        естетична зона, знижена регенерація.</p>
+                </div>
+                <div class="type-item">
+                    <h3>MIS C1 <span style="font-size:13px;color:var(--text-grey);font-weight:600;">Ізраїль</span></h3>
+                    <p>Оптимальний баланс ціни та якості. Конічна форма й агресивна різьба дають високу первинну
+                        стабільність, що особливо важливо при одномоментній імплантації.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Alpha Dent <span style="font-size:13px;color:var(--text-grey);font-weight:600;">Німеччина</span></h3>
+                    <p>Європейська якість у середньому ціновому сегменті — найпопулярніший вибір наших пацієнтів.
+                        Надійна система для відновлення як жувальних, так і фронтальних зубів.</p>
+                </div>
+                <div class="type-item">
+                    <h3>Unident <span style="font-size:13px;color:var(--text-grey);font-weight:600;">Україна</span></h3>
+                    <p>Бюджетне рішення, коли потрібно відновити жувальну групу без переплати. Титановий сплав і
+                        протокол установки — ті самі, різниця в поверхні та обсязі досліджень.</p>
+                </div>
+            </div>
+            <p style="max-width:900px;margin:30px auto 0;text-align:center;color:var(--text-grey);font-size:15px;">
+                Якщо ви розглядали <strong>Neodent</strong>, <strong>Osstem</strong>, <strong>Nobel Biocare</strong>
+                чи іншу систему — на консультації порівняємо їхні характеристики з тими, які встановлюємо ми, і
+                чесно пояснимо, де різниця реальна, а де лише в маркетингу.
+            </p>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <div class="container">
+            <h2 class="section-title">Імплант, міст чи знімний протез — що обрати</h2>
+            <p style="max-width:900px;margin:-20px auto 35px;text-align:center;color:var(--text-grey);font-size:16px;">
+                Імплантація — не єдиний спосіб закрити дефект. Принципова відмінність у тому, що
+                <strong>імплант замінює корінь зуба</strong>, а міст і знімний протез працюють лише над яснами і
+                ніяк не зупиняють атрофію кістки.</p>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Критерій</th>
+                        <th>Імплант</th>
+                        <th>Мостоподібний протез</th>
+                        <th>Знімний протез</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Обточування сусідніх зубів</td>
+                        <td class="price-val">Не потрібне</td>
+                        <td>Обов'язкове — два живі зуби під коронки</td>
+                        <td>Не потрібне</td>
+                    </tr>
+                    <tr>
+                        <td>Збереження кістки</td>
+                        <td class="price-val">Зупиняє атрофію</td>
+                        <td>Не зупиняє: кістка під мостом просідає</td>
+                        <td>Не зупиняє, атрофія прискорюється</td>
+                    </tr>
+                    <tr>
+                        <td>Середній строк служби</td>
+                        <td class="price-val">Десятиліття</td>
+                        <td>7–10 років</td>
+                        <td>3–5 років, потребує перебазування</td>
+                    </tr>
+                    <tr>
+                        <td>Відчуття в роті</td>
+                        <td class="price-val">Як власний зуб</td>
+                        <td>Близько до власних зубів</td>
+                        <td>Стороннє тіло, можливий блювотний рефлекс</td>
+                    </tr>
+                    <tr>
+                        <td>Догляд</td>
+                        <td class="price-val">Щітка, йоржик, іригатор</td>
+                        <td>Іригатор обов'язково — під мостом накопичується наліт</td>
+                        <td>Знімається і чиститься окремо</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="max-width:900px;margin:30px auto 0;text-align:center;color:var(--text-grey);font-size:15px;">
+                Міст залишається розумним вибором, коли сусідні зуби вже під коронками або значно зруйновані — тоді
+                обточувати фактично нічого. Знімний протез виправданий як тимчасове рішення на період приживлення
+                імплантів або коли до операції є протипоказання. У решті випадків імплант виявляється дешевшим у
+                перерахунку на рік служби.
+            </p>
+        </div>
+    </section>
+
+    <section class="carousel-section works" id="works">
+        <div class="container">
+            <h2 class="section-title">Наші роботи: до та після імплантації зубів в Одесі</h2>
+            <div class="carousel-wrapper">
+                <button class="c-btn c-prev" onclick="moveWorks(-1)">❮</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="worksTrack">
+                        <!-- Case 1 -->
+                        <li class="carousel-slide">
+                            <div class="case-card">
+                                <h3 style="color: var(--primary);">Відновлення втраченого зуба</h3>
+                                <div class="before-after-row">
+                                    <div class="photo-wrapper">
+                                        <span class="label">BEFORE</span>
+                                        <picture><source srcset="images_implants/c1b.webp" type="image/webp"><img src="images_implants/c1b.jpg" alt="Стан зубів пацієнта до імплантації — Harmony Clinic Одеса" width="1280" height="853" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                    <div class="photo-wrapper">
+                                        <span class="label">AFTER</span>
+                                        <picture><source srcset="images_implants/c1a.webp" type="image/webp"><img src="images_implants/c1a.jpg" alt="Результат імплантації зуба в Одесі — кейс 1 Harmony Clinic" width="1280" height="853" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Case 2 -->
+                        <li class="carousel-slide">
+                            <div class="case-card">
+                                <h3 style="color: var(--primary);">Відновлення зубів за допомогою імплантації</h3>
+                                <div class="before-after-row">
+                                    <div class="photo-wrapper">
+                                        <span class="label">BEFORE</span>
+                                        <picture><source srcset="images_implants/c2b.webp" type="image/webp"><img src="images_implants/c2b.jpg" alt="Відсутній зуб до встановлення зубного імпланту — Одеса" width="1080" height="720" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                    <div class="photo-wrapper">
+                                        <span class="label">AFTER</span>
+                                        <picture><source srcset="images_implants/c2a.webp" type="image/webp"><img src="images_implants/c2a.jpg" alt="Зубний імплант з коронкою після операції — кейс 2 Harmony Clinic" width="1080" height="720" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Case 3 -->
+                        <li class="carousel-slide">
+                            <div class="case-card">
+                                <h3 style="color: var(--primary);">Комплексне відновлення посмішки</h3>
+                                <div class="before-after-row">
+                                    <div class="photo-wrapper">
+                                        <span class="label">BEFORE</span>
+                                        <picture><source srcset="images_implants/c3b.webp" type="image/webp"><img src="images_implants/c3b.jpg" alt="Зруйновані зуби до комплексної імплантації — Одеса" width="1280" height="824" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                    <div class="photo-wrapper">
+                                        <span class="label">AFTER</span>
+                                        <picture><source srcset="images_implants/c3a.webp" type="image/webp"><img src="images_implants/c3a.jpg" alt="Відновлений зубний ряд на імплантах — кейс 3 Harmony Clinic" width="1280" height="832" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Case 4 -->
+                        <li class="carousel-slide">
+                            <div class="case-card">
+                                <h3 style="color: var(--primary);">Імплантація в естетичній зоні</h3>
+                                <div class="before-after-row">
+                                    <div class="photo-wrapper">
+                                        <span class="label">BEFORE</span>
+                                        <picture><source srcset="images_implants/c4b.webp" type="image/webp"><img src="images_implants/c4b.jpg" alt="Відсутній жувальний зуб до імплантації — Harmony Clinic Одеса" width="1280" height="853" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                    <div class="photo-wrapper">
+                                        <span class="label">AFTER</span>
+                                        <picture><source srcset="images_implants/c4a.webp" type="image/webp"><img src="images_implants/c4a.jpg" alt="Жувальний зуб після встановлення імпланту та цирконієвої коронки — Одеса" width="1280" height="853" loading="lazy" decoding="async"></picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="c-btn c-next" onclick="moveWorks(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sterilization">
+        <div class="container">
+            <h2 class="section-title">Кісткова пластика та синус-ліфтинг</h2>
+            <div style="max-width:900px;margin:0 auto;color:var(--text-grey);font-size:16px;">
+                <p style="margin-bottom:25px;">Якщо зуб видалили давно, кістка на його місці поступово атрофується —
+                    за перший рік втрачається до 25 % об'єму. Щоб імплант тримався надійно, йому потрібні достатні
+                    висота й ширина кістки. Дефіцит показує <strong>комп'ютерна томографія</strong>, і саме за КТ, а
+                    не «на око», вирішується, чи потрібна кісткова пластика.</p>
+                <div class="types-grid">
+                    <div class="type-item">
+                        <h3>Напрямлена кісткова регенерація</h3>
+                        <p>Кістковий матеріал і захисна мембрана відновлюють ширину гребеня. Часто виконується
+                            <strong>одночасно зі встановленням імпланта</strong> — без окремої операції та без
+                            додаткових місяців очікування.</p>
+                    </div>
+                    <div class="type-item">
+                        <h3>Закритий синус-ліфтинг</h3>
+                        <p>Для верхньої щелепи, коли до дна гайморової пазухи бракує 2–4 мм. Кістковий матеріал
+                            вносять через ложе самого імпланта — без бічного розрізу, малотравматично, імплант
+                            встановлюється в той самий візит.</p>
+                    </div>
+                    <div class="type-item">
+                        <h3>Відкритий синус-ліфтинг</h3>
+                        <p>Коли дефіцит кістки більший. Доступ через бічне вікно, дно пазухи піднімається, простір
+                            заповнюється кістковим матеріалом. Імплант ставлять одразу або через 4–6 місяців —
+                            залежно від первинної стабільності.</p>
+                    </div>
+                </div>
+                <p style="margin-top:25px;font-size:15px;">Вартість кісткової пластики та синус-ліфтингу залежить від
+                    об'єму дефекту й обраного матеріалу, тому розраховується індивідуально після КТ. На консультації
+                    ви отримуєте план лікування з підсумковою сумою — без «доплат по ходу».</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <div class="container">
+            <h2 class="section-title">Скільки часу займає імплантація: календар лікування</h2>
+            <p style="max-width:900px;margin:-20px auto 40px;text-align:center;color:var(--text-grey);font-size:16px;">
+                Друге питання після ціни — «коли я вийду з новим зубом». Ось реальні строки класичного двоетапного
+                протоколу; при одномоментній імплантації перші два кроки об'єднуються в один візит і загальний
+                термін скорочується приблизно на 3–4 місяці.</p>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <span class="step-number">День 0</span>
+                    <h3>Консультація і діагностика</h3>
+                    <p>Огляд, комп'ютерна томографія, оцінка об'єму кістки та стану сусідніх зубів. Тут же —
+                        сканування 3Shape TRIOS 4 і готовий план лікування з підсумковою вартістю. Близько 40–60
+                        хвилин.</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">День 1–7</span>
+                    <h3>Встановлення імпланта</h3>
+                    <p>Операція триває 30–60 хвилин під місцевою анестезією, за навігаційним шаблоном. Набряк спадає
+                        за 2–3 дні, шви знімаємо на 7–10-й день на контрольному огляді.</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">3–6 місяців</span>
+                    <h3>Остеоінтеграція</h3>
+                    <p>Імплант зростається з кісткою. На нижній щелепі це зазвичай 3–4 місяці, на верхній — 4–6, бо
+                        кістка там менш щільна. На цей час дефект за потреби закриваємо тимчасовою конструкцією.</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">2–3 тижні</span>
+                    <h3>Формувач ясен</h3>
+                    <p>Встановлюємо формувач, який створює правильний контур ясенного краю навколо майбутньої
+                        коронки. Без цього етапу коронка виглядає «вставленою», а не вирослою з ясен.</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">10–14 днів</span>
+                    <h3>Постійна коронка</h3>
+                    <p>Скануємо, лабораторія виготовляє індивідуальний абатмент і коронку. Фіксуємо конструкцію,
+                        перевіряємо прикус і змикання — на цьому лікування завершено.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-accordion" id="perevagy">
+        <div class="container">
+            <h2 class="section-title">Переваги цифрової імплантації в Harmony Clinic</h2>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чому сканер 3Shape TRIOS 4 краще
+                    зліпків? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Більше ніякої нудоти від зліпочної маси! Внутрішньоротовий сканер робить тисячі знімків в
+                            секунду, створюючи надточну цифрову копію ваших зубів. Це забезпечує ідеальне
+                            прилягання майбутньої коронки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Коли ми рекомендуємо встановлення
+                    імпланта?
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <ul style="list-style: none;">
+                            <li><span class="check-icon">✓</span>Відсутність одного або декількох зубів (передніх або
+                                жувальних).</li>
+                            <li><span class="check-icon">✓</span>Втрата жувальної функції через дефіцит зубів.</li>
+                            <li><span class="check-icon">✓</span>Повна відсутність зубів на щелепі.</li>
+                            <li><span class="check-icon">✓</span>Необхідність повного відновлення зубного ряду.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Види коронок для фінального результату
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p><strong>• Цирконієві коронки:</strong> найнадійніший вибір, що поєднує надзвичайну
+                            міцність та високу естетику.</p>
+                        <p><strong>• Керамічні E-max:</strong> безметалева кераміка для ідеальної естетики
+                            фронтальної зони посмішки.</p>
+                        <p><strong>• Металокераміка:</strong> перевірене бюджетне рішення для жувальних зубів.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">Показання та протипоказання до імплантації</h2>
+            <div class="about-grid" style="align-items:start;">
+                <div class="type-item">
+                    <h3 style="margin-bottom:18px;">Коли імплантація показана</h3>
+                    <ul class="sterile-list">
+                        <li><span class="check-icon">✓</span><span>Відсутній один зуб — і ви не хочете обточувати сусідні під міст</span></li>
+                        <li><span class="check-icon">✓</span><span>Відсутні кілька зубів поспіль</span></li>
+                        <li><span class="check-icon">✓</span><span>Кінцевий дефект зубного ряду — немає задньої опори для мосту</span></li>
+                        <li><span class="check-icon">✓</span><span>Зуб не підлягає відновленню й потребує видалення</span></li>
+                        <li><span class="check-icon">✓</span><span>Знімний протез незручний або викликає блювотний рефлекс</span></li>
+                        <li><span class="check-icon">✓</span><span>Почалося зміщення сусідніх зубів у бік дефекту</span></li>
+                    </ul>
+                </div>
+                <div class="type-item">
+                    <h3 style="margin-bottom:18px;">Коли потрібна підготовка або консиліум</h3>
+                    <p style="margin-bottom:14px;"><strong>Тимчасові обмеження</strong> — знімаються після лікування:
+                        вагітність і період лактації, гострі запальні процеси, карієс і пародонтит у стадії
+                        загострення, незадовільна гігієна, недостатній об'єм кістки (вирішується пластикою),
+                        куріння понад 10 сигарет на день.</p>
+                    <p><strong>Постійні протипоказання</strong> — імплантація не проводиться або лише за висновком
+                        профільного лікаря: некомпенсований цукровий діабет, онкологічне захворювання в активній
+                        фазі, тяжкі порушення згортання крові, автоімунні захворювання в декомпенсації, вік до 18
+                        років через незавершений ріст щелеп.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sterilization">
+        <div class="container">
+            <h2 class="section-title">Чому імплант може не прижитися</h2>
+            <div style="max-width:900px;margin:0 auto;color:var(--text-grey);font-size:16px;">
+                <p style="margin-bottom:22px;">За даними клінічних досліджень, приживлюваність сучасних імплантів
+                    становить <strong>95–99 %</strong>. Ті кілька відсотків, що залишаються, — майже ніколи не
+                    випадковість: причина зазвичай відома заздалегідь і піддається контролю.</p>
+                <ul class="sterile-list">
+                    <li><span class="check-icon">✓</span><span><strong>Куріння</strong> — головний фактор ризику.
+                        Нікотин звужує судини й погіршує кровопостачання кістки, через що ризик втрати імпланта у
+                        курців у 2–3 рази вищий.</span></li>
+                    <li><span class="check-icon">✓</span><span><strong>Незадовільна гігієна</strong> призводить до
+                        периімплантиту — запалення тканин навколо імпланта. Воно тривалий час не болить і саме тому
+                        виявляється пізно.</span></li>
+                    <li><span class="check-icon">✓</span><span><strong>Некомпенсовані загальні захворювання</strong>,
+                        насамперед цукровий діабет із високим рівнем глюкози: регенерація кістки сповільнюється.</span></li>
+                    <li><span class="check-icon">✓</span><span><strong>Передчасне навантаження</strong> — коронка,
+                        встановлена раніше, ніж імплант зрісся з кісткою, або неправильно розподілений прикус.</span></li>
+                    <li><span class="check-icon">✓</span><span><strong>Помилка планування</strong> — імплант,
+                        встановлений без КТ і хірургічного шаблону, «на око».</span></li>
+                </ul>
+                <p style="margin-top:22px;">Перші три пункти — зона відповідальності пацієнта, останні два — лікаря.
+                    Саме тому ми не встановлюємо імпланти без комп'ютерної томографії й не скорочуємо строк
+                    остеоінтеграції на прохання пацієнта.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="prices" id="prices">
+        <div class="container">
+            <h2 class="section-title">Ціни на імплантацію зубів в Одесі — вартість під ключ</h2>
+            <p style="max-width:900px;margin:-20px auto 40px;text-align:center;color:var(--text-grey);font-size:15px;">
+                Ціна імплантації зуба в Одесі складається з трьох частин: <strong>сам імплант</strong> (залежить від
+                системи та країни-виробника), <strong>абатмент</strong> — перехідник між імплантом і коронкою, та
+                <strong>коронка</strong>. Нижче — готові комплекти «під ключ», у яких уже враховано всі три
+                складові, 3D-навігаційний шаблон і формувач ясен.</p>
+
+            <div class="packages-grid">
+                <div class="package-card">
+                    <p style="color: #666; font-size: 14px;">Імплантація під ключ (Україна)</p>
+                    <div class="package-price">620 $</div>
+                    <ul class="package-features">
+                        <li>Імплант Unident (Україна)</li>
+                        <li>3D шаблон для точності</li>
+                        <li>Встановлення формувача ясен</li>
+                        <li>Абатмент</li>
+                        <li>Металокерамічна коронка</li>
+                    </ul>
+                    <a href="viber://chat?number=%2B380687794547"
+                        style="display: block; box-sizing: border-box; text-decoration: none; text-align: center;"
+                        class="btn-package"
+                        onclick="return gtag_report_messenger('viber://chat?number=%2B380687794547');">Консультація</a>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="badge">Вибір пацієнтів 2026</div>
+                    <p style="color: #666; font-size: 14px;">Імплантація під ключ (Німеччина)</p>
+                    <div class="package-price">700 $</div>
+                    <ul class="package-features">
+                        <li>Alpha Dent Implants (Німеччина)</li>
+                        <li>3D навігаційний шаблон</li>
+                        <li>Встановлення формувача ясен</li>
+                        <li>Абатмент</li>
+                        <li>Цирконієва коронка</li>
+                    </ul>
+                    <a href="viber://chat?number=%2B380687794547"
+                        style="display: block; box-sizing: border-box; text-decoration: none; text-align: center;"
+                        class="btn-package teal"
+                        onclick="return gtag_report_messenger('viber://chat?number=%2B380687794547');">Консультація</a>
+                </div>
+
+                <div class="package-card">
+                    <p style="color: #666; font-size: 14px;">Максимальна надійність (Швейцарія)</p>
+                    <div class="package-price">1100 $</div>
+                    <ul class="package-features">
+                        <li>Імплант Straumann (Швейцарія)</li>
+                        <li>3D шаблон для встановлення</li>
+                        <li>Встановлення формувача ясен</li>
+                        <li>Абатмент</li>
+                        <li>Цирконієва коронка</li>
+                    </ul>
+                    <a href="viber://chat?number=%2B380687794547"
+                        style="display: block; box-sizing: border-box; text-decoration: none; text-align: center;"
+                        class="btn-package"
+                        onclick="return gtag_report_messenger('viber://chat?number=%2B380687794547');">Консультація</a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Детальний прайс-лист на імплантацію зубів в Одесі</h2>
+
+            <h3 style="margin-bottom: 15px; font-weight: 800; color: #004d40;">Хірургічний етап (встановлення)</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Система імплантації</th>
+                        <th>Вартість</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unident <span class="price-origin">Україна</span></td>
+                        <td class="price-val">300 $</td>
+                    </tr>
+                    <tr>
+                        <td>Alpha Dent Implants <span class="price-origin">Німеччина</span></td>
+                        <td class="price-val">350 $</td>
+                    </tr>
+                    <tr>
+                        <td>MIS C1 <span class="price-origin">Ізраїль</span></td>
+                        <td class="price-val">400 $</td>
+                    </tr>
+                    <tr>
+                        <td>Straumann SLA <span class="price-origin">Швейцарія</span></td>
+                        <td class="price-val">750 $</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin: 40px 0 15px; font-weight: 800; color: #004d40;">Етап протезування (коронки)</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Конструкція / Послуга</th>
+                        <th>Вартість</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Цирконієва коронка на імпланті</td>
+                        <td class="price-val">300 $</td>
+                    </tr>
+                    <tr>
+                        <td>Металокерамічна коронка на імпланті</td>
+                        <td class="price-val">270 $</td>
+                    </tr>
+                    <tr>
+                        <td>Тимчасова коронка на імпланті</td>
+                        <td class="price-val">80 $</td>
+                    </tr>
+                    <tr>
+                        <td>Індивідуальний абатмент</td>
+                        <td class="price-val">70 $</td>
+                    </tr>
+                    <tr>
+                        <td>Формувач ясен</td>
+                        <td class="price-val">50 $</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="types-section" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">Догляд за імплантом і реабілітація</h2>
+            <p style="max-width:900px;margin:-20px auto 40px;text-align:center;color:var(--text-grey);font-size:16px;">
+                Імплант не уражається карієсом, але тканини навколо нього так само чутливі до нальоту, як і навколо
+                власного зуба. Приживлення й довговічність конструкції на 80 % залежать від того, що відбувається
+                після виходу з клініки.</p>
+            <div class="about-grid" style="align-items:start;">
+                <div class="type-item">
+                    <h3 style="margin-bottom:18px;">Перші два тижні</h3>
+                    <ul class="sterile-list">
+                        <li><span class="check-icon">✓</span><span>У першу добу не полоскати рот — кров'яний згусток має залишитися в рані</span></li>
+                        <li><span class="check-icon">✓</span><span>Холод на щоку по 10–15 хвилин кілька разів у перший день</span></li>
+                        <li><span class="check-icon">✓</span><span>М'яка тепла (не гаряча) їжа, жувати на протилежному боці</span></li>
+                        <li><span class="check-icon">✓</span><span>Без сауни, спортзалу, авіаперельотів і алкоголю 5–7 днів</span></li>
+                        <li><span class="check-icon">✓</span><span>Не курити щонайменше два тижні</span></li>
+                        <li><span class="check-icon">✓</span><span>Антибіотик і знеболювальне — строго за призначенням лікаря</span></li>
+                    </ul>
+                </div>
+                <div class="type-item">
+                    <h3 style="margin-bottom:18px;">Далі — на весь строк служби</h3>
+                    <ul class="sterile-list">
+                        <li><span class="check-icon">✓</span><span>Щітка двічі на день плюс йоржик або суперфлос для простору під коронкою</span></li>
+                        <li><span class="check-icon">✓</span><span>Іригатор — для імпланта це не рекомендація, а необхідність</span></li>
+                        <li><span class="check-icon">✓</span><span>Професійна гігієна раз на пів року: і умова гарантії, і головна профілактика периімплантиту</span></li>
+                        <li><span class="check-icon">✓</span><span>Раз на рік — контрольний знімок ділянки імпланта</span></li>
+                        <li><span class="check-icon">✓</span><span>Нічна капа, якщо є бруксизм або звичка стискати щелепи</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" style="background:var(--bg-light);padding:80px 0;">
+        <div class="container">
+            <h2 class="section-title">Хто проводить імплантацію зубів в Одесі</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <picture><source srcset="images/oleg.webp" type="image/webp"><img src="images/oleg.jpg" width="600" height="800" loading="lazy"
+                        alt="Олег Швець — хірург-імплантолог Harmony Dental Clinic, імплантація зубів в Одесі"></picture>
+                </div>
+                <div>
+                    <h3 style="font-size:24px;font-weight:800;margin-bottom:15px;">Олег Швець — хірург-імплантолог</h3>
+                    <p style="color:var(--text-grey);margin-bottom:15px;">Хірургічний етап імплантації в Harmony
+                        Dental Clinic виконує хірург-імплантолог Олег Швець. Кожен випадок ми плануємо командно:
+                        хірург визначає позицію імпланта за КТ, а ортопед заздалегідь погоджує майбутню коронку —
+                        тому імплант встановлюється не «де є кістка», а там, де його потребує майбутній зуб.</p>
+                    <p style="color:var(--text-grey);margin-bottom:25px;">Ортопедичний етап — коронку на імплант —
+                        веде Андрій Малюкін, засновник клініки. Такий розподіл ролей прибирає головну причину
+                        естетичних невдач в імплантації: розрив між хірургією і протезуванням.</p>
+                    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                        <a href="maliukin-andriy.html" class="btn-primary" style="padding:14px 28px;">Про лікаря</a>
+                        <a href="index.html#team" class="btn-primary"
+                            style="padding:14px 28px;background:transparent;color:var(--primary);border:1px solid var(--primary);">Вся команда</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-accordion" id="faq" style="background:#fff;">
+        <div class="container">
+            <h2 class="section-title">Часті питання про імплантацію зубів</h2>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Скільки коштує імплантація зуба в Одесі? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Імплантація під ключ у Harmony Dental Clinic коштує від 620 $ — сюди вже входять імплант, абатмент і коронка. Окремо хірургічний етап (встановлення імпланта) — від 300 $, коронка на імплант — від 270 $. Точну суму розраховуємо на консультації після КТ і фіксуємо в плані лікування.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи болить імплантація зубів? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Сама операція проходить під місцевою анестезією — пацієнт відчуває дотик і тиск, але не біль. Легкий дискомфорт і невеликий набряк можливі протягом 2–3 днів після встановлення імпланта; вони знімаються звичайними знеболювальними за призначенням лікаря.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Скільки часу триває імплантація? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Встановлення одного імпланта займає 30–60 хвилин. Повний цикл до постійної коронки — 3–6 місяців: стільки потрібно кістці на остеоінтеграцію. При одномоментній імплантації строк скорочується, бо видалення й установка імпланта проходять за один візит.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи можна поставити імплант одразу після видалення зуба? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Так, це одномоментна імплантація: імплант встановлюється у лунку щойно видаленого зуба. Умови — відсутність гострого запалення та збережені стінки лунки, що оцінюється за комп'ютерною томографією. Такий протокол зберігає контур ясен і економить 3–4 місяці лікування.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Що робити, якщо не вистачає кістки для імпланта? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Дефіцит кістки — не протипоказання, а окремий етап лікування. Залежно від об'єму застосовуємо напрямлену кісткову регенерацію, закритий або відкритий синус-ліфтинг. У багатьох випадках кісткова пластика виконується одночасно зі встановленням імпланта, без окремої операції.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Скільки служить зубний імплант? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>За належної гігієни та регулярних оглядів імплант служить десятиліттями — виробники Straumann, MIS і Alpha Dent дають на сам імплант довічну гарантію. Коронка на імпланті — розхідна частина конструкції, її середній строк служби 10–15 років.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи дають гарантію на імпланти? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Так. Виробник дає довічну гарантію на сам імплант, а клініка — гарантію на роботу лікаря. Умова збереження гарантії стандартна: профілактичний огляд і професійна гігієна раз на пів року.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи обов'язкова КТ перед імплантацією? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Так. Комп'ютерна томографія показує реальну висоту й ширину кістки, положення гайморової пазухи та нижньощелепного нерва. Без КТ неможливо ані спланувати вісь імпланта, ані виготовити навігаційний хірургічний шаблон, ані чесно назвати ціну.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи встановлюєте ви імпланти Neodent, Osstem або Nobel Biocare? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Ми працюємо з системами Straumann (Швейцарія), MIS C1 (Ізраїль), Alpha Dent (Німеччина) та Unident (Україна). Якщо ви орієнтувалися на іншу систему, на консультації порівняємо характеристики й покажемо, який аналог із нашого переліку відповідає вашому запиту та бюджету.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Скільки імплантів потрібно, якщо немає трьох зубів поспіль? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Зазвичай двох: імпланти встановлюються по краях дефекту й слугують опорами для мостоподібної конструкції. Це дешевше, ніж імплант під кожен зуб, і повністю відновлює жувальну функцію. Остаточне рішення приймається за КТ.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи можна курити після імплантації зубів? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Перші два тижні курити не можна категорично: нікотин звужує судини, порушує кровопостачання рани й різко підвищує ризик відторгнення. Надалі курити не заборонено, але ризик залишається підвищеним — у курців імпланти втрачаються у 2–3 рази частіше, тому й контрольні огляди їм потрібні частіше.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Що можна їсти після встановлення імпланта? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Перші 2–3 дні — м'яка тепла їжа: супи-пюре, каші, йогурти, паштети; жувати потрібно на протилежному боці. Виключіть гаряче, гостре, тверде (горіхи, сухарі) й алкоголь. Через тиждень раціон повертається до звичного, а повноцінно навантажувати імплант можна після фіксації постійної коронки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи можна робити МРТ, якщо стоїть імплант? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Так. Титан немагнітний, тому дентальні імпланти не є протипоказанням до магнітно-резонансної томографії й не зміщуються в томографі. На знімках голови та шиї можливий локальний артефакт у зоні коронки — про наявність імплантів варто попередити рентген-лаборанта.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Чи ставлять імпланти при пародонтиті? <span>+</span></div>
+                <div class="accordion-content">
+                    <div class="content-padding">
+                        <p>Ставлять, але тільки після лікування пародонтиту й досягнення стабільної гігієни. Встановлювати імплант у порожнину рота з активним запаленням не можна: бактерії з пародонтальних кишень колонізують поверхню імпланта й запускають периімплантит. Спершу — пародонтологічне лікування, потім імплантація.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section" style="padding:70px 0;">
+        <div class="container">
+            <h2 class="section-title">Корисне по темі</h2>
+            <div class="types-grid">
+                <a href="blog/implantatsiya-zubiv-povnyi-gayd.html" class="type-item" style="display:block;">
+                    <h3>Імплантація зубів: повний гайд</h3>
+                    <p>Детальний розбір етапів, строків і того, що впливає на приживлення імпланта.</p>
+                </a>
+                <a href="blog/tsyfrova-stomatologiya.html" class="type-item" style="display:block;">
+                    <h3>Цифрова стоматологія</h3>
+                    <p>Як сканер 3Shape TRIOS 4 і 3D-планування змінюють точність лікування.</p>
+                </a>
+                <a href="prosthetics-ua.html" class="type-item" style="display:block;">
+                    <h3>Протезування зубів</h3>
+                    <p>Коронки, вініри та мостоподібні конструкції — коли можна обійтися без імпланта.</p>
+                </a>
+                <a href="extraction-ua.html" class="type-item" style="display:block;">
+                    <h3>Видалення зуба</h3>
+                    <p>Атравматичне видалення зі збереженням лунки — база для майбутньої імплантації.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<footer id="contacts" class="unified-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <picture><source srcset="images/Logo.webp" type="image/webp"><img loading="lazy" src="images/Logo.png" alt="Логотип Harmony Clinic" class="footer-logo-img" width="1072" height="1071"></picture>
+                    <p style="margin-top:10px;">Сучасна сімейна стоматологія в Одесі.</p>
+                    <div class="social-icons">
+                        <a href="viber://chat?number=%2B380687794547" title="Viber" aria-label="Viber"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+                            </svg></a>
+                        <a href="https://t.me/Harmonyclinic_od" target="_blank" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M9.78,18.65l0.13-3.14l5.63-5.07c0.49-0.44-0.11-0.69-0.76-0.29L8.4,14.2l-3.03-0.95c-0.66-0.21-0.67-0.66,0.14-0.97L17.36,7.7c0.56-0.21,1.05,0.13,0.87,0.86L16.14,18.2c-0.12,0.59-0.87,0.72-1.41,0.45L9.78,18.65z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/harmony.dental.clinic.od/" target="_blank" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2.2c3.2,0,3.6,0,4.9,0.1c1.2,0.1,1.8,0.3,2.2,0.5c0.6,0.2,1,0.5,1.4,0.9c0.4,0.4,0.7,0.8,0.9,1.4c0.2,0.4,0.4,1.1,0.5,2.2c0.1,1.3,0.1,1.6,0.1,4.9s0,3.6-0.1,4.9c-0.1,1.2-0.3,1.8-0.5,2.2c-0.2,0.6-0.5,1-0.9,1.4c-0.4,0.4-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.5C8.4,2.2,8.8,2.2,12,2.2 M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2s-1.1,1.4-1.4,2.2C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9c0.3,0.8,0.7,1.5,1.4,2.2c0.7,0.7,1.4,1.1,2.2,1.4c0.8,0.3,1.7,0.5,2.9,0.6c1.2,0.1,1.6,0.1,4.9,0.1s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.2-1.4c0.7-0.7,1.1-1.4,1.4-2.2c0.3-0.8,0.5-1.7,0.6-2.9c0.1-1.2,0.1-1.6,0.1-4.9s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9c-0.3-0.8-0.7-1.5-1.4-2.2c-0.7-0.7-1.4-1.1-2.2-1.4c-0.8-0.3-1.7-0.5-2.9-0.6C15.7,0,15.3,0,12,0z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2c0,3.4,2.8,6.2,6.2,6.2s6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S14.2,16,12,16z M18.4,4.2c-0.8,0-1.4,0.6-1.4,1.4s0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4S19.2,4.2,18.4,4.2z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Меню</h3>
+                    <div class="footer-links"><a href="index.html#about">> Про клініку</a><a href="index.html#prices">> Ціни</a><a href="offer.html">> Оферта</a></div>
+                </div>
+                <div>
+                    <h3>Послуги</h3>
+                    <div class="footer-links"><a href="implants-ua.html">> Імплантація</a><a href="prosthetics-ua.html">> Протезування</a><a href="lechenie-ua.html">> Лікування</a><a href="hygiene-ua.html">> Гігієна</a><a href="otbilyuvannya-ua.html">> Відбілювання</a><a href="orthodontics-ua.html">> Ортодонтія</a><a href="extraction-ua.html">> Видалення</a></div>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>📍 м. Одеса, вул. Новаторів 1А</p>
+                    <p style="margin-top:10px;">
+                        <a href="tel:+380687794547" aria-label="Зателефонувати" style="color:#fff; font-weight:700;"
+                            onclick="if(typeof gtag_report_conversion==='function'){return gtag_report_conversion('tel:+380687794547');}">📞 +38 068 779 45 47</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">Copyright © 2026 Harmony Clinic. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <a href="tel:+380687794547" class="floating-widget"
+        onclick="if(typeof gtag_report_conversion === 'function') { return gtag_report_conversion('tel:+380687794547'); } else if(typeof gtag_report_call === 'function') { return gtag_report_call('tel:+380687794547'); }">
+        <div class="widget-icon">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M22.2,16.6c-0.2-0.6-1.3-1.2-2.1-1.4c-0.8-0.2-1.3-0.1-1.8,0.7c-0.5,0.7-1,1.4-1.6,1.4c-0.5,0-1.9-0.5-3.6-2c-1.3-1.2-2.3-2.6-2.5-3s-0.1-1,0.6-1.7c0.5-0.5,1.1-1.3,1.3-1.8c0.2-0.5,0.1-1,0.1-1.4S10.8,3.9,10.2,2.5C9.5,1.1,8.9,1.4,8.4,1.4c-0.5,0-1.4,0-2.2,0.8c-0.9,0.9-3.2,3.1-3.2,7.5c0,4.4,3.2,8.7,3.7,9.3c0.5,0.6,6.3,9.5,15.2,12.5c5.3,1.8,7.3,1.7,8.6,1.5c1.4-0.1,4.5-1.8,5.1-3.6C26.3,17.7,22.8,17.9,22.2,16.6z" />
+            </svg>
+        </div>
+    </a>
+
+    <script>
+        function toggleMenu() { const m = document.getElementById('navMenu'); m.style.display = (m.style.display === 'flex' ? 'none' : 'flex'); }
+
+        function toggleAccordion(el) {
+            const c = el.nextElementSibling;
+            if (c.style.maxHeight) { c.style.maxHeight = null; }
+            else { c.style.maxHeight = c.scrollHeight + "px"; }
+        }
+
+        function initCarousel(id, pcItems) {
+            let idx = 0;
+            const track = document.getElementById(id);
+            if (!track) return function () { };
+            const slides = track.children;
+
+            let touchstartX = 0;
+            let touchendX = 0;
+
+            const move = function (n) {
+                const vis = window.innerWidth <= 992 ? 1 : pcItems;
+                const max = slides.length - vis;
+                idx += n;
+                if (idx < 0) idx = 0;
+                if (idx > max) idx = max;
+                track.style.transform = `translateX(-${idx * (100 / vis)}%)`;
+            };
+
+            track.addEventListener('touchstart', e => {
+                touchstartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            track.addEventListener('touchend', e => {
+                touchendX = e.changedTouches[0].screenX;
+                if (touchendX < touchstartX - 40) move(1);
+                if (touchendX > touchstartX + 40) move(-1);
+            }, { passive: true });
+
+            return move;
+        }
+        const moveWorks = initCarousel('worksTrack', 2);
+    </script>
+
+    <!-- HC Lightbox: збільшення фото До/Після (карткова форма у стилі сайту) -->
+    <div id="hcLightbox" class="hc-lightbox" role="dialog" aria-hidden="true" aria-label="Збільшене зображення">
+        <div class="hc-lightbox-card" role="document">
+            <button class="hc-lightbox-close" type="button" aria-label="Закрити">&times;</button>
+            <img class="hc-lightbox-img" alt="">
+        </div>
+    </div>
+    <style>
+        .before-after-row .photo-wrapper img,
+        .ba-image img,
+        .collage-card img,
+        .case-card .photo-wrapper img,
+        .gallery-section img,
+        .works .photo-wrapper img,
+        .works .case-card img {
+            cursor: zoom-in;
+            transition: transform 0.25s ease;
+        }
+        .before-after-row .photo-wrapper:hover img,
+        .ba-image:hover img,
+        .collage-card:hover img,
+        .case-card:hover .photo-wrapper img { transform: scale(1.02); }
+        .hc-lightbox {
+            position: fixed; inset: 0;
+            background: rgba(34, 34, 34, 0.55);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            display: none; align-items: center; justify-content: center;
+            z-index: 99999; padding: 28px;
+            opacity: 0;
+            transition: opacity 0.28s ease;
+        }
+        .hc-lightbox.open { display: flex; opacity: 1; }
+        .hc-lightbox-card {
+            position: relative;
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 16px;
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.04),
+                0 30px 80px rgba(0, 0, 0, 0.28),
+                0 12px 30px rgba(82, 97, 84, 0.18);
+            max-width: min(720px, 92vw);
+            max-height: 88vh;
+            display: flex;
+            transform: scale(0.92) translateY(12px);
+            transition: transform 0.34s cubic-bezier(0.2, 0.9, 0.3, 1.15);
+        }
+        .hc-lightbox.open .hc-lightbox-card { transform: scale(1) translateY(0); }
+        .hc-lightbox-img {
+            display: block;
+            max-width: 100%;
+            max-height: calc(88vh - 32px);
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 18px;
+            background: #f9f9f9;
+            cursor: zoom-out;
+        }
+        .hc-lightbox-close {
+            position: absolute;
+            top: -16px; right: -16px;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: #526154;
+            color: #ffffff;
+            border: 3px solid #ffffff;
+            font-size: 26px; line-height: 1;
+            cursor: pointer;
+            padding: 0;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 8px 22px rgba(82, 97, 84, 0.35);
+            transition: background 0.25s ease, transform 0.3s ease;
+        }
+        .hc-lightbox-close:hover {
+            background: #3c493d;
+            transform: scale(1.08) rotate(90deg);
+        }
+        .hc-lightbox-close:focus-visible {
+            outline: 3px solid rgba(82, 97, 84, 0.45);
+            outline-offset: 3px;
+        }
+        body.hc-lightbox-open { overflow: hidden; }
+        @media (max-width: 600px) {
+            .hc-lightbox { padding: 18px; }
+            .hc-lightbox-card { padding: 12px; border-radius: 22px; }
+            .hc-lightbox-img { border-radius: 14px; max-height: calc(88vh - 24px); }
+            .hc-lightbox-close { top: -14px; right: -14px; width: 40px; height: 40px; font-size: 22px; border-width: 2px; }
+        }
+    </style>
+    <script>
+        (function () {
+            var overlay = document.getElementById('hcLightbox');
+            if (!overlay) return;
+            var card = overlay.querySelector('.hc-lightbox-card');
+            var lbImg = overlay.querySelector('.hc-lightbox-img');
+            var closeBtn = overlay.querySelector('.hc-lightbox-close');
+            var selectors = [
+                '.before-after-row .photo-wrapper img',
+                '.ba-image img',
+                '.collage-card img',
+                '.case-card .photo-wrapper img',
+                '.gallery-section img',
+                '.works .photo-wrapper img',
+                '.works .case-card img'
+            ].join(',');
+            function openLB(src, alt) {
+                lbImg.src = src;
+                lbImg.alt = alt || '';
+                overlay.classList.add('open');
+                overlay.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('hc-lightbox-open');
+            }
+            function closeLB() {
+                overlay.classList.remove('open');
+                overlay.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('hc-lightbox-open');
+                setTimeout(function () { lbImg.removeAttribute('src'); }, 320);
+            }
+            document.addEventListener('click', function (e) {
+                var t = e.target;
+                if (!t || t.tagName !== 'IMG') return;
+                if (t.closest('header') || t.closest('footer') || t.closest('.floating-widget') || t.closest('.hc-lightbox')) return;
+                if (!t.closest(selectors)) return;
+                openLB(t.currentSrc || t.src, t.alt);
+                e.preventDefault();
+            });
+            overlay.addEventListener('click', function (e) {
+                // закриваємо тільки якщо клік по фоновому оверлею або по самій картинці
+                if (e.target === overlay || e.target === lbImg) closeLB();
+            });
+            closeBtn.addEventListener('click', function (e) { e.stopPropagation(); closeLB(); });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && overlay.classList.contains('open')) closeLB();
+            });
+        })();
+    </script>
+    <script src="header.js" defer></script>
+    <script src="mobile-menu.js" defer></script>
+</body>
+
+</html>
